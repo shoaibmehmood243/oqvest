@@ -1,0 +1,63 @@
+/* Footer */
+.footer {
+    background: #222D39;
+    box-shadow: 0px -56px 80px rgba(0, 139, 244, 0.06), 0px -23.3955px 33.4221px rgba(0, 139, 244, 0.0431313), 0px -12.5083px 17.869px rgba(0, 139, 244, 0.0357664), 0px -7.01207px 10.0172px rgba(0, 139, 244, 0.03), 0px -3.72406px 5.32008px rgba(0, 139, 244, 0.0242336), 0px -1.54966px 2.21381px rgba(0, 139, 244, 0.0168687);
+    padding: 60px 80px;
+    color: #fff;
+}
+
+.footerInner {
+    background: #222D39;
+    padding: 5px 0px;
+}
+.footerInner p {
+    padding-right: 80px;
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 70px;
+}
+
+footer .links a {
+    color: #0CBC8B;
+    text-decoration: none;
+    font-style: italic;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.map iframe {
+    border-radius: 10px;
+    border: 0px;
+}
+
+.bottom {
+    margin-top: 20px;
+    color: #FF6C59;
+    text-align: end;
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        padding: 60px 30px;
+    }
+    .footerInner {
+        padding: 10px 30px;
+    }
+    .footerGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .footerGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}

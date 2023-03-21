@@ -2,7 +2,7 @@ import { calender, phoneCall } from '../../assets'
 
 const Banner = ()=> {
     return(
-        <div className='surface-900 text-white text-sm py-2 pr-8 banner'>
+        <div className='surface-900 text-white text-sm py-2 pr-7 banner'>
             <div className='flex justify-content-end align-items-center gap-4'>
                 <div className='flex align-items-center gap-2'>
                     <img src={calender} />

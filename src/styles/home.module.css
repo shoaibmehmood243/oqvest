@@ -1,0 +1,51 @@
+.heroSection {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroText h1 {
+    font-weight: 700;
+font-size: 36px;
+line-height: 50px;
+    color: #222D39;
+}
+
+.heroText .st-1 {
+    color: #0CBC8B;
+}
+
+.heroText .st-2 {
+    color: #FF6C59;
+}
+
+.heroText p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #222D39;
+}
+
+.heroText .p-button, .p-button:hover, .p-button:focus {
+    background-color: #0CBC8B !important;
+    box-shadow: 0px 14.7349px 69.3407px rgba(0, 0, 0, 0.07), 0px 6.15589px 28.9689px rgba(0, 0, 0, 0.0503198), 0px 3.29123px 15.4882px rgba(0, 0, 0, 0.0417275), 0px 1.84504px 8.68254px rgba(0, 0, 0, 0.035), 0px 0.979886px 4.61123px rgba(0, 0, 0, 0.0282725), 0px 0.407753px 1.91884px rgba(0, 0, 0, 0.0196802);
+    border-radius: 8.66759px;
+    border: none;
+}
+
+.heroText span {
+    font-weight: 600;
+font-size: 16px;
+color: #222D39;
+}
+
+.imageDiv {
+    max-height: 600px;
+    height: 1000px;
+}
+
+.imageDiv img {
+    max-height: 100%;
+    object-fit: cover;
+    height: 100%;
+}

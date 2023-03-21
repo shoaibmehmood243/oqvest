@@ -49,6 +49,7 @@ import service from './service.svg';
 import yahoo from './yahoo.png';
 import fb from './fb.svg'
 import insta from './insta.svg'
+import twitter from './twitter.svg'
 import phoneLight from './phoneLight.svg'
 import msgLight from './msgLight.svg'
 import location from './locaton.svg'
@@ -105,6 +106,7 @@ export {
     yahoo,
     fb,
     insta,
+    twitter,
     location,
     phoneLight,
     msgLight
