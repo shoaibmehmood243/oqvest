@@ -53,6 +53,11 @@ import twitter from './twitter.svg'
 import phoneLight from './phoneLight.svg'
 import msgLight from './msgLight.svg'
 import location from './locaton.svg'
+import shield from './shield-star-line.svg'
+import card from './card.svg'
+import card1 from './card1.svg'
+import card2 from './card2.svg'
+import calculator from './calculator.svg'
 
 export {
     logo,
@@ -109,5 +114,10 @@ export {
     twitter,
     location,
     phoneLight,
-    msgLight
+    msgLight,
+    shield,
+    card,
+    card1,
+    card2,
+    calculator
 }

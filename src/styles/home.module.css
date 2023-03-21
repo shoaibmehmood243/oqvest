@@ -7,17 +7,13 @@
 
 .heroText h1 {
     font-weight: 700;
-font-size: 36px;
+font-size: 30px;
 line-height: 50px;
     color: #222D39;
 }
 
-.heroText .st-1 {
-    color: #0CBC8B;
-}
-
-.heroText .st-2 {
-    color: #FF6C59;
+.heroText strong {
+    border-bottom: 3px solid #FF6C59;
 }
 
 .heroText p {
@@ -33,10 +29,28 @@ line-height: 50px;
     border: none;
 }
 
-.heroText span {
-    font-weight: 600;
-font-size: 16px;
-color: #222D39;
+.tabButtons {
+    background: #FFFFFF;
+box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.04), 0px 1.6711px 33.4221px rgba(0, 0, 0, 0.0287542), 0px 0.893452px 17.869px rgba(0, 0, 0, 0.0238443), 0px 0.500862px 10.0172px rgba(0, 0, 0, 0.02), 0px 0.266004px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 0.11069px 2.21381px rgba(0, 0, 0, 0.0112458);
+border-radius: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 25px;
+}
+
+.tabButtons button {
+    padding: 15px 60px;
+    background: transparent;
+border-radius: 70px;
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+.active {
+    background: #2BC7B1 !important;
+box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.04), 0px 1.6711px 33.4221px rgba(0, 0, 0, 0.0287542), 0px 0.893452px 17.869px rgba(0, 0, 0, 0.0238443), 0px 0.500862px 10.0172px rgba(0, 0, 0, 0.02), 0px 0.266004px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 0.11069px 2.21381px rgba(0, 0, 0, 0.0112458);
 }
 
 .imageDiv {
@@ -48,4 +62,101 @@ color: #222D39;
     max-height: 100%;
     object-fit: cover;
     height: 100%;
+}
+
+.inputZip input {
+    border-radius: 10px 0px 0px 10px !important;
+    width: 80%;
+    border: 1px solid #000 !important;
+}
+.inputZip input:focus {
+    box-shadow: none !important;
+}
+.inputZip button {
+    border-radius: 0px 10px 10px 0px !important;
+    background: #222D39;
+    color: #FFFFFF !important;
+    border: 1px solid #222D39;
+}
+
+.inputZip button:hover {
+    background: #222D39 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #222D39 !important;
+}
+
+.inputZip :global(._heroText_1loah_15 span) {
+    color: #fff !important;
+}
+
+.featured button {
+    border-radius: 10px !important;
+    background: #222D39;
+    color: #FFFFFF !important;
+    border: 1px solid #222D39;
+}
+
+.featured button:hover {
+    background: #222D39 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #222D39 !important;
+}
+.price {
+    background: rgba(153, 153, 153, 0.04);
+    padding: 40px 60px;
+}
+
+.price button {
+    border-radius: 10px !important;
+    background: #222D39;
+    color: #FFFFFF !important;
+    border: 1px solid #222D39;
+}
+
+.price button:hover {
+    background: #222D39 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #222D39 !important;
+}
+.calculate {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 60px 60px;
+    background: #FFFFFF;
+box-shadow: 0px 14px 80px rgba(0, 0, 0, 0.07), 0px 5.84887px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 3.12708px 17.869px rgba(0, 0, 0, 0.0417275), 0px 1.75302px 10.0172px rgba(0, 0, 0, 0.035), 0px 0.931014px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 0.387416px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+.calculate h1 {
+    font-style: italic;
+font-weight: 400;
+font-size: 172.663px;
+line-height: 170px;
+
+color: rgba(34, 45, 57, 0.12);
+
+opacity: 0.5;
+position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    /* z-index: -1; */
+    margin: 0;
+    text-align: center;
+}
+.calculate button {
+    border-radius: 10px !important;
+    background: #222D39;
+    color: #FFFFFF !important;
+    border: 1px solid #222D39;
+}
+
+.calculate button:hover {
+    background: #222D39 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #222D39 !important;
+}
+
+.calculate h4 {
+    font-weight: 400;
+font-size: 24px;
+line-height: 48px;
 }
