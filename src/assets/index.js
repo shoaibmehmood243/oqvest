@@ -58,6 +58,14 @@ import card from './card.svg'
 import card1 from './card1.svg'
 import card2 from './card2.svg'
 import calculator from './calculator.svg'
+import conventional from './conventional.svg'
+import dscr from './dscr.svg'
+import construction from './construction.svg'
+import clients from './clients.png'
+import client1 from './client1.png'
+import client2 from './client2.png'
+import client3 from './client3.png'
+import welcome from './welcome.png'
 
 export {
     logo,
@@ -119,5 +127,13 @@ export {
     card,
     card1,
     card2,
-    calculator
+    calculator,
+    construction,
+    conventional,
+    dscr,
+    clients,
+    client1,
+    client2,
+    client3,
+    welcome
 }

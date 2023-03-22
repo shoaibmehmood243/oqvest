@@ -56,8 +56,21 @@ footer a {
 }
 
 @media screen and (max-width: 575px) {
+    .footer {
+        padding: 40px 10px;
+    }
     .footerGrid {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
+    }
+    .map iframe {
+        max-width: 300px;
+    }
+    .footerInner {
+        padding: 10px 0px;
+    }
+    .footerInner p {
+        padding-right: 0;
+        text-align: center;
     }
 }
