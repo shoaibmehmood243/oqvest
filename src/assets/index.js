@@ -66,6 +66,15 @@ import client1 from './client1.png'
 import client2 from './client2.png'
 import client3 from './client3.png'
 import welcome from './welcome.png'
+import idea from './idea.svg'
+import blog1 from './blog1.png'
+import blog2 from './blog2.png'
+import blog3 from './blog3.png'
+import girl from './girl.png'
+import uwm from './uwm.png'
+import caliber from './caliber.png'
+import pennymac from './pennymac.png'
+import rocket from './rocket.png'
 
 export {
     logo,
@@ -135,5 +144,14 @@ export {
     client1,
     client2,
     client3,
-    welcome
+    welcome,
+    idea,
+    blog1,
+    blog2,
+    blog3,
+    girl,
+    uwm,
+    rocket,
+    pennymac,
+    caliber
 }

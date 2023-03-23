@@ -26,8 +26,11 @@ const Header = ()=> {
                         }
                     </ul>
                 </div>
-                <div>
+                <div className='hidden lg:block'>
                     <Button label='Sign In'/>
+                </div>
+                <div>
+                    
                 </div>
             </div>
         </div>

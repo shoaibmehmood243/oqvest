@@ -4,6 +4,8 @@ import Hero from "../components/Home/Hero";
 import styles from '../styles/home.module.css'
 import { Carousel } from 'primereact/carousel';
 import Welcome from "../components/Home/Welcome";
+import Blog from "../components/Home/Blog";
+import Rate from "../components/common/Rate";
 
 const Home = ()=> {
     const images = [
@@ -133,7 +135,7 @@ const Home = ()=> {
             <div className="text-center mb-5">
                 <Button label={` Featured In`} icon={<img height={18} src={shield} />} />
             </div>
-            <div style={{maxWidth: '100vw'}} className="images">
+            <div style={{maxWidth: '100vw'}} className={styles.images}>
                 <Carousel
                     value={images}
                     itemTemplate={template}
@@ -149,24 +151,7 @@ const Home = ()=> {
                 />
             </div>
         </div>
-        <div className={styles.price}>
-            <h2 className="w-full m-auto md:w-10 lg:w-8 text-center m-3">Find the right rate for you. Get a fast quote in 5 minutes or less.  We are always ready to serve you.</h2>
-            <div className="grid mt-6">
-                <div className="col-12 lg:col-6">
-                    <div>
-                        <img src={card} />
-                        <img style={{marginTop: '-120px'}} src={card2} />
-                        <img style={{marginTop: '-120px'}} src={card1} />
-                    </div>
-                    <div></div>
-                </div>
-                <div className="col-12 lg:col-6 mt-0 lg:mt-6">
-                    <h3>Get Your Price now with Oqvest</h3>
-                    <p className="w-full md:w-10 lg:w-8">Get the best results with us. We offer personal quotes within 5 minutes and help you understand the process all the way. Let your dreams come true!</p>
-                    <Button className="mt-5" label="Want a Quote?" />
-                </div>
-            </div>
-        </div>
+        <Rate />
         <div className={styles.calculate}>
             <div>
                 <div className="text-center">
@@ -182,7 +167,7 @@ const Home = ()=> {
                 <h1 className="m-0 mb-2">Our Products</h1>
                 <p className="my-1 text">We care our customers. that’s why we provide best products and help them in chasing their dreams</p>
             </div>
-            <div className="my-4">
+            <div className={`my-4`}>
                 <Carousel value={products} numVisible={3} numScroll={3} responsiveOptions={responsiveOptionsProducts} itemTemplate={productTemplate} />
             </div>
         </div>
@@ -216,10 +201,10 @@ const Home = ()=> {
                         <div className={styles.feedback}>
                             {
                                 clients.map((data)=> (
-                                    <div className="flex align-items-center mb-3">
+                                    <div className="flex align-items-center mb-5">
                                         <div>
                                             <p className="text-xs m-0">{data.feedback}</p>
-                                            <h6 className="text-lg m-0">{data.name}</h6>
+                                            <h6 className="text-xs m-0">{data.name}</h6>
                                         </div>
                                         <div>
                                             <img src={data.img} />
@@ -233,6 +218,7 @@ const Home = ()=> {
             </div>
         </div>
         <Welcome />
+        <Blog />
     </>)
 }
 

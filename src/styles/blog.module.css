@@ -1,0 +1,81 @@
+.container {
+    margin: 100px 0px;
+    width: 80%;
+    margin: auto;
+}
+
+.container h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    color: #404F66;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.grid .card {
+background: #FFFFFF;
+box-shadow: 0px -4.13292px 47.2334px rgba(0, 0, 0, 0.07), 0px -1.72664px 19.733px rgba(0, 0, 0, 0.0503198), 0px -0.923142px 10.5502px rgba(0, 0, 0, 0.0417275), 0px -0.517506px 5.91435px rgba(0, 0, 0, 0.035), 0px -0.274844px 3.14107px rgba(0, 0, 0, 0.0282725), 0px -0.114369px 1.30707px rgba(0, 0, 0, 0.0196802);
+border-radius: 12px;
+padding: 10px 10px 20px 10px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card .span1 span {
+    font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #818AA6;
+
+}
+
+.card h3 {
+    font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+
+color: #222D39;
+}
+
+.widgets {
+font-size: 15px;
+line-height: 17px;
+}
+
+.heart {
+    cursor: pointer;
+    color: #FF5959;
+}
+.msg {
+    cursor: pointer;
+    color: #4B88E6;;
+}
+.readMore {
+    cursor: pointer;
+    color: #0CBC8B;
+}
+
+@media screen and (max-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
