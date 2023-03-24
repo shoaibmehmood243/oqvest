@@ -29,6 +29,10 @@ line-height: 50px;
     border: none;
 }
 
+.tabShift {
+    width: 29rem;
+}
+
 .tabButtons {
     background: #FFFFFF;
 box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.04), 0px 1.6711px 33.4221px rgba(0, 0, 0, 0.0287542), 0px 0.893452px 17.869px rgba(0, 0, 0, 0.0238443), 0px 0.500862px 10.0172px rgba(0, 0, 0, 0.02), 0px 0.266004px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 0.11069px 2.21381px rgba(0, 0, 0, 0.0112458);
@@ -40,7 +44,7 @@ gap: 25px;
 }
 
 .tabButtons button {
-    padding: 15px 30px;
+    padding: 20px 30px;
     background: transparent;
 border-radius: 70px;
 border: none;
@@ -48,7 +52,13 @@ outline: none;
 cursor: pointer;
 }
 
-.active {
+.tabButtons button:focus, button:hover {
+    border-radius: 70px;
+    background: #2BC7B1 !important;
+box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.04), 0px 1.6711px 33.4221px rgba(0, 0, 0, 0.0287542), 0px 0.893452px 17.869px rgba(0, 0, 0, 0.0238443), 0px 0.500862px 10.0172px rgba(0, 0, 0, 0.02), 0px 0.266004px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 0.11069px 2.21381px rgba(0, 0, 0, 0.0112458);
+}
+
+.activeTab {
     background: #2BC7B1 !important;
 box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.04), 0px 1.6711px 33.4221px rgba(0, 0, 0, 0.0287542), 0px 0.893452px 17.869px rgba(0, 0, 0, 0.0238443), 0px 0.500862px 10.0172px rgba(0, 0, 0, 0.02), 0px 0.266004px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 0.11069px 2.21381px rgba(0, 0, 0, 0.0112458);
 }
@@ -63,7 +73,9 @@ box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.04), 0px 1.6711px 33.4221px rgba(0, 0, 
     object-fit: cover;
     height: 100%;
 }
-
+.inputZip {
+    height: 3.5rem;
+}
 .inputZip input {
     border-radius: 10px 0px 0px 10px !important;
     width: 80%;
@@ -76,7 +88,7 @@ box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.04), 0px 1.6711px 33.4221px rgba(0, 0, 
     border-radius: 0px 10px 10px 0px !important;
     background: #222D39;
     color: #FFFFFF !important;
-    border: 1px solid #222D39;
+    border: 2px solid #222D39;
 }
 
 .inputZip button:hover {
@@ -219,13 +231,16 @@ box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 
 
 @media screen and (max-width: 1024px) {
     .tabButtons {
-        gap: 0px;
+        gap: 20px;
     }
     .tabButtons button {
         padding: 15px 20px;
     }
     .featured .images {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .tabShift {
+        width: 25rem;
     }
 }
 
@@ -240,10 +255,10 @@ box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 
         line-height: 35px;
     }
     .tabButtons {
-        gap: 0px;
+        gap: 15px;
     }
     .tabButtons button {
-        padding: 15px 12px;
+        padding: 15px 15px;
     }
     .calculate {
         padding: 60px 10px;
@@ -264,5 +279,8 @@ box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 
     }
     .featured .images {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .tabShift {
+        width: 22rem;
     }
 }

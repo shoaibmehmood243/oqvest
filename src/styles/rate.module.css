@@ -30,7 +30,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 20px 0px;
+    margin: 20px auto;
+    width: 350px;
+}
+
+.card:first-child {
+    width: 400px;
+    padding: 20px 10px;
 }
 
 .card .img {

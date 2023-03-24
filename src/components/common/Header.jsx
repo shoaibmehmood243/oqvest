@@ -18,8 +18,8 @@ const Header = ()=> {
                 <div className={styles.navItems}>
                     <ul className='flex gap-4 align-items-center justify-content-center'>
                         {
-                            navItems.map((item)=> (
-                                <li>
+                            navItems.map((item, i)=> (
+                                <li key={i}>
                                     <Link to='/'>{item}</Link>
                                 </li>
                             ))

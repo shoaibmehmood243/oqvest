@@ -23,20 +23,20 @@ const Welcome = () => {
                             <button className={activeTab === 1 ? styles.active : ''} onClick={() => handleTabClick(1)}>Purchase</button>
                             <button className={activeTab === 2 ? styles.active : ''} onClick={() => handleTabClick(2)}>Refinnace</button>
                         </div>
-                        <div className={`w-full md:w-10 lg:w-8 ${styles.tabContent}`}>
+                        <div className={` ${styles.tabContent}`}>
                             {activeTab === 0 &&
-                                <div className={`mb-4 mt-0 w-full ${styles.inputZip}`}>
+                                <div className={`mb-4 mt-0 ${styles.inputZip}`}>
                                     <InputMask mask="999999" placeholder="Enter your zip code here" />
-                                    <Button label='Search' />
+                                    <Button label='Get my Quote' />
                                 </div>
                             }
-                            {activeTab === 1 && <div className={`mb-4 mt-0 w-full ${styles.inputZip}`}>
+                            {activeTab === 1 && <div className={`mb-4 mt-0 ${styles.inputZip}`}>
                                 <InputMask mask="999999" placeholder="Enter your zip code here" />
-                                <Button label='Search' />
+                                <Button label='Get my Quote' />
                             </div>}
-                            {activeTab === 2 && <div className={`mb-4 mt-0 w-full ${styles.inputZip}`}>
+                            {activeTab === 2 && <div className={`mb-4 mt-0 ${styles.inputZip}`}>
                                 <InputMask mask="999999" placeholder="Enter your zip code here" />
-                                <Button label='Search' />
+                                <Button label='Get my Quote' />
                             </div>}
                         </div>
                     </div>

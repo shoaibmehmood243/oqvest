@@ -29,8 +29,8 @@ const Blog = ()=> {
             <h1 className='m-0 text-center'>Knowledge Centre <img height={50} src={idea} /></h1>
             <div className={`mt-6 ${styles.grid}`}>
                 {
-                    data.map((data)=> (
-                        <div className={styles.card}>
+                    data.map((data, i)=> (
+                        <div key={i} className={styles.card}>
                             <div>
                                 <img src={data.img} />
                             </div>

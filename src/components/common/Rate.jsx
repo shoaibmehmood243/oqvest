@@ -26,8 +26,8 @@ const Rate = ()=> {
                 <div className={`col-12 lg:col-6 `}>
                     <div className={styles.cardDiv}>
                         {
-                            data.map((data)=> (
-                                <div className={styles.card}>
+                            data.map((data, i)=> (
+                                <div key={i} className={styles.card}>
                                     <div className={styles.img}>
                                         <img src={data.img} />
                                     </div>

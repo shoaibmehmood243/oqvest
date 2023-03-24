@@ -175,8 +175,8 @@ const Home = ()=> {
             <h1 className="text-center">Why Choose Us??</h1>
             <div className={`w-full md:w-10 lg:w-9 mt-3 ${styles.grid}`}>
                 {
-                    chooseData.map((data)=> (
-                        <div className={styles.gridItems}>
+                    chooseData.map((data, i)=> (
+                        <div key={i} className={styles.gridItems}>
                             <div>
                                 <img height={60} className='mb-3' src={data.img} />
                             </div>
@@ -200,8 +200,8 @@ const Home = ()=> {
                     <div className="col-12 lg:col-6">
                         <div className={styles.feedback}>
                             {
-                                clients.map((data)=> (
-                                    <div className="flex align-items-center mb-5">
+                                clients.map((data, i)=> (
+                                    <div key={i} className="flex align-items-center mb-5">
                                         <div>
                                             <p className="text-xs m-0">{data.feedback}</p>
                                             <h6 className="text-xs m-0">{data.name}</h6>

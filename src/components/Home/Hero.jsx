@@ -20,11 +20,11 @@ const Hero = () => {
                     }
                 </h1>
                 <p>Sort through thousands of options and find your perfect home loan today.</p>
-                <div className="custom-tab-shift">
+                <div className={styles.tabShift}>
                     <div className={styles.tabButtons}>
-                        <button className={activeTab === 0 ? styles.active : ''} onClick={() => handleTabClick(0)}>Get Pre-approved</button>
-                        <button className={activeTab === 1 ? styles.active : ''} onClick={() => handleTabClick(1)}>Purchase</button>
-                        <button className={activeTab === 2 ? styles.active : ''} onClick={() => handleTabClick(2)}>Refinance</button>
+                        <button className={activeTab === 0 ? styles.activeTab : ''} onClick={() => handleTabClick(0)}>Get Pre-approved</button>
+                        <button className={activeTab === 1 ? styles.activeTab : ''} onClick={() => handleTabClick(1)}>Purchase</button>
+                        <button className={activeTab === 2 ? styles.activeTab : ''} onClick={() => handleTabClick(2)}>Refinance</button>
                     </div>
                     <div className="tab-content">
                         {activeTab === 0 && 
