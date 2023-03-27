@@ -4,7 +4,7 @@ import styles from '../../styles/hero.module.css'
 import { InputMask} from 'primereact/inputmask'
 import {Button} from 'primereact/button'
 
-const Hero = () => {
+const Hero = ({image, heading, subheading}) => {
     const [activeTab, setActiveTab] = useState(0);
 
     const handleTabClick = (tabIndex) => {
@@ -13,13 +13,8 @@ const Hero = () => {
     return (
         <div className={`grid max-w-full mb-5 m-0 md:m-0 md:relative ${styles.heroSection}`}>
             <div className={`col-12 md:col-6 px-2 md:px-8 ${styles.heroText}`}>
-                <h1>{ activeTab === 1 ? 
-                        `Want to purchase a property? Oqvest has your back` :
-                        activeTab === 2 ? `Get ready to refinance your Mortgage with Oqvest.` :
-                        `Find the right mortgage at Oqvest.`
-                    }
-                </h1>
-                <p>Sort through thousands of options and find your perfect home loan today.</p>
+                <h1>{heading}</h1>
+                <p>{subheading}</p>
                 <div className={styles.tabShift}>
                     <div className={styles.tabButtons}>
                         <button className={activeTab === 0 ? styles.activeTab : ''} onClick={() => handleTabClick(0)}>Get Pre-approved</button>
@@ -45,7 +40,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className={`col-6 m-0 px-0 hidden md:block ${styles.imageDiv}`}>
-                <img className="w-full" src={HeroImage} />
+                <img className="w-full" src={image} />
             </div>
         </div>
     )

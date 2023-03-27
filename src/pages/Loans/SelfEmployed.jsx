@@ -1,13 +1,13 @@
 import { Button } from "primereact/button";
-import { calculator, card, card1, card2, client1, client2, client3, clients, closing, construction, conventional, dscr, forbes, guarantee, hidden, inc, msn, privacy, service, shield, welcome, yahoo } from "../assets";
-import Hero from "../components/Home/Hero";
-import styles from '../styles/home.module.css'
+import { calculator, client1, client2, client3, closing, constrcutionLoan, construction, conventional, dscr, forbes, guarantee, hidden, inc, msn, privacy, selfEmployedHero, service, shield, yahoo } from "../../assets";
+import Hero from "../../components/common/Hero";
+import styles from '../../styles/home.module.css'
 import { Carousel } from 'primereact/carousel';
-import Welcome from "../components/Home/Welcome";
-import Blog from "../components/Home/Blog";
-import Rate from "../components/common/Rate";
+import Welcome from "../../components/Home/Welcome";
+import Blog from "../../components/Home/Blog";
+import Rate from "../../components/common/Rate";
 
-const Home = ()=> {
+const SelfEmployed = ()=> {
     const images = [
         {src: yahoo},
         {src: forbes},
@@ -130,7 +130,7 @@ const Home = ()=> {
         },
     ]
     return (<>
-        <Hero />
+        <Hero image={selfEmployedHero} heading="Mortgages for Self-Employed Borrowers" subheading="Are you self-employed and would like to get approved for a home loan? We can help with all of your needs, including rate comparisons and legal tips." />
         <div className={`mt-7 mb-6 md:my-6 ${styles.featured}`}>
             <div className="text-center mb-5">
                 <Button label={` Featured In`} icon={<img height={18} src={shield} />} />
@@ -224,4 +224,4 @@ const Home = ()=> {
     </>)
 }
 
-export default Home;
+export default SelfEmployed;

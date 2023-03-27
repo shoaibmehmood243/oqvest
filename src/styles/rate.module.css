@@ -1,6 +1,7 @@
 .price {
     background: rgba(153, 153, 153, 0.04);
     padding: 40px 60px;
+    margin: 50px 0px 100px 0px;
 }
 
 .price button {

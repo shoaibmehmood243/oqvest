@@ -1,13 +1,13 @@
 import { Button } from "primereact/button";
-import { calculator, card, card1, card2, client1, client2, client3, clients, closing, construction, conventional, dscr, forbes, guarantee, hidden, inc, msn, privacy, service, shield, welcome, yahoo } from "../assets";
-import Hero from "../components/Home/Hero";
-import styles from '../styles/home.module.css'
+import { calculator, client1, client2, client3, closing, constrcutionLoan, construction, conventional, dscr, forbes, guarantee, hidden, inc, msn, privacy, service, shield, yahoo } from "../../assets";
+import Hero from "../../components/common/Hero";
+import styles from '../../styles/home.module.css'
 import { Carousel } from 'primereact/carousel';
-import Welcome from "../components/Home/Welcome";
-import Blog from "../components/Home/Blog";
-import Rate from "../components/common/Rate";
+import Welcome from "../../components/Home/Welcome";
+import Blog from "../../components/Home/Blog";
+import Rate from "../../components/common/Rate";
 
-const Home = ()=> {
+const Construction = ()=> {
     const images = [
         {src: yahoo},
         {src: forbes},
@@ -130,7 +130,7 @@ const Home = ()=> {
         },
     ]
     return (<>
-        <Hero />
+        <Hero image={constrcutionLoan} heading="Find the best financing options for your Construction Loan." subheading="Our construction loan is designed to help you get your project off the ground. Find out how much you can borrow today." />
         <div className={`mt-7 mb-6 md:my-6 ${styles.featured}`}>
             <div className="text-center mb-5">
                 <Button label={` Featured In`} icon={<img height={18} src={shield} />} />
@@ -224,4 +224,4 @@ const Home = ()=> {
     </>)
 }
 
-export default Home;
+export default Construction;

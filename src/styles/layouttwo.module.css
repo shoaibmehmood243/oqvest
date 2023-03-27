@@ -1,0 +1,80 @@
+.section {
+    width: 60%;
+    margin: auto;
+}
+
+.headers {
+    text-align: center;
+}
+
+.section .headers h1 {
+    font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 97px;
+/* or 202% */
+
+
+color: #222D39;
+margin-bottom: 0px !important;
+}
+
+.section .headers p {
+    margin-top: 0px !important;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+text-align: center;
+
+color: #59668D;
+}
+
+.detailsSection {
+    background: #0CBC8B;
+box-shadow: 0px 72.6519px 61.7542px rgba(0, 0, 0, 0.09), 0px 30.3522px 25.7994px rgba(0, 0, 0, 0.0646969), 0px 16.2278px 13.7936px rgba(0, 0, 0, 0.0536497), 0px 9.09715px 7.73258px rgba(0, 0, 0, 0.045), 0px 4.83143px 4.10671px rgba(0, 0, 0, 0.0363503), 0px 2.01047px 1.7089px rgba(0, 0, 0, 0.0253031);
+border-radius: 21.7956px;
+width: 60%;
+margin: auto;
+padding: 40px 100px;
+}
+
+.detailsSection h1 {
+    font-weight: 600;
+font-size: 34.8729px;
+line-height: 125%;
+/* identical to box height, or 44px */
+
+text-align: center;
+
+color: #222D39;
+margin: 50px 0px;
+}
+
+.detailsSection li {
+    margin: 10px 0px;
+    font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 125%;
+/* or 22px */
+
+
+color: #404F66;
+}
+
+.detailsSection :global(.p-button) {
+    background: #222D39;
+box-shadow: 0px -22.5221px 80.6436px rgba(255, 255, 255, 0.16), 0px -9.40919px 33.691px rgba(255, 255, 255, 0.115017), 0px -5.03061px 18.0128px rgba(255, 255, 255, 0.0953772), 0px -2.82012px 10.0978px rgba(255, 255, 255, 0.08), 0px -1.49774px 5.36288px rgba(255, 255, 255, 0.0646228), 0px -0.623244px 2.23162px rgba(255, 255, 255, 0.0449833);
+border-radius: 66.8398px;
+ color: #FF6C59;
+ border: none;
+}
+
+.detailsSection :global(.p-button:focus, .p-button:hover) {
+    background: #222D39 !important;
+box-shadow: 0px -22.5221px 80.6436px rgba(255, 255, 255, 0.16), 0px -9.40919px 33.691px rgba(255, 255, 255, 0.115017), 0px -5.03061px 18.0128px rgba(255, 255, 255, 0.0953772), 0px -2.82012px 10.0978px rgba(255, 255, 255, 0.08), 0px -1.49774px 5.36288px rgba(255, 255, 255, 0.0646228), 0px -0.623244px 2.23162px rgba(255, 255, 255, 0.0449833);
+border-radius: 66.8398px;
+ color: #FF6C59 !important;
+ border: none !important;
+}

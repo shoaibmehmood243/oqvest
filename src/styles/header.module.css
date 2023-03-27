@@ -26,6 +26,42 @@
     padding: 5px 10px;
 }
 
+.navItems svg {
+    color: #008BF4;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    top: 60px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.dropdown ul {
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown ul li {
+    padding: 7px 5px;
+}
+
+.mobileNavItems ul {
+    padding: 0 !important;
+    list-style: none;
+}
+
+.mobileNavItems ul li {
+    padding: 10px 7px;
+}
+
+.mobileNavItems ul li a {
+    text-decoration: none;
+    color: #222D39;
+}
+
 @media screen and (max-width: 575px) {
     .navItems {
         display: none;

@@ -75,6 +75,9 @@ import uwm from './uwm.png'
 import caliber from './caliber.png'
 import pennymac from './pennymac.png'
 import rocket from './rocket.png'
+import constrcutionLoan from './construction-hero.png'
+import selfEmployedHero from './self-employed-loan.png'
+import play from './play.svg'
 
 export {
     logo,
@@ -153,5 +156,8 @@ export {
     uwm,
     rocket,
     pennymac,
-    caliber
+    caliber,
+    constrcutionLoan,
+    selfEmployedHero,
+    play
 }

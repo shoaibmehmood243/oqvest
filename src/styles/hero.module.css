@@ -1,0 +1,154 @@
+.heroSection {
+    /* min-height: 90vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroText h1 {
+    font-weight: 700;
+font-size: 30px;
+line-height: 50px;
+    color: #222D39;
+}
+
+.heroText strong {
+    border-bottom: 3px solid #FF6C59;
+}
+
+.heroText p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #222D39;
+}
+
+.heroText .p-button, .p-button:hover, .p-button:focus {
+    background-color: #0CBC8B !important;
+    box-shadow: 0px 14.7349px 69.3407px rgba(0, 0, 0, 0.07), 0px 6.15589px 28.9689px rgba(0, 0, 0, 0.0503198), 0px 3.29123px 15.4882px rgba(0, 0, 0, 0.0417275), 0px 1.84504px 8.68254px rgba(0, 0, 0, 0.035), 0px 0.979886px 4.61123px rgba(0, 0, 0, 0.0282725), 0px 0.407753px 1.91884px rgba(0, 0, 0, 0.0196802);
+    border-radius: 8.66759px;
+    border: none;
+}
+
+.tabShift {
+    width: 29rem;
+}
+
+.tabButtons {
+    background: #FFFFFF;
+box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.04), 0px 1.6711px 33.4221px rgba(0, 0, 0, 0.0287542), 0px 0.893452px 17.869px rgba(0, 0, 0, 0.0238443), 0px 0.500862px 10.0172px rgba(0, 0, 0, 0.02), 0px 0.266004px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 0.11069px 2.21381px rgba(0, 0, 0, 0.0112458);
+border-radius: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 25px;
+}
+
+.tabButtons button {
+    padding: 20px 30px;
+    background: transparent;
+border-radius: 70px;
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+.tabButtons button:focus, button:hover {
+    border-radius: 70px;
+    background: #2BC7B1 !important;
+box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.04), 0px 1.6711px 33.4221px rgba(0, 0, 0, 0.0287542), 0px 0.893452px 17.869px rgba(0, 0, 0, 0.0238443), 0px 0.500862px 10.0172px rgba(0, 0, 0, 0.02), 0px 0.266004px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 0.11069px 2.21381px rgba(0, 0, 0, 0.0112458);
+}
+
+.activeTab {
+    background: #2BC7B1 !important;
+box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.04), 0px 1.6711px 33.4221px rgba(0, 0, 0, 0.0287542), 0px 0.893452px 17.869px rgba(0, 0, 0, 0.0238443), 0px 0.500862px 10.0172px rgba(0, 0, 0, 0.02), 0px 0.266004px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 0.11069px 2.21381px rgba(0, 0, 0, 0.0112458);
+}
+
+.imageDiv {
+    max-height: 700px;
+    height: 1000px;
+}
+
+.imageDiv img {
+    max-height: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.inputZip {
+    height: 3.5rem;
+}
+.inputZip input {
+    border-radius: 10px 0px 0px 10px !important;
+    width: 80%;
+    border: 1px solid #000 !important;
+}
+.inputZip input:focus {
+    box-shadow: none !important;
+}
+.inputZip button {
+    border-radius: 0px 10px 10px 0px !important;
+    background: #222D39;
+    color: #FFFFFF !important;
+    border: 2px solid #222D39;
+}
+
+.inputZip button:hover {
+    background: #222D39 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #222D39 !important;
+}
+
+.inputZip :global(._heroText_1loah_15 span) {
+    color: #fff !important;
+}
+
+.sectionTwo :global(.p-button) {
+    background: #0CBC8B;
+box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.04), 0px 1.6711px 33.4221px rgba(0, 0, 0, 0.0287542), 0px 0.893452px 17.869px rgba(0, 0, 0, 0.0238443), 0px 0.500862px 10.0172px rgba(0, 0, 0, 0.02), 0px 0.266004px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 0.11069px 2.21381px rgba(0, 0, 0, 0.0112458);
+border-radius: 70px;
+border: none;
+padding: 15px 40px;
+}
+
+.sectionTwo p {
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 27px;
+/* identical to box height */
+
+
+color: #818AA6;
+}
+
+@media screen and (max-width: 1024px) {
+    .tabButtons {
+        gap: 20px;
+    }
+    .tabButtons button {
+        padding: 15px 20px;
+    }
+    .tabShift {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .heroSection {
+        position: relative;
+        top: 70px;
+    }
+    
+    .heroText h1 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .tabShift {
+        width: 22rem;
+    }
+    .tabButtons {
+        gap: 15px;
+    }
+    .tabButtons button {
+        padding: 15px 15px;
+    }
+}

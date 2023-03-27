@@ -11,9 +11,9 @@ const Welcome = () => {
         setActiveTab(tabIndex);
     };
     return (
-        <div className="w-full md:w-10 lg:w-9 m-auto my-7">
+        <div className="w-full md:w-10 lg:w-9 m-auto mb-7 mt-2 md:my-7">
             <div className="grid max-w-full">
-                <div className="col-12 lg:col-6 ml-3 lg:ml-0">
+                <div className="col-12 lg:col-6 ml-2 lg:ml-0">
                     <div className="mt-5">
                         <h1 className="text-4xl mb-1 mt-0">Ready to buy your dream house??</h1>
                     </div>
