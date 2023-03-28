@@ -1,0 +1,28 @@
+.section {
+    background: rgba(217, 217, 217, 0.2);
+    padding: 50px;
+}
+
+.section :global(.p-button) {
+    background: #222D39;
+    border-radius: 11.8163px;
+    border: 1px solid #222D39;
+}
+
+.section :global(.p-button:hover), :global(.p-button:focus) {
+    background: #222D39 ;
+    border-radius: 11.8163px ;
+    border: 1px solid #222D39 ;
+}
+
+.section :global(.p-button) {
+    font-style: normal;
+font-weight: 600;
+font-size: 18.9061px;
+line-height: 125%;
+/* identical to box height, or 24px */
+
+text-align: center;
+
+color: #FF6C59;
+}

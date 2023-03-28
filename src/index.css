@@ -12,6 +12,10 @@
     text-decoration: none;
 }
 
+.p-button .p-button-label {
+    font-family: Poppins !important;
+}
+
 .p-sidebar-visible {
     z-index: 10000 !important;
 }

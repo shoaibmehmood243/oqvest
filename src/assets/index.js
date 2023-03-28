@@ -78,6 +78,35 @@ import rocket from './rocket.png'
 import constrcutionLoan from './construction-hero.png'
 import selfEmployedHero from './self-employed-loan.png'
 import play from './play.svg'
+import bridgeloanhero from './bridgeloanhero.png'
+import bankloanhero from './bankloanhero.png'
+import bankloan1 from './bankloan1.png'
+import bankloan2 from './bankloan2.png'
+import bankloan3 from './bankloan3.png'
+import bankloan4 from './bankloan4.png'
+import bankloan5 from './bankloan5.png'
+import bankloan6 from './bankloan6.png'
+import bankloan7 from './bankloan7.png'
+import bankloan8 from './bankloan8.png'
+import bridgeloan1 from './bridgeloan1.png'
+import bridgeloan2 from './bridgeloan2.png'
+import bridgeloan3 from './bridgeloan3.png'
+import bridgeloan4 from './bridgeloan4.png'
+import conventionalLoanHero from './conventionalLoanHero.png'
+import conventionalloan1 from './conventionalloan1.png'
+import conventionalloan2 from './conventionalloan2.png'
+import conventionalloan3 from './conventionalloan3.png'
+import conventionalloan4 from './conventionalloan4.png'
+import conventionalloan5 from './conventionalloan5.png'
+import conventionalloan6 from './conventionalloan6.png'
+import conventionalloan7 from './conventionalloan7.png'
+import conventionalloan8 from './conventionalloan8.png'
+import comboloanhero from './comboloanhero.png'
+import comboloan1 from './comboloan1.png'
+import comboloan2 from './comboloan2.png'
+import comboloan3 from './comboloan3.png'
+import comboloan4 from './comboloan4.png'
+import vector from './Vector.png'
 
 export {
     logo,
@@ -159,5 +188,34 @@ export {
     caliber,
     constrcutionLoan,
     selfEmployedHero,
-    play
+    play,
+    bridgeloanhero,
+    bankloanhero,
+    bankloan1,
+    bankloan2,
+    bankloan3,
+    bankloan4,
+    bankloan5,
+    bankloan6,
+    bankloan7,
+    bankloan8,
+    bridgeloan1,
+    bridgeloan2,
+    bridgeloan3,
+    bridgeloan4,
+    conventionalLoanHero,
+    conventionalloan1,
+    conventionalloan2,
+    conventionalloan3,
+    conventionalloan4,
+    conventionalloan5,
+    conventionalloan6,
+    conventionalloan7,
+    conventionalloan8,
+    comboloanhero,
+    comboloan1,
+    comboloan2,
+    comboloan3,
+    comboloan4,
+    vector
 }

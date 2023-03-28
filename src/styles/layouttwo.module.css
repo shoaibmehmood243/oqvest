@@ -19,6 +19,21 @@ color: #222D39;
 margin-bottom: 0px !important;
 }
 
+.section {
+    margin-bottom: 70px;
+}
+
+.section .headers h6 {
+    font-style: normal;
+font-weight: normal;
+font-size: 38px;
+color: #222D39;
+}
+
+.section .headers strong {
+    font-weight: 700;
+}
+
 .section .headers p {
     margin-top: 0px !important;
     font-style: normal;
@@ -36,10 +51,19 @@ box-shadow: 0px 72.6519px 61.7542px rgba(0, 0, 0, 0.09), 0px 30.3522px 25.7994px
 border-radius: 21.7956px;
 width: 60%;
 margin: auto;
-padding: 40px 100px;
+padding: 30px 100px;
 }
 
-.detailsSection h1 {
+.detailsSection2 {
+    background: #0CBC8B;
+box-shadow: 0px 72.6519px 61.7542px rgba(0, 0, 0, 0.09), 0px 30.3522px 25.7994px rgba(0, 0, 0, 0.0646969), 0px 16.2278px 13.7936px rgba(0, 0, 0, 0.0536497), 0px 9.09715px 7.73258px rgba(0, 0, 0, 0.045), 0px 4.83143px 4.10671px rgba(0, 0, 0, 0.0363503), 0px 2.01047px 1.7089px rgba(0, 0, 0, 0.0253031);
+border-radius: 21.7956px;
+width: 60%;
+margin: 40px auto;
+padding: 30px 50px;
+}
+
+.detailsSection h1, .detailsSection2 h1 {
     font-weight: 600;
 font-size: 34.8729px;
 line-height: 125%;
@@ -51,12 +75,33 @@ color: #222D39;
 margin: 50px 0px;
 }
 
+.detailsSection2 h4 {
+    font-style: normal;
+font-weight: 500;
+font-size: 31.8895px;
+line-height: 125%;
+/* identical to box height, or 40px */
+
+text-align: center;
+
+color: #222D39;
+}
+
+.detailsSection2 img {
+    width: 100%;
+    height: auto;
+}
+
+.detailsSection2 span {
+    color: #59668D;
+}
+
 .detailsSection li {
     margin: 10px 0px;
     font-style: italic;
 font-weight: 400;
 font-size: 16px;
-line-height: 125%;
+line-height: 135%;
 /* or 22px */
 
 
@@ -77,4 +122,186 @@ box-shadow: 0px -22.5221px 80.6436px rgba(255, 255, 255, 0.16), 0px -9.40919px 3
 border-radius: 66.8398px;
  color: #FF6C59 !important;
  border: none !important;
+}
+
+.detailsSection2 .para {
+    font-style: normal;
+font-weight: 400;
+font-size: 13.9448px;
+line-height: 126.5%;
+color: #59668D;
+}
+
+.bank h3 {
+    font-style: normal;
+font-weight: 600;
+font-size: 32.884px;
+line-height: 125%;
+text-align: center;
+color: #222D39;
+}
+
+.bank p {
+    font-style: normal;
+font-weight: 400;
+font-size: 16.442px;
+line-height: 125%;
+text-align: center;
+color: #404F66;
+}
+
+.bank h6 {
+    font-style: normal;
+font-weight: 600;
+font-size: 16.442px;
+line-height: 125%;
+/* or 21px */
+
+
+color: #222D39;
+}
+
+.happensSection {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.happensSection h1 {
+    font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 125%;
+/* or 52px */
+
+text-align: center;
+
+color: #404F66;
+}
+
+.happensSection strong {
+    font-weight: 700;
+    font-style: italic;
+    color: #222D39;
+}
+
+.happensSection p {
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #59668D;
+}
+
+.gridSection {
+    width: 65%;
+    margin: 70px auto;
+}
+
+.gridSection h6 {
+    font-style: normal;
+font-weight: 600;
+font-size: 34px;
+
+text-align: center;
+
+color: #222D39;
+}
+
+.gridSection .subheading {
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+
+color: #818AA6;
+margin: 0;
+}
+
+.imageSection1 img, .imageSection2 img {
+    border-radius: 13.3512px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imageSection1, .imageSection2 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.imageSection1 div:first-child {
+    width: 281.71px;
+    height: 251px;
+}
+
+.gridSection strong {
+    font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+
+color: #222D39;
+
+}
+
+.gridSection .para {
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+
+color: #59668D;
+}
+
+.gridSection button {
+    background: #222D39 ;
+box-shadow: 0px -31px 111px rgba(255, 255, 255, 0.16), 0px -12.9511px 46.3731px rgba(255, 255, 255, 0.115017), 0px -6.92426px 24.7933px rgba(255, 255, 255, 0.0953772), 0px -3.88168px 13.8989px rgba(255, 255, 255, 0.08), 0px -2.06153px 7.38161px rgba(255, 255, 255, 0.0646228), 0px -0.85785px 3.07165px rgba(255, 255, 255, 0.0449833);
+border-radius: 92px;
+border: 1px solid #222D39 ;
+color: #FF6C59 ;
+}
+
+.gridSection button:focus, button:hover {
+    background: #222D39 ;
+border-radius: 92px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .gridSection {
+        width: 95%;
+    }
+    .gridSection h6 {
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    .section {
+        width: 95%;
+    }
+    .section .headers h1 {
+        font-size: 28px;
+    }
+    .section .headers h6 {
+        font-size: 24px;
+    }
+    .detailsSection, .detailsSection2 {
+        width: 95%;
+        padding: 20px 10px;
+    }
+    .detailsSection2 h4 {
+        font-size: 26.8895px;
+        line-height: 120%;
+    }
+    .detailsSection h1 {
+        font-size: 28px;
+    }
+    .happensSection {
+        width: 95%;
+    }
+    .happensSection h1 {
+        font-size: 24px;
+    }
 }

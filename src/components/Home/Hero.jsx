@@ -12,7 +12,7 @@ const Hero = () => {
     };
     return (
         <div className={`grid max-w-full mb-5 m-0 md:m-0 md:relative ${styles.heroSection}`}>
-            <div className={`col-12 md:col-6 px-2 md:px-8 ${styles.heroText}`}>
+            <div className={`col-12 md:col-6 px-2 md:px-7 ${styles.heroText}`}>
                 <h1>{ activeTab === 1 ? 
                         `Want to purchase a property? Oqvest has your back` :
                         activeTab === 2 ? `Get ready to refinance your Mortgage with Oqvest.` :
@@ -30,16 +30,16 @@ const Hero = () => {
                         {activeTab === 0 && 
                             <div className={`mb-4 mt-5 w-full flex ${styles.inputZip}`}>
                                 <InputMask mask="999999" placeholder="Enter your zip code here" />
-                                <Button label='Search' />
+                                <Button className='px-5' label='Search' />
                             </div>
                         }
                         {activeTab === 1 && <div className={`mb-4 mt-5 w-full flex ${styles.inputZip}`}>
                                 <InputMask mask="999999" placeholder="Enter your zip code here" />
-                                <Button label='Search' />
+                                <Button className='px-5' label='Search' />
                             </div>}
                         {activeTab === 2 && <div className={`mb-4 mt-5 w-full flex ${styles.inputZip}`}>
                                 <InputMask mask="999999" placeholder="Enter your zip code here" />
-                                <Button label='Search' />
+                                <Button className='px-5' label='Search' />
                             </div>}
                     </div>
                 </div>

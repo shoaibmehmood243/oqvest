@@ -6,6 +6,9 @@ import Footer from './components/common/Footer';
 import Construction from './pages/Loans/Construction';
 import SelfEmployed from './pages/Loans/SelfEmployed';
 import Bridge from './pages/Loans/Bridge';
+import BankStatement from './pages/Loans/BankStatement';
+import Conventional from './pages/Loans/Conventional';
+import ComboHome from './pages/Loans/ComboHome';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         <Route path="/construction-loan" element={<Construction />} />
         <Route path="/self-employed-loan" element={<SelfEmployed />} />
         <Route path="/bridge-loan" element={<Bridge />} />
+        <Route path="/bank-statement-loan" element={<BankStatement />} />
+        <Route path="/conventional-loan" element={<Conventional />} />
+        <Route path="/combo-home-loan" element={<ComboHome />} />
       </Routes>
       <Footer />
     </BrowserRouter>

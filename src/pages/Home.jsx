@@ -132,8 +132,8 @@ const Home = ()=> {
     return (<>
         <Hero />
         <div className={`mt-7 mb-6 md:my-6 ${styles.featured}`}>
-            <div className="text-center mb-5">
-                <Button label={` Featured In`} icon={<img height={18} src={shield} />} />
+            <div className="text-center mb-7">
+                <Button className="gap-2" label={` Featured In`} icon={<img height={18} src={shield} />} />
             </div>
             <div style={{maxWidth: '100vw'}} className={styles.images}>
                 <Carousel
@@ -163,7 +163,7 @@ const Home = ()=> {
             </div>
         </div>
         <div className={`w-full m-auto text-center md:w-10 lg:w-9 my-4 ${styles.products}`}>
-            <div className="w-full m-auto text-center md:w-10 lg:w-8">
+            <div className="w-full m-auto text-center md:w-10 lg:w-8 mb-8">
                 <h1 className="m-0 mb-2">Our Products</h1>
                 <p className="my-1 text">We care our customers. that’s why we provide best products and help them in chasing their dreams</p>
             </div>
@@ -190,7 +190,7 @@ const Home = ()=> {
             </div>
         </div>
         <div className={`${styles.clients} mb-0 mt-6 md:my-6`}>
-            <div className="w-11 md:w-10 lg:w-8 m-auto">
+            <div className="w-11 md:w-10 lg:w-9 m-auto">
                 <div className="grid max-w-full">
                     <div className="col-12 lg:col-6 mt-5 mb-3 ml-2 lg:ml-0">
                         <h1 className="text-3xl md:text-6xl mb-1">Our Clients love what we do</h1>
@@ -203,8 +203,8 @@ const Home = ()=> {
                                 clients.map((data, i)=> (
                                     <div key={i} className="flex align-items-center mb-5">
                                         <div>
-                                            <p className="text-xs m-0">{data.feedback}</p>
-                                            <h6 className="text-xs m-0">{data.name}</h6>
+                                            <p className="text-sm m-0">{data.feedback}</p>
+                                            <h6 className="text-sm m-0">{data.name}</h6>
                                         </div>
                                         <div>
                                             <img src={data.img} />

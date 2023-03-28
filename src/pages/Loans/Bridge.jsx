@@ -1,13 +1,46 @@
 import { Button } from "primereact/button";
-import { constrcutionLoan } from "../../assets";
+import { bridgeloan1, bridgeloan2, bridgeloan3, bridgeloan4, bridgeloanhero } from "../../assets";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
 
 const Bridge = ()=> {
     return (<>
-        <HeroSectionTwo image={constrcutionLoan} heading="Get the keys to your new home with a mortgage from Bridge Finance."
+        <HeroSectionTwo image={bridgeloanhero} heading="Get the keys to your new home with a mortgage from Bridge Finance."
              subheading="Financing designed to let you move into your new dream home now." />
+        <div className={styles.gridSection}>
+            <div>
+                <h6 className="m-0">Bridge Financing </h6>
+                <p className={styles.subheading}>Are you prepared to close on your new home purchase but your old one has not yet sold? We can assist if your current home has been listed for a while but the closing date for your new home is approaching.</p>
+                <div className="grid my-6 align-items-center">
+                    <div className="col-12 md:col-6">
+                        <div className={styles.imageSection1}>
+                            <div>
+                                <img src={bridgeloan1} />
+                            </div>
+                            <div>
+                                <img src={bridgeloan2} />
+                            </div>
+                        </div>
+                        <div className={styles.imageSection2}>
+                            <div>
+                                <img src={bridgeloan3} />
+                            </div>
+                            <div>
+                                <img src={bridgeloan4} />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-12 md:col-6">
+                        <div>
+                            <strong>Look How It Works</strong>
+                            <p className={`${styles.para} mb-4`}>We will finance up to 60% of the combined appraised market value of the two properties through our bridge home loan programme, less any outstanding liens or mortgages on the sold property. When the older home is either owned free and clear or has a lot of equity, this method performs especially well. Even if their home isn't selling right away, many homeowners find that they have a sizable amount of equity when the real estate housing market is strong.</p>
+                            <p className={styles.para}>Typically, the first lien position; nevertheless, each situation is examined individually. Although borrowers must have strong credit, credit scores are not taken into account for underwriting or setting prices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div className={styles.section}>
             <div className={styles.headers}>
                 <h1>Bridge Financing </h1>
