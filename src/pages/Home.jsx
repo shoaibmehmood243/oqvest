@@ -118,6 +118,36 @@ const Home = ()=> {
           }
         ]
       };
+      const productSettings = [
+        {
+            breakpoint: '1199px',
+            numVisible: 1,
+            numScroll: 1
+        },
+        {
+            breakpoint: '991px',
+            numVisible: 2,
+            numScroll: 1
+        },
+        {
+            breakpoint: '767px',
+            numVisible: 1,
+            numScroll: 1
+        }
+    ];
+    const productTemplate = (product)=> {
+        return (
+            <div className={` text-center mx-4 ${styles.productCard}`}>
+                <div className="mb-3">
+                    <img height={60} src={product.img} alt={product.title} className="w-6" />
+                </div>
+                <div>
+                    <h4 className="mb-1">{product.title}</h4>
+                    <p className="mt-0 mb-3 text-sm">{product.text}</p>
+                </div>
+            </div>
+        )
+    }
     const chooseData = [
         {
             img: guarantee,
@@ -195,27 +225,13 @@ const Home = ()=> {
                 <h1>Mortage Calculator</h1>
             </div>
         </div>
-        <div className={`w-full m-auto text-center md:w-10 lg:w-9 my-4 ${styles.products}`}>
+        <div className={`w-full m-auto text-center md:w-10 lg:w-10 my-4 ${styles.products}`}>
             <div className="w-full m-auto text-center md:w-10 lg:w-8 mb-8">
                 <h1 className="m-0 mb-2">Our Products</h1>
                 <p className="my-1 text">We care our customers. that’s why we provide best products and help them in chasing their dreams</p>
             </div>
             <div className={`my-4`}>
-                <Slider {...settings}>
-                        {
-                            products.map((product)=> (
-                                <div className={` text-center mx-4 ${styles.productCard}`}>
-                                    <div className="mb-3">
-                                        <img height={60} src={product.img} alt={product.title} className="w-6" />
-                                    </div>
-                                    <div>
-                                        <h4 className="mb-1">{product.title}</h4>
-                                        <p className="mt-0 mb-3 text-sm">{product.text}</p>
-                                    </div>
-                                </div>
-                            ))
-                        }
-                </Slider>
+                <Carousel value={products} numVisible={3} numScroll={3} showIndicators={false} responsiveOptions={productSettings} itemTemplate={productTemplate} />
             </div>
         </div>
         <div className="choose">

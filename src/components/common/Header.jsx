@@ -54,6 +54,18 @@ const Header = () => {
                     name: 'Combo Home',
                     link: '/combo-home-loan'
                 },
+                {
+                    name: 'Profit & Loss',
+                    link: '/profit-loss-loan'
+                },
+                {
+                    name: 'Private',
+                    link: '/private-loan'
+                },
+                {
+                    name: 'DSCR',
+                    link: '/dscr-loan'
+                },
             ]
         },
         {

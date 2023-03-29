@@ -106,7 +106,30 @@ import comboloan1 from './comboloan1.png'
 import comboloan2 from './comboloan2.png'
 import comboloan3 from './comboloan3.png'
 import comboloan4 from './comboloan4.png'
-import vector from './Vector.png'
+import vector from './Vector.png'    
+import profitloanhero from './profitloanhero.png';
+import profitloan1 from './profitloan1.png';
+import profitloan2 from './profitloan2.png';
+import profitloan3 from './profitloan3.png';
+import profitloan4 from './profitloan4.png';
+import profitloan5 from './profitloan5.png';
+import profitloan6 from './profitloan6.png';
+import profitloan7 from './profitloan7.png';
+import profitloan8 from './profitloan8.png';
+import profitloan9 from './profitloan9.png';
+import profitloan10 from './profitloan10.png';
+import profitloan11 from './profitloan11.png';
+import profitloan12 from './profitloan12.png';
+import privateloanhero from './privateloanhero.png';
+import privateloan1 from './privateloan1.png';
+import privateloan2 from './privateloan2.png';
+import privateloan3 from './privateloan3.png';
+import privateloan4 from './privateloan4.png';
+import dscrloanhero from './dscrloanhero.png';
+import dscrloan1 from './dscrloan1.png';
+import dscrloan2 from './dscrloan2.png';
+import dscrloan3 from './dscrloan3.png';
+import dscrloan4 from './dscrloan4.png';
 
 export {
     logo,
@@ -217,5 +240,28 @@ export {
     comboloan2,
     comboloan3,
     comboloan4,
-    vector
+    vector,
+    profitloanhero,
+    profitloan1,
+    profitloan10,
+    profitloan11,
+    profitloan12,
+    profitloan2,
+    profitloan3,
+    profitloan4,
+    profitloan5,
+    profitloan6,
+    profitloan7,
+    profitloan8,
+    profitloan9,
+    privateloan1,
+    privateloan2,
+    privateloan3,
+    privateloan4,
+    privateloanhero,
+    dscrloanhero,
+    dscrloan1,
+    dscrloan2,
+    dscrloan3,
+    dscrloan4
 }

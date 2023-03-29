@@ -9,6 +9,9 @@ import Bridge from './pages/Loans/Bridge';
 import BankStatement from './pages/Loans/BankStatement';
 import Conventional from './pages/Loans/Conventional';
 import ComboHome from './pages/Loans/ComboHome';
+import ProfitLoss from './pages/Loans/ProfitLoss';
+import Private from './pages/Loans/Private';
+import Dscr from './pages/Loans/Dscr';
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
         <Route path="/bank-statement-loan" element={<BankStatement />} />
         <Route path="/conventional-loan" element={<Conventional />} />
         <Route path="/combo-home-loan" element={<ComboHome />} />
+        <Route path="/profit-loss-loan" element={<ProfitLoss />} />
+        <Route path="/private-loan" element={<Private />} />
+        <Route path="/dscr-loan" element={<Dscr />} />
       </Routes>
       <Footer />
     </BrowserRouter>
