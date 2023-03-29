@@ -130,7 +130,7 @@ const SelfEmployed = ()=> {
         },
     ]
     return (<>
-        <Hero image={selfEmployedHero} heading="Mortgages for Self-Employed Borrowers" subheading="Are you self-employed and would like to get approved for a home loan? We can help with all of your needs, including rate comparisons and legal tips." />
+        <Hero image={selfEmployedHero} heading={<>Mortgages for <strong>Self-Employed</strong> Borrowers</>} subheading="Are you self-employed and would like to get approved for a home loan? We can help with all of your needs, including rate comparisons and legal tips." />
         <div className={`mt-7 mb-6 md:my-6 ${styles.featured}`}>
             <div className="text-center mb-5">
                 <Button label={` Featured In`} icon={<img height={18} src={shield} />} />

@@ -12,14 +12,23 @@ const Hero = () => {
     };
     return (
         <div className={`grid max-w-full mb-5 m-0 md:m-0 md:relative ${styles.heroSection}`}>
-            <div className={`col-12 md:col-6 px-2 md:px-7 ${styles.heroText}`}>
-                <h1>{ activeTab === 1 ? 
-                        `Want to purchase a property? Oqvest has your back` :
-                        activeTab === 2 ? `Get ready to refinance your Mortgage with Oqvest.` :
-                        `Find the right mortgage at Oqvest.`
+            <div className={`col-12 md:col-6 px-2 md:pl-8 md:pr-1 ${styles.heroText}`}>
+                <h1>
+                    { activeTab === 1 ? <>
+                        Your Dream Home Awaits - Let <strong className='st-1'> Oqvest</strong> Help You Get There with Our Property Purchase Loans
+                         </> :
+                        activeTab === 2 ? <>Simplify Your Finances with a <strong>Mortgage Refinance</strong></> :
+                        <>Your Home, Your Future Get Pre-Approved for your <strong>Mortgage</strong> Today</>
                     }
                 </h1>
-                <p>Sort through thousands of options and find your perfect home loan today.</p>
+                <p>
+                    { activeTab === 1 ? <>
+                        Work with Our Experienced Team to Secure Your Financing and Close with Confidence
+                         </> :
+                        activeTab === 2 ? <>Get More Out of Your Home with Refinancing</> :
+                        <>Get Pre-Approved Quickly and Confidently with Our Simple Application Process</>
+                    }
+                </p>
                 <div className={styles.tabShift}>
                     <div className={styles.tabButtons}>
                         <button className={activeTab === 0 ? styles.activeTab : ''} onClick={() => handleTabClick(0)}>Get Pre-approved</button>

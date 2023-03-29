@@ -1,11 +1,15 @@
 import { Button } from "primereact/button";
-import { calculator, card, card1, card2, client1, client2, client3, clients, closing, construction, conventional, dscr, forbes, guarantee, hidden, inc, msn, privacy, service, shield, welcome, yahoo } from "../assets";
+import { calculator, client1, client2, client3, closing, construction, conventional, dscr, forbes, guarantee, hidden, inc, msn, privacy, service, shield, welcome, yahoo } from "../assets";
 import Hero from "../components/Home/Hero";
 import styles from '../styles/home.module.css'
 import { Carousel } from 'primereact/carousel';
 import Welcome from "../components/Home/Welcome";
 import Blog from "../components/Home/Blog";
 import Rate from "../components/common/Rate";
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
 
 const Home = ()=> {
     const images = [
@@ -54,37 +58,66 @@ const Home = ()=> {
             title: 'Construction',
             text: 'Suitable for those who have a landpiece and want to construct their mortgage there. It helps people to get their dream home if they have land and need financial support',
         },
+        {
+            img: dscr,
+            title: 'DSCR',
+            text: 'Designed for seasoned investors looking for a low-documentation program, but without the hard money interest rates and terms. ',
+        },
     ]
-    const responsiveOptionsProducts = [
-        {
-            breakpoint: '1199px',
-            numVisible: 1,
-            numScroll: 1
-        },
-        {
-            breakpoint: '991px',
-            numVisible: 2,
-            numScroll: 1
-        },
-        {
-            breakpoint: '767px',
-            numVisible: 1,
-            numScroll: 1
-        }
-    ];
-    const productTemplate = (product) => {
+    const PrevArrow = (props) => {
+        const { className, style, onClick } = props;
         return (
-            <div className={` text-center ${styles.productCard}`}>
-                <div className="mb-3">
-                    <img height={60} src={product.img} alt={product.title} className="w-6" />
-                </div>
-                <div>
-                    <h4 className="mb-1">{product.title}</h4>
-                    <p className="mt-0 mb-3 text-sm">{product.text}</p>
-                </div>
-            </div>
+          <div
+            className={className}
+            style={{ ...style, top: '200px' }}
+            onClick={onClick}
+          >
+            <BsChevronLeft />
+          </div>
         );
-    };
+      };
+      
+      const NextArrow = (props) => {
+        const { className, style, onClick } = props;
+        return (
+          <div
+            className={className}
+            style={{ ...style, top: '200px' }}
+            onClick={onClick}
+          >
+            <BsChevronRight />
+          </div>
+        );
+      };
+    const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow />,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              initialSlide: 1,
+              prevArrow: null,
+              nextArrow: null,
+              dots: true
+            }
+          }
+        ]
+      };
     const chooseData = [
         {
             img: guarantee,
@@ -168,7 +201,21 @@ const Home = ()=> {
                 <p className="my-1 text">We care our customers. that’s why we provide best products and help them in chasing their dreams</p>
             </div>
             <div className={`my-4`}>
-                <Carousel value={products} numVisible={3} numScroll={3} showIndicators={false} responsiveOptions={responsiveOptionsProducts} itemTemplate={productTemplate} />
+                <Slider {...settings}>
+                        {
+                            products.map((product)=> (
+                                <div className={` text-center mx-4 ${styles.productCard}`}>
+                                    <div className="mb-3">
+                                        <img height={60} src={product.img} alt={product.title} className="w-6" />
+                                    </div>
+                                    <div>
+                                        <h4 className="mb-1">{product.title}</h4>
+                                        <p className="mt-0 mb-3 text-sm">{product.text}</p>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                </Slider>
             </div>
         </div>
         <div className="choose">

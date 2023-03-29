@@ -104,6 +104,10 @@ color: #818AA6;
     .price {
         padding: 20px 10px;
     }
+    .price h2 {
+        font-size: 28px;
+        line-height: 45px;
+    }
     .cardDiv {
         width: 18rem;
     }

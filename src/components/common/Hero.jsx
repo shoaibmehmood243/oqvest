@@ -12,7 +12,7 @@ const Hero = ({image, heading, subheading}) => {
     };
     return (
         <div className={`grid max-w-full mb-5 m-0 md:m-0 md:relative ${styles.heroSection}`}>
-            <div className={`col-12 md:col-6 px-2 md:px-8 ${styles.heroText}`}>
+            <div className={`col-12 md:col-6 px-2 md:pl-8 md:pr-1 ${styles.heroText}`}>
                 <h1>{heading}</h1>
                 <p>{subheading}</p>
                 <div className={styles.tabShift}>

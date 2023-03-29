@@ -8,7 +8,7 @@ import styles from '../../styles/layouttwo.module.css'
 const BankStatement = ()=> {
     return (<>
         <HeroSectionTwo image={bankloanhero} 
-            heading="Bank Statement Home Loans"
+            heading={<>Bank Statement Home <strong>Loans</strong></>}
             subheading="Designed to finance your home purchase with no questions asked, no due dates and no hassle." />
         <div className={styles.gridSection}>
             <div>

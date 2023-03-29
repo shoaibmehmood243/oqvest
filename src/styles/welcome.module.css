@@ -11,7 +11,7 @@
     padding: 10px;
     border: none;
     outline: none;
-    background: #fff;
+    background: transparent;
     cursor: pointer;
     height: 100%;
 }
@@ -31,7 +31,6 @@ font-weight: 700;
 .tabContent input {
     border-radius: 10px 0px 0px 10px;
     border: 0;
-box-shadow: 0px -5.83886px 66.7298px rgba(0, 0, 0, 0.07), 0px -2.43934px 27.8781px rgba(0, 0, 0, 0.0503198), 0px -1.30419px 14.905px rgba(0, 0, 0, 0.0417275), 0px -0.731116px 8.35561px rgba(0, 0, 0, 0.035), 0px -0.38829px 4.4376px rgba(0, 0, 0, 0.0282725), 0px -0.161576px 1.84659px rgba(0, 0, 0, 0.0196802);
     width: 60%;
     height: 100%;
 }
@@ -58,6 +57,9 @@ box-shadow: 0px -5.83886px 66.7298px rgba(0, 0, 0, 0.07), 0px -2.43934px 27.8781
 .inputZip{
     height: 4rem;
     width: 26rem;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0px -5.83886px 66.7298px rgba(0, 0, 0, 0.07), 0px -2.43934px 27.8781px rgba(0, 0, 0, 0.0503198), 0px -1.30419px 14.905px rgba(0, 0, 0, 0.0417275), 0px -0.731116px 8.35561px rgba(0, 0, 0, 0.035), 0px -0.38829px 4.4376px rgba(0, 0, 0, 0.0282725), 0px -0.161576px 1.84659px rgba(0, 0, 0, 0.0196802);
 }
 
 @media screen and (max-width: 575px) {

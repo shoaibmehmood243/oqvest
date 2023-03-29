@@ -6,7 +6,8 @@ import styles from '../../styles/layouttwo.module.css'
 
 const Bridge = ()=> {
     return (<>
-        <HeroSectionTwo image={bridgeloanhero} heading="Get the keys to your new home with a mortgage from Bridge Finance."
+        <HeroSectionTwo image={bridgeloanhero} 
+            heading={<>Get the keys to your new home with a mortgage from <strong>Bridge Finance</strong>.</>}
              subheading="Financing designed to let you move into your new dream home now." />
         <div className={styles.gridSection}>
             <div>

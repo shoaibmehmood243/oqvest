@@ -130,7 +130,7 @@ const Construction = ()=> {
         },
     ]
     return (<>
-        <Hero image={constrcutionLoan} heading="Find the best financing options for your Construction Loan." subheading="Our construction loan is designed to help you get your project off the ground. Find out how much you can borrow today." />
+        <Hero image={constrcutionLoan} heading={<>Find the best financing options for your <strong>Construction Loan</strong>.</>} subheading="Our construction loan is designed to help you get your project off the ground. Find out how much you can borrow today." />
         <div className={`mt-7 mb-6 md:my-6 ${styles.featured}`}>
             <div className="text-center mb-5">
                 <Button label={` Featured In`} icon={<img height={18} src={shield} />} />

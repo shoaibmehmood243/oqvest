@@ -1,3 +1,9 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 .header {
     background: rgba(203, 223, 254, 0.1);
     backdrop-filter: blur(20px);

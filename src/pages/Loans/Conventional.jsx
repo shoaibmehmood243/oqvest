@@ -7,7 +7,7 @@ import styles from '../../styles/layouttwo.module.css'
 const Conventional = ()=> {
     return (<>
         <HeroSectionTwo image={conventionalLoanHero} 
-            heading="Take charge of your financial future with Conventional Home Loan"
+            heading={<>Take charge of your financial future with <strong>Conventional Home Loan</strong>.</>}
             subheading="The most popular and versatile home loan in America" />
         <div className={styles.gridSection}>
             <div>
