@@ -1,4 +1,4 @@
-import {  privateloan1, privateloan2, privateloan3, privateloan4, privateloanhero } from "../../assets";
+import {  privateloan1, privateloan2, privateloan3, privateloan4, privateloanhero, rectangleLeft } from "../../assets";
 import Apply from "../../components/common/Apply";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
 import Welcome from "../../components/Home/Welcome";
@@ -42,6 +42,9 @@ const Private = ()=> {
                 </div>
             </div>
         </div>
+        <div className={styles.left}>
+                <img src={rectangleLeft} />
+            </div>
         <div className={`my-8 ${styles.detailsSection}`}>
             <div>
                 <h1>Features & Benefits:</h1>

@@ -1,5 +1,5 @@
 import { Button } from "primereact/button";
-import { calculator, client1, client2, client3, closing, construction, conventional, dscr, forbes, guarantee, hidden, inc, msn, privacy, service, shield, welcome, yahoo } from "../assets";
+import { calculator, client1, client2, client3, closing, construction, conventional, dpa, dscr, fhaloan, forbes, guarantee, hidden, inc, msn, privacy, rectangleLeft, rectangleRight, service, shield, welcome, yahoo } from "../assets";
 import Hero from "../components/Home/Hero";
 import styles from '../styles/home.module.css'
 import { Carousel } from 'primereact/carousel';
@@ -10,6 +10,7 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
+import { Link } from "react-router-dom";
 
 const Home = ()=> {
     const images = [
@@ -45,23 +46,33 @@ const Home = ()=> {
     const products = [
         {
             img: conventional,
+            link: 'conventional-loan',
             title: 'Conventional',
             text: 'Full-Doc Loan. Designed for borrowers who can must show enough taxable income to demonstrate the ability to repay the new loan ',
         },
         {
             img: dscr,
+            link: 'dscr-loan',
             title: 'DSCR',
             text: 'Designed for seasoned investors looking for a low-documentation program, but without the hard money interest rates and terms. ',
         },
         {
             img: construction,
+            link: 'construction-loan',
             title: 'Construction',
             text: 'Suitable for those who have a landpiece and want to construct their mortgage there. It helps people to get their dream home if they have land and need financial support',
         },
         {
-            img: dscr,
-            title: 'DSCR',
-            text: 'Designed for seasoned investors looking for a low-documentation program, but without the hard money interest rates and terms. ',
+            img: fhaloan,
+            link: 'profit-loss-loan',
+            title: 'FHA Loan',
+            text: 'For most first-time home buyers and for those whose employment or credit history does not meet the standard conventional loan guidelines.',
+        },
+        {
+            img: dpa,
+            link: 'bank-statement-loan',
+            title: 'DPA',
+            text: 'Down payment assistance (DPA) programs offer loans and grants that can cover part or all of a home buyer’s down payment and closing costs.',
         },
     ]
     const PrevArrow = (props) => {
@@ -137,15 +148,17 @@ const Home = ()=> {
     ];
     const productTemplate = (product)=> {
         return (
-            <div className={` text-center mx-4 ${styles.productCard}`}>
-                <div className="mb-3">
-                    <img height={60} src={product.img} alt={product.title} className="w-6" />
+            <Link to={product.link}>
+                <div className={` text-center mx-4 ${styles.productCard}`}>
+                    <div className="mb-3">
+                        <img height={60} src={product.img} alt={product.title} className="w-6" />
+                    </div>
+                    <div>
+                        <h4 className="mb-1">{product.title}</h4>
+                        <p className="mt-0 mb-3 text-sm">{product.text}</p>
+                    </div>
                 </div>
-                <div>
-                    <h4 className="mb-1">{product.title}</h4>
-                    <p className="mt-0 mb-3 text-sm">{product.text}</p>
-                </div>
-            </div>
+            </Link>
         )
     }
     const chooseData = [
@@ -225,7 +238,7 @@ const Home = ()=> {
                 <h1>Mortage Calculator</h1>
             </div>
         </div>
-        <div className={`w-full m-auto text-center md:w-10 lg:w-10 my-4 ${styles.products}`}>
+        <div className={` m-auto text-center my-4 ${styles.products}`}>
             <div className="w-full m-auto text-center md:w-10 lg:w-8 mb-8">
                 <h1 className="m-0 mb-2">Our Products</h1>
                 <p className="my-1 text">We care our customers. that’s why we provide best products and help them in chasing their dreams</p>
@@ -235,8 +248,11 @@ const Home = ()=> {
             </div>
         </div>
         <div className="choose">
-            <h1 className="text-center">Why Choose Us??</h1>
-            <div className={`w-full md:w-10 lg:w-9 mt-3 ${styles.grid}`}>
+            <div className={styles.right}>
+                <img src={rectangleRight} />
+            </div>
+            <h1 className="text-center mb-7">Why Choose Us??</h1>
+            <div className={` mt-3 ${styles.grid}`}>
                 {
                     chooseData.map((data, i)=> (
                         <div key={i} className={styles.gridItems}>
@@ -244,36 +260,40 @@ const Home = ()=> {
                                 <img height={60} className='mb-3' src={data.img} />
                             </div>
                             <div>
-                                <h4 className="m-0">{data.title}</h4>
-                                <p className="m-0 text-sm">{data.text}</p>
+                                <h4 className="m-0 mt-1">{data.title}</h4>
+                                <p className="m-0 mt-3 text-sm">{data.text}</p>
                             </div>
                         </div>
                     ))
                 }
+            </div>
+            <div className={styles.left}>
+                <img src={rectangleLeft} />
             </div>
         </div>
         <div className={`${styles.clients} mb-0 mt-6 md:my-6`}>
             <div className="w-11 md:w-10 lg:w-9 m-auto">
                 <div className="grid max-w-full">
                     <div className="col-12 lg:col-6 mt-5 mb-3 ml-2 lg:ml-0">
-                        <h1 className="text-3xl md:text-6xl mb-1">Our Clients love what we do</h1>
+                        <h1 className="mb-1">Our Clients love what we do</h1>
                         <p className="mt-0 mb-6" style={{color: '#395F99'}}>See what people are sayinng about us.Our happy customers</p>
-                        <Button label="Read more Feedbacks" />
+                        <Button label="Paperless & Quick - Apply Now" />
                     </div>
                     <div className="col-12 lg:col-6">
                         <div className={styles.feedback}>
                             {
-                                clients.map((data, i)=> (
-                                    <div key={i} className="flex align-items-center mb-5">
+                                clients.map((data, i)=> (<>
+                                    <h2 className="text-6xl relative m-0" style={{top: '10px', fontFamily: 'auto'}}>“</h2>
+                                    <div key={i} className="flex align-items-center mb-4">
                                         <div>
-                                            <p className="text-sm m-0">{data.feedback}</p>
+                                            <p className="text-xs m-0">{data.feedback}</p>
                                             <h6 className="text-sm m-0">{data.name}</h6>
                                         </div>
                                         <div>
                                             <img src={data.img} />
                                         </div>
                                     </div>
-                                ))
+                                </>))
                             }
                         </div>
                     </div>

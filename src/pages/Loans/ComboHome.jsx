@@ -1,5 +1,5 @@
 import { Button } from "primereact/button";
-import { comboloan1, comboloan2, comboloan3, comboloan4, comboloanhero, vector } from "../../assets";
+import { comboloan1, comboloan2, comboloan3, comboloan4, comboloanhero, rectangleLeft, rectangleRight, vector } from "../../assets";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
@@ -39,6 +39,9 @@ const ComboHome = ()=> {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className={styles.left}>
+                    <img src={rectangleLeft} />
                 </div>
             </div>
         </div>
@@ -83,6 +86,9 @@ const ComboHome = ()=> {
                 </div>
             </div>
         </div>
+        <div className={styles.right}>
+                <img src={rectangleRight} />
+            </div>
         <Welcome />
     </>)
 }

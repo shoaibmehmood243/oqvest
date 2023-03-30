@@ -12,10 +12,25 @@
     z-index: 10000;
 }
 
+.dropdown {
+    animation: slide-in 0.3s ease-in-out;
+  }
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateZ(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
+
 .header :global(.p-button) {
     background: #404F66 !important;
     box-shadow: 0px 8.30752px 24.343px rgba(10, 63, 120, 0.165559);
     border-radius: 10px;
+    padding: 0.75rem 2rem;
     border: none;
 }
 
@@ -42,7 +57,8 @@
     top: 60px;
     background: #fff;
     border-radius: 10px;
-    padding: 10px 30px;
+    padding: 10px 30px 10px 10px;
+    width: 15rem;
 }
 
 .dropdown ul {
@@ -51,7 +67,8 @@
 }
 
 .dropdown ul li {
-    padding: 7px 5px;
+    padding: 10px 5px;
+    border-bottom: 0.5px solid rgba(203, 223, 254, 0.5);
 }
 
 .mobileNavItems ul {

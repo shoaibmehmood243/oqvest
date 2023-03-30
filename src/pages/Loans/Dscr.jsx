@@ -1,8 +1,9 @@
-import {  dscrloan1, dscrloan2, dscrloan3, dscrloan4, dscrloanhero, privateloan1, privateloan2, privateloan3, privateloan4, privateloanhero } from "../../assets";
+import {  dscrloan1, dscrloan2, dscrloan3, dscrloan4, dscrloanhero, privateloan1, privateloan2, privateloan3, privateloan4, privateloanhero, rectangleLeft } from "../../assets";
 import Apply from "../../components/common/Apply";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
+import {Button} from 'primereact/button'
 
 const Dscr = ()=> {
     return (<>
@@ -40,6 +41,9 @@ const Dscr = ()=> {
                     </div>
                 </div>
             </div>
+            <div className={styles.left}>
+                <img src={rectangleLeft} />
+            </div>
         </div>
         <div className={styles.dscr}>
             <h6>Here is the formula to determine DSCR ratio:</h6>
@@ -49,44 +53,48 @@ const Dscr = ()=> {
         </div>
         <div className={`my-8 ${styles.detailsSection2}`}>
             <div>
-                <h1>Features & Benefits:</h1>
-                <ul className={styles.list}>
-                    <li>
-                        <strong>Larger loan amounts:</strong>
-                        We can lend from $100,000 loan amounts up to $20MM. This is our most flexible full-doc Jumbo home loan as well.
+                <h1>The loan terms for a DSCR Loan are determined by the following criteria:</h1>
+                <ul style={{fontStyle: 'italic'}} className={`mb-5 ${styles.list}`}>
+                    <li className="mb-3">
+                    DSCR Ratio - (how well the property cash-flows) - We will finance properties with a ratio of 0.75 and higher.
                     </li>
-                    <li>
-                        <strong> Close in the name of a Trust or LLC:</strong>
-                        Yes, we allow you to close the home in the name of your trust or LLC, subject to conditions. Consult loan originator for details.
+                    <li className="mb-3">
+                    The applicant's middle FICO score
                     </li>
-                    <li>
-                        <strong>No Credit Score Requirements:</strong>
-                        We do not use the applicant's credit scores for the purposes of pricing or qualification. We perform our own evaluation of the applicant's entire credit profile and background.
+                    <li className="mb-3">
+                    Size of the down payment.
                     </li>
-                    <li>
-                        <strong>Common Sense Underwriting:</strong>
-                        Our loan originators and underwriting team proactively seek ways to make an application work, using the applicant's strengths to balance potential shortfalls
-                    </li>
-                    <li>
-                        <strong>Income calculation:</strong>
-                        This is where high net-worth individuals often run into trouble on a traditional bank loan program. The good news is that this is where we shine. Unlike the typical bank or credit union, we are very experienced with scenarios like this to ensure that all available income is used to qualify.
-                    </li>
-                    <li>
-                        <strong>Flexible Asset-Based Income Calculation:</strong>
-                        Many of our clients have substantial wealth, but sometimes lack the necessary income on their tax returns to qualify for a traditional Conventional or Jumbo home loan. Our unique formulation of income allows us to calculate over 33% more income for qualification purposes than a Conventional loan, and can open more possibilities for applicants buying bigger homes.
-                    </li>
-                    <li>
-                    We DO NOT require you to move your money around in exchange for a home loan, enabling you to keep your trusted financial advisors and investment relationships in place as you see fit.                        
-                    </li>
-                    <li>
-                        <strong>No Escrow Account Requirement:</strong>
-                        We do not manage escrows for property taxes or homeowners insurance. Only homes located in FEMA-designated Flood Zones are required to escrow.
-                    </li>
-                    <li>
-                        <strong>Non-typical income types accepted on a case-by-case basis:</strong>
-                        Newly Self-Employed • Newly- 1099'd • High-Dollar Employment Contract Work (Entertainers, Professional Athlete, Law Firm Partner, etc.)
+                    <li className="mb-3">
+                    Prepayment Penalty (optional) - Options include: no prepayment penalty, 1 year, 2 year, or 3 year (ask your Loan Originator for details)
                     </li>
                 </ul>
+                <p className="text-sm">For experienced investors, 20% down payment is the required minimum. The required down payment for first-time investors is 30%. (A candidate is considered a seasoned investor if they have 12 months of recent landlord experience.) The applicant's credit history must show 3 active credit tradelines from the past 12 months, *OR* 2 active tradelines from the past 24 months. The most recent three years of prior homeownership experience and a spotless, verifiable 12-month payment history for residency are requirements for applicants.</p>
+                <h1 className="text-left">If the DSCR Ratio is ≥ 1.00...</h1>
+                <ul style={{fontStyle: 'italic'}} className={`mb-5 ${styles.list}`}>
+                    <li className="mb-3">
+                    The maximum LTV is 80% for applicants with a middle FICO of 700 or higher for purchase and rate & term refinance transactions. (max LTV of 75% for cash-out transactions)
+                    </li>
+                    <li className="mb-3">
+                    The maximum LTV is 80% for applicants with a middle FICO of 700 or higher for purchase and rate & term refinance transactions. (max LTV of 75% for cash-out transactions)
+                    </li>
+                    <li className="mb-3">
+                    The maximum LTV is 80% for applicants with a middle FICO of 700 or higher for purchase and rate & term refinance transactions. (max LTV of 75% for cash-out transactions)
+                    </li>
+                </ul>
+                <h1 className="mb-0 text-left">If the DSCR Ratio is {"<"} 1.00...</h1>
+                <span className={styles.span}>*NOTE: The minimum acceptable DSCR ratio is 0.75 *</span>
+                <ul style={{fontStyle: 'italic'}} className={`mb-5 ${styles.list}`}>
+                    <li className="mb-3">
+                    The maximum LTV is 80% for applicants with a middle FICO of 700 or higher for purchase and rate & term refinance transactions. (max LTV of 75% for cash-out transactions)
+                    </li>
+                    <li className="mb-3">
+                    The maximum LTV is 80% for applicants with a middle FICO of 700 or higher for purchase and rate & term refinance transactions. (max LTV of 75% for cash-out transactions)
+                    </li>
+                    <li className="mb-3">
+                    The maximum LTV is 80% for applicants with a middle FICO of 700 or higher for purchase and rate & term refinance transactions. (max LTV of 75% for cash-out transactions)
+                    </li>
+                </ul>
+                <Button label="Get your Quote" />
             </div>
         </div>
         <Apply />

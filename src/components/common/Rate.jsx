@@ -21,7 +21,7 @@ const Rate = ()=> {
     ]
     return(
         <div className={styles.price}>
-            <h2 className="w-full m-auto md:w-10 lg:w-11 text-center m-3">Find the right rate for you. Get a fast quote in 5 minutes or less.  We are always ready to serve you.</h2>
+            <h2 className="w-full m-auto md:w-10 lg:w-11 text-center m-3">Find the right rate for you. Get a fast quote in 5 minutes or less. <br />  We are always ready to serve you.</h2>
             <div className="grid mt-6">
                 <div className={`col-12 lg:col-6 `}>
                     <div className={styles.cardDiv}>

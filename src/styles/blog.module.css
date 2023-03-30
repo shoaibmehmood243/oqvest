@@ -1,11 +1,11 @@
 .container {
-    width: 80%;
+    width: 70%;
     margin: 100px auto;
 }
 
 .container h1 {
     font-weight: 600;
-    font-size: 48px;
+    font-size: 32px;
     line-height: 72px;
     color: #404F66;
 }
@@ -13,7 +13,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 32px;
     margin-bottom: 100px;
 }
 
@@ -22,8 +22,9 @@ background: #FFFFFF;
 box-shadow: 0px -4.13292px 47.2334px rgba(0, 0, 0, 0.07), 0px -1.72664px 19.733px rgba(0, 0, 0, 0.0503198), 0px -0.923142px 10.5502px rgba(0, 0, 0, 0.0417275), 0px -0.517506px 5.91435px rgba(0, 0, 0, 0.035), 0px -0.274844px 3.14107px rgba(0, 0, 0, 0.0282725), 0px -0.114369px 1.30707px rgba(0, 0, 0, 0.0196802);
 border-radius: 12px;
 padding: 10px 10px 20px 10px;
-width: 330px;
-height: 370px;
+width: 300px;
+height: 355px;
+margin-bottom: 20px;
 }
 
 .grid img {
@@ -69,6 +70,28 @@ line-height: 17px;
     color: #0CBC8B;
 }
 
+.btn p {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid rgba(70, 86, 111, 0.56);
+    padding: 10px 0;
+}
+
+.btn svg {
+    color: #FF6C59;
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        width: 60%;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
@@ -76,8 +99,12 @@ line-height: 17px;
     }
 }
 @media screen and (max-width: 575px) {
+    .container {
+        width: 100%;
+    }
     .grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
+        margin: 0 10px;
     }
 }

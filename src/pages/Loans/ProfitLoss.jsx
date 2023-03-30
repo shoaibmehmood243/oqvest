@@ -1,5 +1,5 @@
 import { Button } from "primereact/button";
-import { bankloan1, bankloan2, bankloan3, bankloan4, bankloan5, bankloan6, bankloan7, bankloan8, bankloanhero, profitloan1, profitloan10, profitloan11, profitloan12, profitloan2, profitloan3, profitloan4, profitloan5, profitloan6, profitloan7, profitloan8, profitloan9, profitloanhero } from "../../assets";
+import { bankloan1, bankloan2, bankloan3, bankloan4, bankloan5, bankloan6, bankloan7, bankloan8, bankloanhero, profitloan1, profitloan10, profitloan11, profitloan12, profitloan2, profitloan3, profitloan4, profitloan5, profitloan6, profitloan7, profitloan8, profitloan9, profitloanhero, rectangleLeft, rectangleRight } from "../../assets";
 import Apply from "../../components/common/Apply";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
 import Welcome from "../../components/Home/Welcome";
@@ -41,6 +41,9 @@ const ProfitLoss = ()=> {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className={styles.left}>
+                <img src={rectangleLeft} />
             </div>
             <div>
                 <h6>Our P&L Loan Program Solves this Problem </h6>
@@ -97,6 +100,9 @@ const ProfitLoss = ()=> {
                             <p className={styles.para}>There are a few lenders who provide this kind of programme, but very few of them have the same level of expertise and track record as we do, making us the reliable experts you need to make this programme work for you.</p>
                         </div>
                     </div>
+                </div>
+                <div className={styles.right}>
+                    <img src={rectangleRight} />
                 </div>
             </div>
         </div>

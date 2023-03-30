@@ -9,14 +9,14 @@
 
 .section .headers h1 {
     font-style: normal;
-font-weight: 600;
-font-size: 48px;
-line-height: 97px;
-/* or 202% */
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 97px;
+    /* or 202% */
 
 
-color: #222D39;
-margin-bottom: 0px !important;
+    color: #222D39;
+    margin-bottom: 0px !important;
 }
 
 .section {
@@ -25,9 +25,9 @@ margin-bottom: 0px !important;
 
 .section .headers h6 {
     font-style: normal;
-font-weight: normal;
-font-size: 38px;
-color: #222D39;
+    font-weight: normal;
+    font-size: 38px;
+    color: #222D39;
 }
 
 .section .headers strong {
@@ -37,12 +37,12 @@ color: #222D39;
 .section .headers p {
     margin-top: 0px !important;
     font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 25px;
-text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
 
-color: #59668D;
+    color: #59668D;
 }
 
 .dscr {
@@ -53,11 +53,11 @@ color: #59668D;
 
 .dscr h6 {
     font-style: normal;
-font-weight: 600;
-font-size: 36px;
-line-height: 105%;
-color: #222D39;
-margin: 10px 0px 50px 0px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 105%;
+    color: #222D39;
+    margin: 10px 0px 50px 0px;
 }
 
 .dscr strong {
@@ -84,44 +84,45 @@ margin: 10px 0px 50px 0px;
 
 .detailsSection {
     background: #0CBC8B;
-box-shadow: 0px 72.6519px 61.7542px rgba(0, 0, 0, 0.09), 0px 30.3522px 25.7994px rgba(0, 0, 0, 0.0646969), 0px 16.2278px 13.7936px rgba(0, 0, 0, 0.0536497), 0px 9.09715px 7.73258px rgba(0, 0, 0, 0.045), 0px 4.83143px 4.10671px rgba(0, 0, 0, 0.0363503), 0px 2.01047px 1.7089px rgba(0, 0, 0, 0.0253031);
-border-radius: 21.7956px;
-width: 60%;
-margin: auto;
-padding: 30px 100px;
+    box-shadow: 0px 72.6519px 61.7542px rgba(0, 0, 0, 0.09), 0px 30.3522px 25.7994px rgba(0, 0, 0, 0.0646969), 0px 16.2278px 13.7936px rgba(0, 0, 0, 0.0536497), 0px 9.09715px 7.73258px rgba(0, 0, 0, 0.045), 0px 4.83143px 4.10671px rgba(0, 0, 0, 0.0363503), 0px 2.01047px 1.7089px rgba(0, 0, 0, 0.0253031);
+    border-radius: 21.7956px;
+    width: 60%;
+    margin: 80px auto;
+    padding: 30px 100px;
 }
 
 .detailsSection2 {
     background: #0CBC8B;
-box-shadow: 0px 72.6519px 61.7542px rgba(0, 0, 0, 0.09), 0px 30.3522px 25.7994px rgba(0, 0, 0, 0.0646969), 0px 16.2278px 13.7936px rgba(0, 0, 0, 0.0536497), 0px 9.09715px 7.73258px rgba(0, 0, 0, 0.045), 0px 4.83143px 4.10671px rgba(0, 0, 0, 0.0363503), 0px 2.01047px 1.7089px rgba(0, 0, 0, 0.0253031);
-border-radius: 21.7956px;
-width: 60%;
-margin: 40px auto;
-padding: 30px 50px;
+    box-shadow: 0px 72.6519px 61.7542px rgba(0, 0, 0, 0.09), 0px 30.3522px 25.7994px rgba(0, 0, 0, 0.0646969), 0px 16.2278px 13.7936px rgba(0, 0, 0, 0.0536497), 0px 9.09715px 7.73258px rgba(0, 0, 0, 0.045), 0px 4.83143px 4.10671px rgba(0, 0, 0, 0.0363503), 0px 2.01047px 1.7089px rgba(0, 0, 0, 0.0253031);
+    border-radius: 21.7956px;
+    width: 60%;
+    margin: 80px auto;
+    padding: 30px 50px;
 }
 
-.detailsSection h1, .detailsSection2 h1 {
+.detailsSection h1,
+.detailsSection2 h1 {
     font-weight: 600;
-font-size: 34.8729px;
-line-height: 125%;
-/* identical to box height, or 44px */
+    font-size: 32px;
+    line-height: 125%;
+    /* identical to box height, or 44px */
 
-text-align: center;
+    text-align: center;
 
-color: #222D39;
-margin: 50px 0px;
+    color: #222D39;
+    margin: 50px 0px;
 }
 
 .detailsSection2 h4 {
     font-style: normal;
-font-weight: 500;
-font-size: 31.8895px;
-line-height: 125%;
-/* identical to box height, or 40px */
+    font-weight: 500;
+    font-size: 31.8895px;
+    line-height: 125%;
+    /* identical to box height, or 40px */
 
-text-align: center;
+    text-align: center;
 
-color: #222D39;
+    color: #222D39;
 }
 
 .detailsSection2 img {
@@ -129,8 +130,47 @@ color: #222D39;
     height: auto;
 }
 
+.right {
+    position: absolute;
+    left: 90%;
+    height: 400px;
+    margin-top: -180px;
+}
+
+.left {
+    position: absolute;
+    left: 0%;
+    height: 400px;
+    margin-top: -250px;
+}
+
+.right img,
+.left img {
+    height: 100%;
+}
+
 .detailsSection2 span {
     color: #59668D;
+}
+
+.detailsSection2 :global(.p-button) {
+    background: #222D39;
+    box-shadow: 0px -22.5221px 80.6436px rgba(255, 255, 255, 0.16), 0px -9.40919px 33.691px rgba(255, 255, 255, 0.115017), 0px -5.03061px 18.0128px rgba(255, 255, 255, 0.0953772), 0px -2.82012px 10.0978px rgba(255, 255, 255, 0.08), 0px -1.49774px 5.36288px rgba(255, 255, 255, 0.0646228), 0px -0.623244px 2.23162px rgba(255, 255, 255, 0.0449833);
+    border-radius: 66.8398px;
+    color: #FF6C59;
+    border: none;
+}
+
+.detailsSection2 :global(.p-button .p-button-label) {
+    color: #FF6C59 !important;
+}
+
+.detailsSection2 :global(.p-button:focus, .p-button:hover) {
+    background: #222D39 !important;
+    box-shadow: 0px -22.5221px 80.6436px rgba(255, 255, 255, 0.16), 0px -9.40919px 33.691px rgba(255, 255, 255, 0.115017), 0px -5.03061px 18.0128px rgba(255, 255, 255, 0.0953772), 0px -2.82012px 10.0978px rgba(255, 255, 255, 0.08), 0px -1.49774px 5.36288px rgba(255, 255, 255, 0.0646228), 0px -0.623244px 2.23162px rgba(255, 255, 255, 0.0449833);
+    border-radius: 66.8398px;
+    color: #FF6C59 !important;
+    border: none !important;
 }
 
 .detailsSection li {
@@ -153,55 +193,55 @@ color: #222D39;
 
 .detailsSection :global(.p-button) {
     background: #222D39;
-box-shadow: 0px -22.5221px 80.6436px rgba(255, 255, 255, 0.16), 0px -9.40919px 33.691px rgba(255, 255, 255, 0.115017), 0px -5.03061px 18.0128px rgba(255, 255, 255, 0.0953772), 0px -2.82012px 10.0978px rgba(255, 255, 255, 0.08), 0px -1.49774px 5.36288px rgba(255, 255, 255, 0.0646228), 0px -0.623244px 2.23162px rgba(255, 255, 255, 0.0449833);
-border-radius: 66.8398px;
- color: #FF6C59;
- border: none;
+    box-shadow: 0px -22.5221px 80.6436px rgba(255, 255, 255, 0.16), 0px -9.40919px 33.691px rgba(255, 255, 255, 0.115017), 0px -5.03061px 18.0128px rgba(255, 255, 255, 0.0953772), 0px -2.82012px 10.0978px rgba(255, 255, 255, 0.08), 0px -1.49774px 5.36288px rgba(255, 255, 255, 0.0646228), 0px -0.623244px 2.23162px rgba(255, 255, 255, 0.0449833);
+    border-radius: 66.8398px;
+    color: #FF6C59;
+    border: none;
 }
 
 .detailsSection :global(.p-button:focus, .p-button:hover) {
     background: #222D39 !important;
-box-shadow: 0px -22.5221px 80.6436px rgba(255, 255, 255, 0.16), 0px -9.40919px 33.691px rgba(255, 255, 255, 0.115017), 0px -5.03061px 18.0128px rgba(255, 255, 255, 0.0953772), 0px -2.82012px 10.0978px rgba(255, 255, 255, 0.08), 0px -1.49774px 5.36288px rgba(255, 255, 255, 0.0646228), 0px -0.623244px 2.23162px rgba(255, 255, 255, 0.0449833);
-border-radius: 66.8398px;
- color: #FF6C59 !important;
- border: none !important;
+    box-shadow: 0px -22.5221px 80.6436px rgba(255, 255, 255, 0.16), 0px -9.40919px 33.691px rgba(255, 255, 255, 0.115017), 0px -5.03061px 18.0128px rgba(255, 255, 255, 0.0953772), 0px -2.82012px 10.0978px rgba(255, 255, 255, 0.08), 0px -1.49774px 5.36288px rgba(255, 255, 255, 0.0646228), 0px -0.623244px 2.23162px rgba(255, 255, 255, 0.0449833);
+    border-radius: 66.8398px;
+    color: #FF6C59 !important;
+    border: none !important;
 }
 
 .detailsSection2 .para {
     font-style: normal;
-font-weight: 400;
-font-size: 13.9448px;
-line-height: 126.5%;
-color: #59668D;
+    font-weight: 400;
+    font-size: 13.9448px;
+    line-height: 126.5%;
+    color: #59668D;
 }
 
 .bank h3 {
     font-style: normal;
-font-weight: 600;
-font-size: 32.884px;
-line-height: 125%;
-text-align: center;
-color: #222D39;
+    font-weight: 600;
+    font-size: 32.884px;
+    line-height: 125%;
+    text-align: center;
+    color: #222D39;
 }
 
 .bank p {
     font-style: normal;
-font-weight: 400;
-font-size: 16.442px;
-line-height: 125%;
-text-align: center;
-color: #404F66;
+    font-weight: 400;
+    font-size: 16.442px;
+    line-height: 125%;
+    text-align: center;
+    color: #404F66;
 }
 
 .bank h6 {
     font-style: normal;
-font-weight: 600;
-font-size: 16.442px;
-line-height: 125%;
-/* or 21px */
+    font-weight: 600;
+    font-size: 16.442px;
+    line-height: 125%;
+    /* or 21px */
 
 
-color: #222D39;
+    color: #222D39;
 }
 
 .happensSection {
@@ -211,14 +251,14 @@ color: #222D39;
 
 .happensSection h1 {
     font-style: normal;
-font-weight: 400;
-font-size: 34px;
-line-height: 125%;
-/* or 52px */
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 125%;
+    /* or 52px */
 
-text-align: center;
+    text-align: center;
 
-color: #404F66;
+    color: #404F66;
 }
 
 .happensSection strong {
@@ -229,11 +269,11 @@ color: #404F66;
 
 .happensSection p {
     font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 
-color: #59668D;
+    color: #59668D;
 }
 
 .gridSection {
@@ -243,33 +283,35 @@ color: #59668D;
 
 .gridSection h6 {
     font-style: normal;
-font-weight: 600;
-font-size: 34px;
+    font-weight: 600;
+    font-size: 34px;
 
-text-align: center;
+    text-align: center;
 
-color: #222D39;
+    color: #222D39;
 }
 
 .gridSection .subheading {
     font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
 
-color: #818AA6;
-margin: 0;
+    color: #818AA6;
+    margin: 0;
 }
 
-.imageSection1 img, .imageSection2 img {
+.imageSection1 img,
+.imageSection2 img {
     border-radius: 13.3512px;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.imageSection1, .imageSection2 {
+.imageSection1,
+.imageSection2 {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
@@ -282,69 +324,190 @@ margin: 0;
 
 .gridSection strong {
     font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
 
-color: #222D39;
+    color: #222D39;
 
 }
 
 .gridSection .para {
     font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
 
-color: #59668D;
+    color: #59668D;
 }
 
 .gridSection button {
-    background: #222D39 ;
-box-shadow: 0px -31px 111px rgba(255, 255, 255, 0.16), 0px -12.9511px 46.3731px rgba(255, 255, 255, 0.115017), 0px -6.92426px 24.7933px rgba(255, 255, 255, 0.0953772), 0px -3.88168px 13.8989px rgba(255, 255, 255, 0.08), 0px -2.06153px 7.38161px rgba(255, 255, 255, 0.0646228), 0px -0.85785px 3.07165px rgba(255, 255, 255, 0.0449833);
-border-radius: 92px;
-border: 1px solid #222D39 ;
-color: #FF6C59 ;
+    background: #222D39;
+    box-shadow: 0px -31px 111px rgba(255, 255, 255, 0.16), 0px -12.9511px 46.3731px rgba(255, 255, 255, 0.115017), 0px -6.92426px 24.7933px rgba(255, 255, 255, 0.0953772), 0px -3.88168px 13.8989px rgba(255, 255, 255, 0.08), 0px -2.06153px 7.38161px rgba(255, 255, 255, 0.0646228), 0px -0.85785px 3.07165px rgba(255, 255, 255, 0.0449833);
+    border-radius: 92px;
+    border: 1px solid #222D39;
+    color: #FF6C59;
 }
 
-.gridSection button:focus, button:hover {
-    background: #222D39 ;
-border-radius: 92px;
+.gridSection button:focus,
+button:hover {
+    background: #222D39;
+    border-radius: 92px;
 
+}
+
+.cardLayout {
+    width: 65%;
+    margin: 100px auto;
+}
+
+.cardLayout h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 72px;
+    color: #222D39;
+    text-align: center;
+}
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 32px;
+}
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px -12.1949px 57.3878px rgba(0, 0, 0, 0.07), 0px -5.09474px 23.9753px rgba(0, 0, 0, 0.0503198), 0px -2.72389px 12.8183px rgba(0, 0, 0, 0.0417275), 0px -1.52699px 7.18584px rgba(0, 0, 0, 0.035), 0px -0.810974px 3.81635px rgba(0, 0, 0, 0.0282725), 0px -0.337464px 1.58807px rgba(0, 0, 0, 0.0196802);
+    border-radius: 0px 0px 36.5847px 35.8674px;
+    width: 415.77px;
+    height: 994.54px;
+}
+.image {
+    height: 300px;
+    position: relative;
+}
+.image img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.text {
+    padding: 40px 50px;
+}
+
+.text h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24.4327px;
+    line-height: 52px;
+    text-align: center;
+    color: #222D39;
+    margin: 0;
+}
+
+.text p {
+    font-style: normal;
+font-weight: 400;
+font-size: 12.9123px;
+line-height: 19px;
+
+color: #59668D;
+margin-top: 5px;
+}
+
+.text button {
+    border: 0.717348px solid #222D39;
+    border-radius: 63.8439px;
+    background-color: transparent;
+    width: 100%;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+ .type {
+    background: #4B88E6;
+    width: 120px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: Poppins;
+    box-shadow: 0px 71.7348px 57.3878px rgba(0, 0, 0, 0.11), 0px 29.9691px 23.9753px rgba(0, 0, 0, 0.079074), 0px 16.0229px 12.8183px rgba(0, 0, 0, 0.0655718), 0px 8.98231px 7.18584px rgba(0, 0, 0, 0.055), 0px 4.77044px 3.81635px rgba(0, 0, 0, 0.0444282), 0px 1.98508px 1.58807px rgba(0, 0, 0, 0.030926);
+    border-radius: 54.5184px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
     .gridSection {
         width: 95%;
     }
+    .cardLayout {
+        width: 85%;
+    }
+    .cardGrid {
+        grid-template-columns: repeat(1,1fr);
+    }
+
     .gridSection h6 {
         font-size: 24px;
         margin-bottom: 0px;
     }
+
     .section {
         width: 95%;
     }
+
     .section .headers h1 {
         font-size: 28px;
     }
+
     .section .headers h6 {
         font-size: 24px;
     }
-    .detailsSection, .detailsSection2 {
+
+    .detailsSection,
+    .detailsSection2 {
         width: 95%;
         padding: 20px 10px;
     }
+
     .detailsSection2 h4 {
         font-size: 26.8895px;
         line-height: 120%;
     }
+
     .detailsSection h1 {
         font-size: 28px;
     }
+
     .happensSection {
         width: 95%;
     }
+
     .happensSection h1 {
         font-size: 24px;
+    }
+
+    .right,
+    .left {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .cardLayout {
+        width: 95%;
+    }
+    .card {
+        width: 100%;
+    }
+    .image {
+        height: 200px;
+    }
+
+    .text {
+        padding: 30px 20px;
     }
 }

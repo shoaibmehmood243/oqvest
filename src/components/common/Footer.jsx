@@ -17,9 +17,6 @@ const Footer = ()=> {
                             <a target='_blank' href='https://www.instagram.com/oqvest'>
                                 <img src={insta} />
                             </a>
-                            <a target='_blank' href='https://www.twitter.com/oqvest'>
-                                <img src={twitter} />
-                            </a>
                         </div>
                     </div>
                     <div className={`mt-3 md:mt-8 ${styles.links}`}>
@@ -39,7 +36,7 @@ const Footer = ()=> {
                         </div>
                         <div className='flex align-items-center gap-2 mb-3'>
                             <img src={msgLight} />
-                            <span><a href="contact@oqvest.com">contact@oqvest.com</a></span>
+                            <span><a href="mailto:contact@oqvest.com">contact@oqvest.com</a></span>
                         </div>
                         <div className={styles.map}>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.118078643175!2d-74.04563212505788!3d40.73742723606027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25744c1d852d5%3A0x18559a0769b54c06!2s50%20Harrison%20St%20%23211c%2C%20Hoboken%2C%20NJ%2007030%2C%20USA!5e0!3m2!1sen!2s!4v1679495069595!5m2!1sen!2s" width="350" height="250" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>

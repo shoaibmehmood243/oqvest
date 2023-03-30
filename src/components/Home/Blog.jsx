@@ -1,7 +1,8 @@
-import { blog1, blog2, blog3, idea } from '../../assets';
+import { blog1, blog2, blog3, blog4, blog5, blog6, idea } from '../../assets';
 import styles from '../../styles/blog.module.css';
 import {AiOutlineEye, AiFillHeart, AiOutlineAlignLeft} from 'react-icons/ai'
 import {TbMessageCircle2Filled} from 'react-icons/tb'
+import {BiChevronsRight} from 'react-icons/bi'
 
 const Blog = ()=> {
     const data = [
@@ -23,10 +24,28 @@ const Blog = ()=> {
             views: '3.5',
             date: 'March,2022'
         },
+        {
+            img: blog4,
+            title: 'Buying an Investment Property:A Complete Guide',
+            views: '3.5',
+            date: 'March,2022'
+        },
+        {
+            img: blog5,
+            title: 'How to Finance an Airbnb Rental: A Guide for Iinvestors',
+            views: '3.5',
+            date: 'March,2022'
+        },
+        {
+            img: blog6,
+            title: 'Closing Costs: What are They and How Much??',
+            views: '3.5',
+            date: 'March,2022'
+        },
     ]
     return (
         <div className={styles.container}>
-            <h1 className='m-0 text-center'>Knowledge Centre <img height={50} src={idea} /></h1>
+            <h1 className='m-0 text-center'>Knowledge Centre <img height={70} width={100} src={idea} /></h1>
             <div className={`mt-6 ${styles.grid}`}>
                 {
                     data.map((data, i)=> (
@@ -35,8 +54,8 @@ const Blog = ()=> {
                                 <img src={data.img} />
                             </div>
                             <div className={`flex justify-content-between align-items-center ${styles.span1}`}>
-                                <span>{data.date}</span>
-                                <span><AiOutlineEye /> {data.views} k</span>
+                                <span className='text-base'>{data.date}</span>
+                                <span className='text-base'><AiOutlineEye /> {data.views} k</span>
                             </div>
                             <h3 className='m-0 mb-3'>{data.title}</h3>
                             <div className={`flex justify-content-start gap-4 align-items-center ${styles.widgets}`}>
@@ -47,6 +66,9 @@ const Blog = ()=> {
                         </div>
                     ))
                 }
+            </div>
+            <div className={styles.btn}>
+                <p>View More <BiChevronsRight /></p>
             </div>
         </div>
     )

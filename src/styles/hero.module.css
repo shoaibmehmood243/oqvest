@@ -28,10 +28,19 @@ line-height: 50px;
 }
 
 .heroText strong {
-    text-decoration: underline;
-    text-decoration-color: #FF6C59;
-    text-decoration-thickness: 5px;
-}
+    position: relative;
+  }
+  
+  .heroText strong::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 100%;
+    height: 10px;
+    background-color: #FF6C59;
+    z-index: -1;
+  }
 
 .heroText p {
     font-weight: 400;
@@ -47,7 +56,7 @@ line-height: 50px;
 }
 
 .tabShift {
-    width: 29rem;
+    width: 32rem;
     margin-top: 100px;
 }
 

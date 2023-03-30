@@ -1,5 +1,5 @@
 import { Button } from "primereact/button";
-import { calculator, client1, client2, client3, closing, constrcutionLoan, construction, conventional, dscr, forbes, guarantee, hidden, inc, msn, privacy, selfEmployedHero, service, shield, yahoo } from "../../assets";
+import { calculator, client1, client2, client3, closing, constrcutionLoan, construction, conventional, dscr, forbes, guarantee, hidden, inc, msn, privacy, rectangleLeft, rectangleRight, selfEmployedHero, service, shield, yahoo } from "../../assets";
 import Hero from "../../components/common/Hero";
 import styles from '../../styles/home.module.css'
 import { Carousel } from 'primereact/carousel';
@@ -172,6 +172,9 @@ const SelfEmployed = ()=> {
             </div>
         </div>
         <div className="choose">
+        <div className={styles.right}>
+                <img src={rectangleRight} />
+            </div>
             <h1 className="text-center">Why Choose Us??</h1>
             <div className={`w-full md:w-10 lg:w-9 mt-3 ${styles.grid}`}>
                 {
@@ -187,6 +190,9 @@ const SelfEmployed = ()=> {
                         </div>
                     ))
                 }
+            </div>
+            <div className={styles.left}>
+                <img src={rectangleLeft} />
             </div>
         </div>
         <div className={`${styles.clients} mb-0 mt-6 md:my-6`}>

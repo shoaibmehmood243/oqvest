@@ -8,6 +8,7 @@
     background: #222D39;
     color: #FFFFFF !important;
     border: 1px solid #222D39;
+    padding: 0.75rem 2rem;
     box-shadow:  0px 14px 80px rgba(0, 0, 0, 0.07), 0px 5.84887px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 3.12708px 17.869px rgba(0, 0, 0, 0.0417275), 0px 1.75302px 10.0172px rgba(0, 0, 0, 0.035), 0px 0.931014px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 0.387416px 2.21381px rgba(0, 0, 0, 0.0196802);;
 }
 
@@ -53,6 +54,7 @@ position: absolute;
     border-radius: 10px !important;
     background: #222D39;
     color: #FFFFFF !important;
+    padding: 0.75rem 2rem;
     border: 1px solid #222D39;
 }
 
@@ -70,6 +72,8 @@ line-height: 48px;
 
 .products {
     padding: 40px 40px 80px 40px;
+    width: 80%;
+    margin: auto;
 }
 
 .products .text {
@@ -94,19 +98,51 @@ line-height: 48px;
     width: 260px !important;
     height: 295px;
     transition: all .3s ease;
+    color: #222D39;
+    text-decoration: none;
+}
+
+.products a {
+    text-decoration: none !important;
+}
+
+.productCard h4, .productCard p {
+    text-decoration: none !important;
 }
 
 .productCard:hover {
-    background-color: #222D39;
-    color: #fff;
+    background-color: rgba(203, 223, 254, 0.26);
     transform: scale(1.1) translateZ(0px);
 }
 
+.right {
+    position: absolute;
+    left: 90%;
+    height: 400px;
+}
+.left {
+    position: absolute;
+    left: 0%;
+    height: 400px;
+    margin-top: -250px;
+}
+
+.right img, .left img {
+    height: 100%;
+}
+
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
-    gap: 60px;
+    gap: 32px;
+    width: 70%;
+}
+
+.grid>* {
+    flex-basis: calc(33.33% - 10px);
+    max-width: calc(30.33% - 10px);
 }
 
 .gridItems {
@@ -126,9 +162,24 @@ box-shadow: 0px -7px 193px rgba(116, 193, 234, 0.11), 0px -2.92443px 80.6308px r
 }
 
 .feedback {
+    width: 500px;
     padding: 20px;
     background: #FFFFFF;
+    border-radius: 8.66759px;
+
 box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+
+.clients h1 {
+    font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 125.5%;
+/* or 60px */
+
+letter-spacing: 0.02em;
+
+color: #222D39;
 }
 
 .clients button {
@@ -138,10 +189,10 @@ box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 
     border: 1px solid #222D39;
 }
 
-.clients button:hover {
-    background: #222D39 !important;
+.clients button:hover, button:focus {
+    background: #0cbc8b!important;
     color: #FFFFFF !important;
-    border: 1px solid #222D39 !important;
+    border: 1px solid #0cbc8b !important;
 }
 
 .clients .emptyContainer {
@@ -150,9 +201,22 @@ box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 
     z-index: -1;
 }
 
+@media screen and (min-width: 1400px) {
+    .products {
+        width: 70%;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .featured .images {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .grid>* {
+        flex-basis: calc(45.33% - 10px);
+    max-width: calc(50.33% - 10px);
     }
 }
 
@@ -167,12 +231,18 @@ box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 
     .grid {
         padding: 0px 20px;
         grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .grid>* {
+        flex-basis: calc(100% - 10px);
+        max-width: calc(100% - 10px);
     }
     .gridItems {
         height: 300px;
     }
     .products {
         padding: 20px 5px;
+        width: 100%;
     }
     .productCard {
         margin: 0px;
@@ -180,9 +250,13 @@ box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 
         height: 320px;
     }
     .feedback {
-        margin: 0 20px;
+        margin: 0 10px;
+        width: 100%;
     }
     .featured .images {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .right, .left {
+        display: none;
     }
 }

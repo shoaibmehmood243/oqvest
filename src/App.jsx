@@ -12,6 +12,7 @@ import ComboHome from './pages/Loans/ComboHome';
 import ProfitLoss from './pages/Loans/ProfitLoss';
 import Private from './pages/Loans/Private';
 import Dscr from './pages/Loans/Dscr';
+import JumboHome from './pages/Loans/JumboHome';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/profit-loss-loan" element={<ProfitLoss />} />
         <Route path="/private-loan" element={<Private />} />
         <Route path="/dscr-loan" element={<Dscr />} />
+        <Route path="/jumbo-home-loan" element={<JumboHome />} />
       </Routes>
       <Footer />
     </BrowserRouter>

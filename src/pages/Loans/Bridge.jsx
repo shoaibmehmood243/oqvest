@@ -1,5 +1,5 @@
 import { Button } from "primereact/button";
-import { bridgeloan1, bridgeloan2, bridgeloan3, bridgeloan4, bridgeloanhero } from "../../assets";
+import { bridgeloan1, bridgeloan2, bridgeloan3, bridgeloan4, bridgeloanhero, rectangleLeft, rectangleRight } from "../../assets";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
@@ -40,6 +40,9 @@ const Bridge = ()=> {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className={styles.left}>
+                <img src={rectangleLeft} />
             </div>
         </div>
         <div className={styles.section}>
@@ -93,6 +96,9 @@ const Bridge = ()=> {
             <div className="text-center mt-6">
                 <Button label="Get your Quote" />
             </div>
+        </div>
+        <div className={styles.right}>
+            <img src={rectangleRight} />
         </div>
         <Welcome />
     </>)

@@ -130,6 +130,24 @@ import dscrloan1 from './dscrloan1.png';
 import dscrloan2 from './dscrloan2.png';
 import dscrloan3 from './dscrloan3.png';
 import dscrloan4 from './dscrloan4.png';
+import rectangleRight from './rectangleRight.png';
+import rectangleLeft from './rectangleLeft.png';
+import jumboloanhero from './jumboloanhero.png';
+import jumboloan1 from './jumboloan1.png';
+import jumboloan2 from './jumboloan2.png';
+import jumboloan3 from './jumboloan3.png';
+import jumboloan4 from './jumboloan4.png';
+import jumboloan5 from './jumboloan5.png';
+import jumboloan6 from './jumboloan6.png';
+import jumboloan7 from './jumboloan7.png';
+import jumboloan8 from './jumboloan8.png';
+import jumboloan9 from './jumboloan9.png';
+import jumboloan10 from './jumboloan10.png';
+import fhaloan from './fhaloan.svg';
+import dpa from './dpa.svg';
+import blog4 from './blog4.png';
+import blog5 from './blog5.png';
+import blog6 from './blog6.png';
 
 export {
     logo,
@@ -263,5 +281,23 @@ export {
     dscrloan1,
     dscrloan2,
     dscrloan3,
-    dscrloan4
+    dscrloan4,
+    rectangleRight,
+    rectangleLeft,
+    jumboloanhero,
+    jumboloan1,
+    jumboloan10,
+    jumboloan2,
+    jumboloan3,
+    jumboloan4,
+    jumboloan5,
+    jumboloan6,
+    jumboloan7,
+    jumboloan8,
+    jumboloan9,
+    fhaloan,
+    dpa,
+    blog4,
+    blog5,
+    blog6
 }

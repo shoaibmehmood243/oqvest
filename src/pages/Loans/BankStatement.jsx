@@ -1,5 +1,5 @@
 import { Button } from "primereact/button";
-import { bankloan1, bankloan2, bankloan3, bankloan4, bankloan5, bankloan6, bankloan7, bankloan8, bankloanhero } from "../../assets";
+import { bankloan1, bankloan2, bankloan3, bankloan4, bankloan5, bankloan6, bankloan7, bankloan8, bankloanhero, rectangleLeft, rectangleRight } from "../../assets";
 import Apply from "../../components/common/Apply";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
 import Welcome from "../../components/Home/Welcome";
@@ -68,6 +68,9 @@ const BankStatement = ()=> {
                         </div>
                     </div>
                 </div>
+                <div className={styles.left}>
+                    <img src={rectangleLeft} />
+                </div>
             </div>
         </div>
         <div className={styles.section}>
@@ -94,6 +97,9 @@ const BankStatement = ()=> {
             <div className="mt-6">
                 <Button label="Get your Quote" />
             </div>
+        </div>
+        <div className={styles.right}>
+            <img src={rectangleRight} />
         </div>
         <div className={styles.happensSection}>
             <h1>So you might be asking, <strong>"What happens if my business is operating with expense ratio lower than 50%?"</strong></h1>

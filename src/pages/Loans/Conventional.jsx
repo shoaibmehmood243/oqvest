@@ -1,5 +1,5 @@
 import { Button } from "primereact/button";
-import {  conventionalloan1, conventionalloan2, conventionalloan3, conventionalloan4, conventionalloan5, conventionalloan6, conventionalloan7, conventionalloan8, conventionalLoanHero } from "../../assets";
+import {  conventionalloan1, conventionalloan2, conventionalloan3, conventionalloan4, conventionalloan5, conventionalloan6, conventionalloan7, conventionalloan8, conventionalLoanHero, rectangleLeft } from "../../assets";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
@@ -68,8 +68,11 @@ const Conventional = ()=> {
                         </div>
                     </div>
                 </div>
+                <div className={styles.left}>
+                    <img src={rectangleLeft} />
+                </div>
             </div>
-            <div className="mt-6">
+            <div className="mt-7">
                 <p>If you are thinking about conventional financing, give us a call so we can go through your options, address all of your concerns, and determine whether this is the best lending programme for you.</p>
                 <div className="text-center mt-6">
                     <Button className="px-5" label="Get your Quote" />
