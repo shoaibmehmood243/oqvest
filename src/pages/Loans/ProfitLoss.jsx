@@ -1,13 +1,29 @@
 import { Button } from "primereact/button";
+import { useState } from "react";
 import { bankloan1, bankloan2, bankloan3, bankloan4, bankloan5, bankloan6, bankloan7, bankloan8, bankloanhero, profitloan1, profitloan10, profitloan11, profitloan12, profitloan2, profitloan3, profitloan4, profitloan5, profitloan6, profitloan7, profitloan8, profitloan9, profitloanhero, rectangleLeft, rectangleRight } from "../../assets";
 import Apply from "../../components/common/Apply";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
+import Video from "../../components/common/Video";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
+import VideoDialog from "../../components/common/VideoDialog";
 
 const ProfitLoss = ()=> {
+    const [video, setVideo] = useState(false);
+    const onShow = ()=> {
+        setVideo(true)
+    }
+    const onHide = ()=> {
+        setVideo(false)
+    }
     return (<>
-        <HeroSectionTwo image={profitloanhero} 
+        <VideoDialog
+            videoId="HFJLjqde8b8"
+            visible={video}
+            onHide={onHide}
+        />
+
+        <HeroSectionTwo handleClick={()=> setVideo(true)} image={profitloanhero} 
             heading={<>P & L Home loans</>}
             subheading="The quickest route to approval for self-employed house buyers is our P&L financing programme." />
         <div className={styles.gridSection}>
@@ -17,18 +33,18 @@ const ProfitLoss = ()=> {
                 <div className="grid my-6">
                     <div className="col-12 md:col-6">
                         <div className={styles.imageSection1}>
-                            <div>
+                            <div className={styles.img1}>
                                 <img src={profitloan1} />
                             </div>
-                            <div>
+                            <div className={styles.img2}>
                                 <img src={profitloan2} />
                             </div>
                         </div>
                         <div className={styles.imageSection2}>
-                            <div>
+                            <div className={styles.img3}>
                                 <img src={profitloan3} />
                             </div>
-                            <div>
+                            <div className={styles.img4}>
                                 <img src={profitloan4} />
                             </div>
                         </div>
@@ -55,18 +71,18 @@ const ProfitLoss = ()=> {
                     </div>
                     <div className="col-12 md:col-6">
                         <div className={styles.imageSection1}>
-                            <div>
+                            <div className={styles.img1}>
                                 <img src={profitloan5} />
                             </div>
-                            <div>
+                            <div className={styles.img2}>
                                 <img src={profitloan6} />
                             </div>
                         </div>
                         <div className={styles.imageSection2}>
-                            <div>
+                            <div className={styles.img3}>
                                 <img src={profitloan7} />
                             </div>
-                            <div>
+                            <div className={styles.img4}>
                                 <img src={profitloan8} />
                             </div>
                         </div>
@@ -78,18 +94,18 @@ const ProfitLoss = ()=> {
                 <div className="grid my-6">
                     <div className="col-12 md:col-6">
                         <div className={styles.imageSection1}>
-                            <div>
+                            <div className={styles.img1}>
                                 <img src={profitloan9} />
                             </div>
-                            <div>
+                            <div className={styles.img2}>
                                 <img src={profitloan10} />
                             </div>
                         </div>
                         <div className={styles.imageSection2}>
-                            <div>
+                            <div className={styles.img3}>
                                 <img src={profitloan11} />
                             </div>
-                            <div>
+                            <div className={styles.img4}>
                                 <img src={profitloan12} />
                             </div>
                         </div>

@@ -10,9 +10,9 @@
 }
 
 .section :global(.p-button:hover), :global(.p-button:focus) {
-    background: #222D39 ;
+    background: #0CBC8B !important;
     border-radius: 11.8163px ;
-    border: 1px solid #222D39 ;
+    border: none !important;
 }
 
 .section :global(.p-button) {

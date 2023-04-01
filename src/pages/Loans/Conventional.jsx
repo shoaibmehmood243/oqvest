@@ -1,12 +1,27 @@
 import { Button } from "primereact/button";
+import { useState } from "react";
 import {  conventionalloan1, conventionalloan2, conventionalloan3, conventionalloan4, conventionalloan5, conventionalloan6, conventionalloan7, conventionalloan8, conventionalLoanHero, rectangleLeft } from "../../assets";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
+import Video from "../../components/common/Video";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
+import VideoDialog from "../../components/common/VideoDialog";
 
 const Conventional = ()=> {
+    const [video, setVideo] = useState(false);
+    const onShow = ()=> {
+        setVideo(true)
+    }
+    const onHide = ()=> {
+        setVideo(false)
+    }
     return (<>
-        <HeroSectionTwo image={conventionalLoanHero} 
+        <VideoDialog
+            videoId="BaedWpuuBsk"
+            visible={video}
+            onHide={onHide}
+        />
+        <HeroSectionTwo handleClick={()=> setVideo(true)} image={conventionalLoanHero} 
             heading={<>Take charge of your financial future with <strong>Conventional Home Loan</strong>.</>}
             subheading="The most popular and versatile home loan in America" />
         <div className={styles.gridSection}>
@@ -16,18 +31,18 @@ const Conventional = ()=> {
                 <div className="grid my-6">
                     <div className="col-12 md:col-6">
                         <div className={styles.imageSection1}>
-                            <div>
+                            <div className={styles.img1}>
                                 <img src={conventionalloan1} />
                             </div>
-                            <div>
+                            <div className={styles.img2}>
                                 <img src={conventionalloan2} />
                             </div>
                         </div>
                         <div className={styles.imageSection2}>
-                            <div>
+                            <div className={styles.img3}>
                                 <img src={conventionalloan3} />
                             </div>
-                            <div>
+                            <div className={styles.img4}>
                                 <img src={conventionalloan4} />
                             </div>
                         </div>
@@ -51,18 +66,18 @@ const Conventional = ()=> {
                     </div>
                     <div className="col-12 md:col-6">
                         <div className={styles.imageSection1}>
-                            <div>
+                            <div className={styles.img1}>
                                 <img src={conventionalloan5} />
                             </div>
-                            <div>
+                            <div className={styles.img2}>
                                 <img src={conventionalloan6} />
                             </div>
                         </div>
                         <div className={styles.imageSection2}>
-                            <div>
+                            <div className={styles.img3}>
                                 <img src={conventionalloan7} />
                             </div>
-                            <div>
+                            <div className={styles.img4}>
                                 <img src={conventionalloan8} />
                             </div>
                         </div>

@@ -2,7 +2,7 @@ import styles from '../../styles/hero.module.css'
 import {Button} from 'primereact/button'
 import { play } from '../../assets';
 
-const HeroSectionTwo = ({image, heading, subheading}) => {
+const HeroSectionTwo = ({image, heading, subheading, handleClick}) => {
     return (
         <div className={`grid max-w-full mb-5 m-0 md:m-0 md:relative ${styles.heroSection}`}>
             <div className={`col-12 md:col-6 px-2 md:pl-8 md:pr-0 ${styles.heroText}`}>
@@ -11,7 +11,7 @@ const HeroSectionTwo = ({image, heading, subheading}) => {
                 <div className={styles.sectionTwo}>
                     <div className='px-4 flex align-items-center gap-3 cursor-pointer mb-3'>
                         <img src={play} />
-                        <span>Watch Video</span>
+                        <span onClick={handleClick}>Watch Video</span>
                     </div>
                     <Button label='Get Pre-approved' />
                     <p>Get pre-approved today. 3 easy steps. No cost/obligations</p>

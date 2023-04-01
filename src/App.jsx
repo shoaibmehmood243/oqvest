@@ -13,6 +13,7 @@ import ProfitLoss from './pages/Loans/ProfitLoss';
 import Private from './pages/Loans/Private';
 import Dscr from './pages/Loans/Dscr';
 import JumboHome from './pages/Loans/JumboHome';
+import Mortgage from './pages/Loans/Mortgage';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/private-loan" element={<Private />} />
         <Route path="/dscr-loan" element={<Dscr />} />
         <Route path="/jumbo-home-loan" element={<JumboHome />} />
+        <Route path="/flex-mortgage-loan" element={<Mortgage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

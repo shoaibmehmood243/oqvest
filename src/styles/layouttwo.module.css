@@ -91,6 +91,70 @@
     padding: 30px 100px;
 }
 
+.mortgageSection {
+    padding: 0 !important;
+}
+
+.section2 {
+    padding: 30px 100px;
+}
+
+.mortgageDetails {
+    width: 90%;
+    margin: auto;
+    padding: 0 0 60px 0px;
+}
+
+.mortgageItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0px;
+}
+
+.mortgageItems li {
+    font-size: 14px !important;
+    width: 75%;
+}
+
+.mortgageItems strong {
+    color: #222D39 !important;
+}
+
+.mortgageItems div {
+    width: 10%;
+    font-size: 8px;
+    font-weight: 500;
+    font-family: Poppins;
+    width: 86.01px;
+    height: 80.72px;
+
+    background: #222D39;
+    color: #FFFFFF;
+    box-shadow: 0px 66.1602px 52.9282px rgba(0, 0, 0, 0.07), 0px 27.6402px 22.1121px rgba(0, 0, 0, 0.0503198), 0px 14.7778px 11.8222px rgba(0, 0, 0, 0.0417275), 0px 8.28429px 6.62743px rgba(0, 0, 0, 0.035), 0px 4.39972px 3.51978px rgba(0, 0, 0, 0.0282725), 0px 1.83082px 1.46466px rgba(0, 0, 0, 0.0196802);
+    border-radius: 6.61602px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mortgageItems button {
+    width: 15%;
+}
+
+.mortgageItems :global(.p-button) {
+    border-radius: 6px !important;
+    color: #FF6C59;
+    border: none;
+    padding: 10px;
+}
+
+.mortgageItems span {
+    font-size: 14px !important;
+}
+
 .detailsSection2 {
     background: #0CBC8B;
     box-shadow: 0px 72.6519px 61.7542px rgba(0, 0, 0, 0.09), 0px 30.3522px 25.7994px rgba(0, 0, 0, 0.0646969), 0px 16.2278px 13.7936px rgba(0, 0, 0, 0.0536497), 0px 9.09715px 7.73258px rgba(0, 0, 0, 0.045), 0px 4.83143px 4.10671px rgba(0, 0, 0, 0.0363503), 0px 2.01047px 1.7089px rgba(0, 0, 0, 0.0253031);
@@ -113,6 +177,15 @@
     margin: 50px 0px;
 }
 
+.detailsSection h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 145%;
+    text-align: center;
+    color: #222D39;
+    margin-bottom: 30px !important;
+}
+
 .detailsSection2 h4 {
     font-style: normal;
     font-weight: 500;
@@ -128,6 +201,36 @@
 .detailsSection2 img {
     width: 100%;
     height: auto;
+}
+
+.detailsSection .pills {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 32px;
+}
+
+.detailsSection .pills div {
+    width: 136px;
+    color: #FFFFFF;
+    height: 32px;
+    background: #222D39;
+    box-shadow: 0px 66.1602px 52.9282px rgba(0, 0, 0, 0.07), 0px 27.6402px 22.1121px rgba(0, 0, 0, 0.0503198), 0px 14.7778px 11.8222px rgba(0, 0, 0, 0.0417275), 0px 8.28429px 6.62743px rgba(0, 0, 0, 0.035), 0px 4.39972px 3.51978px rgba(0, 0, 0, 0.0282725), 0px 1.83082px 1.46466px rgba(0, 0, 0, 0.0196802);
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailsSection .pills p {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 140.5%;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .right {
@@ -149,7 +252,31 @@
     height: 100%;
 }
 
-.detailsSection2 span {
+.mortgage {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+
+.mortgage h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #222D39;
+}
+
+.mortgage p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #59668D;
+    margin-bottom: 80px;
+}
+
+.detailsSection2 .span {
     color: #59668D;
 }
 
@@ -161,16 +288,12 @@
     border: none;
 }
 
-.detailsSection2 :global(.p-button .p-button-label) {
-    color: #FF6C59 !important;
-}
-
-.detailsSection2 :global(.p-button:focus, .p-button:hover) {
-    background: #222D39 !important;
+.detailsSection2 :global(.p-button:focus), .detailsSection2 :global(.p-button:hover) {
+    background: #FF6C59 !important;
     box-shadow: 0px -22.5221px 80.6436px rgba(255, 255, 255, 0.16), 0px -9.40919px 33.691px rgba(255, 255, 255, 0.115017), 0px -5.03061px 18.0128px rgba(255, 255, 255, 0.0953772), 0px -2.82012px 10.0978px rgba(255, 255, 255, 0.08), 0px -1.49774px 5.36288px rgba(255, 255, 255, 0.0646228), 0px -0.623244px 2.23162px rgba(255, 255, 255, 0.0449833);
     border-radius: 66.8398px;
-    color: #FF6C59 !important;
     border: none !important;
+    color: #222D39 !important;
 }
 
 .detailsSection li {
@@ -199,11 +322,10 @@
     border: none;
 }
 
-.detailsSection :global(.p-button:focus, .p-button:hover) {
-    background: #222D39 !important;
+.detailsSection :global(.p-button:focus), .detailsSection :global(.p-button:hover) {
+    background: #FF6C59 !important;
     box-shadow: 0px -22.5221px 80.6436px rgba(255, 255, 255, 0.16), 0px -9.40919px 33.691px rgba(255, 255, 255, 0.115017), 0px -5.03061px 18.0128px rgba(255, 255, 255, 0.0953772), 0px -2.82012px 10.0978px rgba(255, 255, 255, 0.08), 0px -1.49774px 5.36288px rgba(255, 255, 255, 0.0646228), 0px -0.623244px 2.23162px rgba(255, 255, 255, 0.0449833);
     border-radius: 66.8398px;
-    color: #FF6C59 !important;
     border: none !important;
 }
 
@@ -317,9 +439,19 @@
     margin-bottom: 10px;
 }
 
-.imageSection1 div:first-child {
-    width: 281.71px;
-    height: 251px;
+.imageSection1 .img1 {
+    width: 80%;
+    height: 210px;
+}
+.imageSection1 .img2 {
+    width: 20%;
+    height: 210px;
+}
+.imageSection2 .img3 {
+    width: 50%;
+}
+.imageSection2 .img4 {
+    width: 50%;
 }
 
 .gridSection strong {
@@ -353,7 +485,7 @@
 button:hover {
     background: #222D39;
     border-radius: 92px;
-
+    border: none !important;
 }
 
 .cardLayout {
@@ -381,6 +513,26 @@ button:hover {
     width: 415.77px;
     height: 994.54px;
 }
+.mortgageCard {
+    background: #FFFFFF;
+    box-shadow: 0px -12.1949px 57.3878px rgba(0, 0, 0, 0.07), 0px -5.09474px 23.9753px rgba(0, 0, 0, 0.0503198), 0px -2.72389px 12.8183px rgba(0, 0, 0, 0.0417275), 0px -1.52699px 7.18584px rgba(0, 0, 0, 0.035), 0px -0.810974px 3.81635px rgba(0, 0, 0, 0.0282725), 0px -0.337464px 1.58807px rgba(0, 0, 0, 0.0196802);
+    border-radius: 0px 0px 36.5847px 35.8674px;
+    width: 415.77px;
+    height: 600px;
+}
+
+.mortgageCard .image {
+    height: 230px;
+}
+
+.mortgageCard .text {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+    justify-content: space-between;
+}
+
 .image {
     height: 300px;
     position: relative;
@@ -392,16 +544,20 @@ button:hover {
 }
 .text {
     padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: space-between;
 }
 
 .text h3 {
     font-style: normal;
     font-weight: 600;
     font-size: 24.4327px;
-    line-height: 52px;
+    line-height: 34px;
     text-align: center;
     color: #222D39;
-    margin: 0;
+    margin: 0 0 20px 0px;
 }
 
 .text p {
@@ -503,11 +659,35 @@ margin-top: 5px;
     .card {
         width: 100%;
     }
+    .mortgageCard {
+        width: 100%;
+        height: fit-content;
+    }
     .image {
         height: 200px;
     }
-
+    .detailsSection .pills {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .section2 {
+        padding: 30px;
+    }
+    .mortgageItems {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .mortgageItems button {
+        width: 40%;
+    }
+    .mortgageItems li {
+        width: 95%;
+    }
+    .mortgageCard .text {
+        padding: 20px 15px;
+        height: 100%;
+    }
     .text {
-        padding: 30px 20px;
+        padding: 20px 15px;
+        height: 100%;
     }
 }

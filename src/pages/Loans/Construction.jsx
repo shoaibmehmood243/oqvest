@@ -1,11 +1,12 @@
 import { Button } from "primereact/button";
-import { calculator, client1, client2, client3, closing, constrcutionLoan, construction, conventional, dscr, forbes, guarantee, hidden, inc, msn, privacy, rectangleLeft, rectangleRight, service, shield, yahoo } from "../../assets";
+import { calculator, client1, client2, client3, closing, constrcutionLoan, construction, conventional, dpa, dscr, fhaloan, forbes, guarantee, hidden, inc, msn, privacy, rectangleLeft, rectangleRight, service, shield, yahoo } from "../../assets";
 import Hero from "../../components/common/Hero";
 import styles from '../../styles/home.module.css'
 import { Carousel } from 'primereact/carousel';
 import Welcome from "../../components/Home/Welcome";
 import Blog from "../../components/Home/Blog";
 import Rate from "../../components/common/Rate";
+import { Link } from "react-router-dom";
 
 const Construction = ()=> {
     const images = [
@@ -41,18 +42,33 @@ const Construction = ()=> {
     const products = [
         {
             img: conventional,
+            link: '/conventional-loan',
             title: 'Conventional',
             text: 'Full-Doc Loan. Designed for borrowers who can must show enough taxable income to demonstrate the ability to repay the new loan ',
         },
         {
             img: dscr,
+            link: '/dscr-loan',
             title: 'DSCR',
             text: 'Designed for seasoned investors looking for a low-documentation program, but without the hard money interest rates and terms. ',
         },
         {
             img: construction,
+            link: '/construction-loan',
             title: 'Construction',
             text: 'Suitable for those who have a landpiece and want to construct their mortgage there. It helps people to get their dream home if they have land and need financial support',
+        },
+        {
+            img: fhaloan,
+            link: '/profit-loss-loan',
+            title: 'FHA Loan',
+            text: 'For most first-time home buyers and for those whose employment or credit history does not meet the standard conventional loan guidelines.',
+        },
+        {
+            img: dpa,
+            link: '/bank-statement-loan',
+            title: 'DPA',
+            text: 'Down payment assistance (DPA) programs offer loans and grants that can cover part or all of a home buyer’s down payment and closing costs.',
         },
     ]
     const responsiveOptionsProducts = [
@@ -72,19 +88,21 @@ const Construction = ()=> {
             numScroll: 1
         }
     ];
-    const productTemplate = (product) => {
+    const productTemplate = (product)=> {
         return (
-            <div className={` text-center ${styles.productCard}`}>
-                <div className="mb-3">
-                    <img height={60} src={product.img} alt={product.title} className="w-6" />
+            <Link to={product.link}>
+                <div className={` text-center mx-4 ${styles.productCard}`}>
+                    <div className="mb-3">
+                        <img height={60} src={product.img} alt={product.title} className="w-6" />
+                    </div>
+                    <div>
+                        <h4 className="mb-1">{product.title}</h4>
+                        <p className="mt-0 mb-3 text-sm">{product.text}</p>
+                    </div>
                 </div>
-                <div>
-                    <h4 className="mb-1">{product.title}</h4>
-                    <p className="mt-0 mb-3 text-sm">{product.text}</p>
-                </div>
-            </div>
-        );
-    };
+            </Link>
+        )
+    }
     const chooseData = [
         {
             img: guarantee,
@@ -133,7 +151,7 @@ const Construction = ()=> {
         <Hero image={constrcutionLoan} heading={<>Find the best financing options for your <strong>Construction Loan</strong>.</>} subheading="Our construction loan is designed to help you get your project off the ground. Find out how much you can borrow today." />
         <div className={`mt-7 mb-6 md:my-6 ${styles.featured}`}>
             <div className="text-center mb-5">
-                <Button label={` Featured In`} icon={<img height={18} src={shield} />} />
+                <Button className="gap-2" label={` Featured In`} icon={<img height={18} src={shield} />} />
             </div>
             <div style={{maxWidth: '100vw'}} className={styles.images}>
                 <Carousel

@@ -1,11 +1,21 @@
 import { Button } from "primereact/button";
+import { useState } from "react";
 import {  jumboloan1, jumboloan2, jumboloanhero, jumboloan3,  rectangleLeft, jumboloan4, jumboloan5, jumboloan6, jumboloan7, jumboloan8, jumboloan9, jumboloan10 } from "../../assets";
 import Apply from "../../components/common/Apply";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
+import Video from "../../components/common/Video";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
+import VideoDialog from "../../components/common/VideoDialog";
 
 const JumboHome = ()=> {
+    const [video, setVideo] = useState(false);
+    const onShow = ()=> {
+        setVideo(true)
+    }
+    const onHide = ()=> {
+        setVideo(false)
+    }
     const data = [
         {
             image: jumboloan9,
@@ -23,7 +33,13 @@ const JumboHome = ()=> {
         },
     ]
     return (<>
-        <HeroSectionTwo image={jumboloanhero} 
+        <VideoDialog
+            videoId="kcicLM7tw3E"
+            visible={video}
+            onHide={onHide}
+        />
+
+        <HeroSectionTwo handleClick={()=> setVideo(true)} image={jumboloanhero} 
             heading={<>Jumbo Home <strong>Loans</strong></>}
             subheading="Jumbo Home Loans are ideal for borrowers who have a low FICO score, no large down payment, or poor credit history." />
         <div className={styles.gridSection}>
@@ -33,18 +49,18 @@ const JumboHome = ()=> {
                 <div className="grid my-6">
                     <div className="col-12 md:col-6">
                         <div className={styles.imageSection1}>
-                            <div>
+                            <div className={styles.img1}>
                                 <img src={jumboloan1} />
                             </div>
-                            <div>
+                            <div className={styles.img2}>
                                 <img src={jumboloan2} />
                             </div>
                         </div>
                         <div className={styles.imageSection2}>
-                            <div>
+                            <div className={styles.img3}>
                                 <img src={jumboloan3} />
                             </div>
-                            <div>
+                            <div className={styles.img4}>
                                 <img src={jumboloan4} />
                             </div>
                         </div>
@@ -69,18 +85,18 @@ const JumboHome = ()=> {
                     </div>
                     <div className="col-12 md:col-6">
                         <div className={styles.imageSection1}>
-                            <div>
+                            <div className={styles.img1}>
                                 <img src={jumboloan5} />
                             </div>
-                            <div>
+                            <div className={styles.img2}>
                                 <img src={jumboloan6} />
                             </div>
                         </div>
                         <div className={styles.imageSection2}>
-                            <div>
+                            <div className={styles.img3}>
                                 <img src={jumboloan7} />
                             </div>
-                            <div>
+                            <div className={styles.img4}>
                                 <img src={jumboloan8} />
                             </div>
                         </div>
@@ -95,8 +111,8 @@ const JumboHome = ()=> {
             <h1>2 Jumbo Loan Programs to Choose From:</h1>
             <div className={styles.cardGrid}>
                 {
-                    data.map((data)=> (
-                        <div className={styles.card}>
+                    data.map((data, i)=> (
+                        <div key={i} className={styles.card}>
                             <div className={styles.image}>
                                 <img src={data.image} />
                                 <div className="text-right flex justify-content-end mr-2">
@@ -104,8 +120,10 @@ const JumboHome = ()=> {
                                 </div>
                             </div>
                             <div className={styles.text}>
+                                <div>
                                 <h3>{data.title}</h3>
                                 <p>{data.text}</p>
+                                </div>
                                 <div>
                                     <button>{data.btn}</button>
                                 </div>

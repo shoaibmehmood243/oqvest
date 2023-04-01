@@ -1,0 +1,59 @@
+.dialogContainer {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+}
+
+@keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+.container {
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    animation: slide-in .5s ease-in-out;
+
+    box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.04), 0px 1.6711px 33.4221px rgba(0, 0, 0, 0.0287542), 0px 0.893452px 17.869px rgba(0, 0, 0, 0.0238443), 0px 0.500862px 10.0172px rgba(0, 0, 0, 0.02), 0px 0.266004px 5.32008px rgba(0, 0, 0, 0.0161557), 0px 0.11069px 2.21381px rgba(0, 0, 0, 0.0112458);
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        width: 90%;
+    }
+}

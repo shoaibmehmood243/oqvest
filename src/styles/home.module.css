@@ -154,6 +154,10 @@ line-height: 48px;
 
 }
 
+.gridItems p {
+    line-height: 20px;
+}
+
 .gridItems:hover {
     border-top: 3px solid #222D39;
     background: #FFFFFF;
@@ -203,7 +207,7 @@ color: #222D39;
 
 @media screen and (min-width: 1400px) {
     .products {
-        width: 70%;
+        width: 67%;
     }
 }
 

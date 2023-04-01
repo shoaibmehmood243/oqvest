@@ -85,6 +85,10 @@ const Header = () => {
     const [visible, setVisible] = useState(false);
     const [show, setShow] = useState(false);
     const ref = useRef(null);
+    const handleClick = () => {
+        setShow(false);
+        window.scrollTo(0, 0);
+      };
 
     useEffect(() => {
         function handleClickOutside(event) {
@@ -97,30 +101,24 @@ const Header = () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
     }, [ref]);
-    useEffect(() => {
-        function handleClickInside(event) {
-          if (ref.current && !ref.current.contains(event.target)) {
-            setShow(false);
-          }
-        }
-    
-        document.addEventListener('mousedown', handleClickInside);
-    
-        return () => {
-          document.removeEventListener('mousedown', handleClickInside);
-        };
-      }, [ref]);
     return (<>
         <div className={styles.navbar}>
             <div className={styles.header}>
                 <div className='flex justify-content-between lg:justify-content-around gap-4 align-items-center py-2 px-3 md:px-0'>
-                    <img src={logo} />
+                    <Link to='/'>
+                        <img src={logo} />
+                    </Link>
                     <div className={styles.navItems}>
                         <ul className='flex gap-4 align-items-center justify-content-center'>
                             {
                                 navItems.map((item, i) => (
                                     <li key={i} className='flex align-items-center gap-2'>
-                                        <Link to='/'>{item.name}</Link>
+                                        {
+                                            item.items.length > 0 ?
+                                                <span onClick={() => setShow(!show)} className={styles.span}>{item.name}</span>
+                                                :
+                                            <Link to='/'>{item.name}</Link>
+                                        }
                                         {
                                             item.items.length > 0 && (<>
                                                 {
@@ -137,7 +135,7 @@ const Header = () => {
                                                 <ul>
                                                     {
                                                         item.items.map((i, index) => (
-                                                            <li key={index}>
+                                                            <li key={index} onClick={handleClick}>
                                                                 <Link to={i.link}>{i.name}</Link>
                                                             </li>
                                                         ))

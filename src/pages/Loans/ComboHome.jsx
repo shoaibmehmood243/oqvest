@@ -1,12 +1,27 @@
 import { Button } from "primereact/button";
+import { useState } from "react";
 import { comboloan1, comboloan2, comboloan3, comboloan4, comboloanhero, rectangleLeft, rectangleRight, vector } from "../../assets";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
+import Video from "../../components/common/Video";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
+import VideoDialog from "../../components/common/VideoDialog";
 
 const ComboHome = ()=> {
+    const [video, setVideo] = useState(false);
+    const onShow = ()=> {
+        setVideo(true)
+    }
+    const onHide = ()=> {
+        setVideo(false)
+    }
     return (<>
-        <HeroSectionTwo image={comboloanhero} 
+        <VideoDialog
+            videoId="f3FP666KtNk"
+            visible={video}
+            onHide={onHide}
+        />
+        <HeroSectionTwo  handleClick={()=> setVideo(true)} image={comboloanhero} 
             heading="Combo Home Loans"
             subheading="A COMBO loan is the combination of TWO different home loans to purchase a home." />
         <div className={styles.gridSection}>
@@ -23,18 +38,18 @@ const ComboHome = ()=> {
                     </div>
                     <div className="col-12 md:col-6">
                         <div className={styles.imageSection1}>
-                            <div>
+                            <div className={styles.img1}>
                                 <img src={comboloan1} />
                             </div>
-                            <div>
+                            <div className={styles.img2}>
                                 <img src={comboloan2} />
                             </div>
                         </div>
                         <div className={styles.imageSection2}>
-                            <div>
+                            <div className={styles.img3}>
                                 <img src={comboloan3} />
                             </div>
-                            <div>
+                            <div className={styles.img4}>
                                 <img src={comboloan4} />
                             </div>
                         </div>
@@ -69,7 +84,7 @@ const ComboHome = ()=> {
             </div>
         </div>
         <div className={styles.detailsSection2}>
-            <h4 className="text-center my-0"><span>Example 2:</span> Maximize Cash-Out</h4>
+            <h4 className="text-center my-0"><span className={styles.span}>Example 2:</span> Maximize Cash-Out</h4>
             <p className="text-center mt-0">Get more cash-out when refinancing</p>
             <div className="grid align-items-center">
                 <div className="col-12 md:col-7">

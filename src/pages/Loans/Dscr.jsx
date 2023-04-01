@@ -4,10 +4,26 @@ import HeroSectionTwo from "../../components/common/HeroSectionTwo";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
 import {Button} from 'primereact/button'
+import { useState } from "react";
+import Video from "../../components/common/Video";
+import VideoDialog from "../../components/common/VideoDialog";
 
 const Dscr = ()=> {
+    const [video, setVideo] = useState(false);
+    const onShow = ()=> {
+        setVideo(true)
+    }
+    const onHide = ()=> {
+        setVideo(false)
+    }
     return (<>
-        <HeroSectionTwo image={dscrloanhero} 
+        <VideoDialog
+            videoId="8MutFwLHNK4"
+            visible={video}
+            onHide={onHide}
+        />
+
+        <HeroSectionTwo handleClick={()=> setVideo(true)} image={dscrloanhero} 
             heading={<>Debt Servic Coverage Ratio <strong>(DSCR) Loans</strong></>}
             subheading="Based on the home's potential for cash flow, residential investment loans." />
         <div className={styles.gridSection}>
@@ -17,18 +33,18 @@ const Dscr = ()=> {
                 <div className="grid my-6">
                     <div className="col-12 md:col-6">
                         <div className={styles.imageSection1}>
-                            <div>
+                            <div style={{height: '205px'}} className={styles.img1}>
                                 <img src={dscrloan1} />
                             </div>
-                            <div>
+                            <div style={{height: '205px'}} className={styles.img2}>
                                 <img src={dscrloan2} />
                             </div>
                         </div>
                         <div className={styles.imageSection2}>
-                            <div>
+                            <div className={styles.img3}>
                                 <img src={dscrloan3} />
                             </div>
-                            <div>
+                            <div className={styles.img4}>
                                 <img src={dscrloan4} />
                             </div>
                         </div>

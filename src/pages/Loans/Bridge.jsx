@@ -1,12 +1,27 @@
 import { Button } from "primereact/button";
+import { useState } from "react";
 import { bridgeloan1, bridgeloan2, bridgeloan3, bridgeloan4, bridgeloanhero, rectangleLeft, rectangleRight } from "../../assets";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
+import Video from "../../components/common/Video";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
+import VideoDialog from "../../components/common/VideoDialog";
 
 const Bridge = ()=> {
+    const [video, setVideo] = useState(false);
+    const onShow = ()=> {
+        setVideo(true)
+    }
+    const onHide = ()=> {
+        setVideo(false)
+    }
     return (<>
-        <HeroSectionTwo image={bridgeloanhero} 
+        <VideoDialog
+            videoId="PudGpKWT8GE"
+            visible={video}
+            onHide={onHide}
+        />
+        <HeroSectionTwo image={bridgeloanhero}  handleClick={()=> setVideo(true)}
             heading={<>Get the keys to your new home with a mortgage from <strong>Bridge Finance</strong>.</>}
              subheading="Financing designed to let you move into your new dream home now." />
         <div className={styles.gridSection}>
@@ -16,18 +31,18 @@ const Bridge = ()=> {
                 <div className="grid my-6 align-items-center">
                     <div className="col-12 md:col-6">
                         <div className={styles.imageSection1}>
-                            <div>
+                            <div className={styles.img1}>
                                 <img src={bridgeloan1} />
                             </div>
-                            <div>
+                            <div className={styles.img2}>
                                 <img src={bridgeloan2} />
                             </div>
                         </div>
                         <div className={styles.imageSection2}>
-                            <div>
+                            <div className={styles.img3}>
                                 <img src={bridgeloan3} />
                             </div>
-                            <div>
+                            <div className={styles.img4}>
                                 <img src={bridgeloan4} />
                             </div>
                         </div>

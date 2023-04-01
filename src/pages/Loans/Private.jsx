@@ -1,12 +1,28 @@
+import { useState } from "react";
 import {  privateloan1, privateloan2, privateloan3, privateloan4, privateloanhero, rectangleLeft } from "../../assets";
 import Apply from "../../components/common/Apply";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
+import Video from "../../components/common/Video";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
+import VideoDialog from "../../components/common/VideoDialog";
 
 const Private = ()=> {
+    const [video, setVideo] = useState(false);
+    const onShow = ()=> {
+        setVideo(true)
+    }
+    const onHide = ()=> {
+        setVideo(false)
+    }
     return (<>
-        <HeroSectionTwo image={privateloanhero} 
+        <VideoDialog
+            videoId="E9iFA9VWOCk"
+            visible={video}
+            onHide={onHide}
+        />
+
+        <HeroSectionTwo handleClick={()=> setVideo(true)} image={privateloanhero} 
             heading={<>Private Client <strong>Portfolio</strong></>}
             subheading="The quickest route to approval for self-employed house buyers is our P&L financing programme." />
         <div className={styles.gridSection}>
@@ -16,18 +32,18 @@ const Private = ()=> {
                 <div className="grid my-6">
                     <div className="col-12 md:col-6">
                         <div className={styles.imageSection1}>
-                            <div>
+                            <div className={styles.img1}>
                                 <img src={privateloan1} />
                             </div>
-                            <div>
+                            <div className={styles.img2}>
                                 <img src={privateloan2} />
                             </div>
                         </div>
                         <div className={styles.imageSection2}>
-                            <div>
+                            <div className={styles.img3}>
                                 <img src={privateloan3} />
                             </div>
-                            <div>
+                            <div className={styles.img4}>
                                 <img src={privateloan4} />
                             </div>
                         </div>
@@ -89,6 +105,7 @@ const Private = ()=> {
         </div>
         <Apply />
         <Welcome />
+
     </>)
 }
 

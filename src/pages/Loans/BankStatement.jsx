@@ -1,13 +1,28 @@
 import { Button } from "primereact/button";
+import { useState } from "react";
 import { bankloan1, bankloan2, bankloan3, bankloan4, bankloan5, bankloan6, bankloan7, bankloan8, bankloanhero, rectangleLeft, rectangleRight } from "../../assets";
 import Apply from "../../components/common/Apply";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
+import Video from "../../components/common/Video";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
+import VideoDialog from "../../components/common/VideoDialog";
 
 const BankStatement = ()=> {
+    const [video, setVideo] = useState(false);
+    const onShow = ()=> {
+        setVideo(true)
+    }
+    const onHide = ()=> {
+        setVideo(false)
+    }
     return (<>
-        <HeroSectionTwo image={bankloanhero} 
+        <VideoDialog
+            videoId="lG4NBGQxDzA"
+            visible={video}
+            onHide={onHide}
+        />
+        <HeroSectionTwo handleClick={()=> setVideo(true)} image={bankloanhero} 
             heading={<>Bank Statement Home <strong>Loans</strong></>}
             subheading="Designed to finance your home purchase with no questions asked, no due dates and no hassle." />
         <div className={styles.gridSection}>
@@ -17,18 +32,18 @@ const BankStatement = ()=> {
                 <div className="grid my-6">
                     <div className="col-12 md:col-6">
                         <div className={styles.imageSection1}>
-                            <div>
+                            <div className={styles.img1}>
                                 <img src={bankloan1} />
                             </div>
-                            <div>
+                            <div className={styles.img2}>
                                 <img src={bankloan2} />
                             </div>
                         </div>
                         <div className={styles.imageSection2}>
-                            <div>
+                            <div className={styles.img3}>
                                 <img src={bankloan3} />
                             </div>
-                            <div>
+                            <div className={styles.img4}>
                                 <img src={bankloan4} />
                             </div>
                         </div>
@@ -51,18 +66,18 @@ const BankStatement = ()=> {
                     </div>
                     <div className="col-12 md:col-6">
                         <div className={styles.imageSection1}>
-                            <div>
+                            <div className={styles.img1}>
                                 <img src={bankloan5} />
                             </div>
-                            <div>
+                            <div className={styles.img2}>
                                 <img src={bankloan6} />
                             </div>
                         </div>
                         <div className={styles.imageSection2}>
-                            <div>
+                            <div className={styles.img3}>
                                 <img src={bankloan7} />
                             </div>
-                            <div>
+                            <div className={styles.img4}>
                                 <img src={bankloan8} />
                             </div>
                         </div>

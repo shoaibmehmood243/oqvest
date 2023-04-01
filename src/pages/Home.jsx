@@ -46,89 +46,35 @@ const Home = ()=> {
     const products = [
         {
             img: conventional,
-            link: 'conventional-loan',
+            link: '/conventional-loan',
             title: 'Conventional',
             text: 'Full-Doc Loan. Designed for borrowers who can must show enough taxable income to demonstrate the ability to repay the new loan ',
         },
         {
             img: dscr,
-            link: 'dscr-loan',
+            link: '/dscr-loan',
             title: 'DSCR',
             text: 'Designed for seasoned investors looking for a low-documentation program, but without the hard money interest rates and terms. ',
         },
         {
             img: construction,
-            link: 'construction-loan',
+            link: '/construction-loan',
             title: 'Construction',
             text: 'Suitable for those who have a landpiece and want to construct their mortgage there. It helps people to get their dream home if they have land and need financial support',
         },
         {
             img: fhaloan,
-            link: 'profit-loss-loan',
+            link: '/profit-loss-loan',
             title: 'FHA Loan',
             text: 'For most first-time home buyers and for those whose employment or credit history does not meet the standard conventional loan guidelines.',
         },
         {
             img: dpa,
-            link: 'bank-statement-loan',
+            link: '/bank-statement-loan',
             title: 'DPA',
             text: 'Down payment assistance (DPA) programs offer loans and grants that can cover part or all of a home buyer’s down payment and closing costs.',
         },
     ]
-    const PrevArrow = (props) => {
-        const { className, style, onClick } = props;
-        return (
-          <div
-            className={className}
-            style={{ ...style, top: '200px' }}
-            onClick={onClick}
-          >
-            <BsChevronLeft />
-          </div>
-        );
-      };
-      
-      const NextArrow = (props) => {
-        const { className, style, onClick } = props;
-        return (
-          <div
-            className={className}
-            style={{ ...style, top: '200px' }}
-            onClick={onClick}
-          >
-            <BsChevronRight />
-          </div>
-        );
-      };
-    const settings = {
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        prevArrow: <PrevArrow />,
-        nextArrow: <NextArrow />,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              infinite: true,
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              initialSlide: 1,
-              prevArrow: null,
-              nextArrow: null,
-              dots: true
-            }
-          }
-        ]
-      };
       const productSettings = [
         {
             breakpoint: '1199px',
@@ -283,14 +229,16 @@ const Home = ()=> {
                         <div className={styles.feedback}>
                             {
                                 clients.map((data, i)=> (<>
-                                    <h2 className="text-6xl relative m-0" style={{top: '10px', fontFamily: 'auto'}}>“</h2>
-                                    <div key={i} className="flex align-items-center mb-4">
-                                        <div>
-                                            <p className="text-xs m-0">{data.feedback}</p>
-                                            <h6 className="text-sm m-0">{data.name}</h6>
-                                        </div>
-                                        <div>
-                                            <img src={data.img} />
+                                    <div key={i}>
+                                        <h2 className="text-6xl relative m-0" style={{top: '10px', fontFamily: 'auto'}}>“</h2>
+                                        <div key={i} className="flex align-items-center mb-4">
+                                            <div>
+                                                <p className="text-xs m-0">{data.feedback}</p>
+                                                <h6 className="text-sm m-0">{data.name}</h6>
+                                            </div>
+                                            <div>
+                                                <img src={data.img} />
+                                            </div>
                                         </div>
                                     </div>
                                 </>))

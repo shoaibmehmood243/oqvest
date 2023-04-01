@@ -53,7 +53,7 @@ import twitter from './twitter.svg'
 import phoneLight from './phoneLight.svg'
 import msgLight from './msgLight.svg'
 import location from './locaton.svg'
-import shield from './shield-star-line.svg'
+import shield from './shield.svg'
 import card from './card.svg'
 import card1 from './card1.svg'
 import card2 from './card2.svg'
@@ -148,6 +148,17 @@ import dpa from './dpa.svg';
 import blog4 from './blog4.png';
 import blog5 from './blog5.png';
 import blog6 from './blog6.png';
+import mortgageloanhero from './mortgageloanhero.png';
+import mortgageloan1 from './mortgageloan1.png';
+import mortgageloan2 from './mortgageloan2.png';
+import mortgageloan3 from './mortgageloan3.png';
+import mortgageloan4 from './mortgageloan4.png';
+import mortgageloan5 from './mortgageloan5.png';
+import mortgageloan6 from './mortgageloan6.png';
+import mortgageloan7 from './mortgageloan7.png';
+import mortgageloan8 from './mortgageloan8.png';
+import mortgageloan9 from './mortgageloan9.png';
+import mortgageloan10 from './mortgageloan10.png';
 
 export {
     logo,
@@ -299,5 +310,16 @@ export {
     dpa,
     blog4,
     blog5,
-    blog6
+    blog6,
+    mortgageloan1,
+    mortgageloanhero,
+    mortgageloan10,
+    mortgageloan2,
+    mortgageloan3,
+    mortgageloan4,
+    mortgageloan5,
+    mortgageloan6,
+    mortgageloan7,
+    mortgageloan8,
+    mortgageloan9
 }

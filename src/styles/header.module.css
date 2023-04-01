@@ -38,9 +38,10 @@
     list-style: none;
 }
 
-.header a {
+.header a, .header .span {
     text-decoration: none;
     color: #008BF4;
+    cursor: pointer;
 }
 
 .navItems li {
