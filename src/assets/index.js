@@ -159,6 +159,9 @@ import mortgageloan7 from './mortgageloan7.png';
 import mortgageloan8 from './mortgageloan8.png';
 import mortgageloan9 from './mortgageloan9.png';
 import mortgageloan10 from './mortgageloan10.png';
+import hero1 from './hero1.svg';
+import hero2 from './hero2.svg';
+import hero3 from './hero3.svg';
 
 export {
     logo,
@@ -321,5 +324,8 @@ export {
     mortgageloan6,
     mortgageloan7,
     mortgageloan8,
-    mortgageloan9
+    mortgageloan9,
+    hero1,
+    hero2,
+    hero3
 }

@@ -1,17 +1,12 @@
-import { Button } from "primereact/button";
 import { useState } from "react";
 import { comboloan1, comboloan2, comboloan3, comboloan4, comboloanhero, rectangleLeft, rectangleRight, vector } from "../../assets";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
-import Video from "../../components/common/Video";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
 import VideoDialog from "../../components/common/VideoDialog";
 
 const ComboHome = ()=> {
     const [video, setVideo] = useState(false);
-    const onShow = ()=> {
-        setVideo(true)
-    }
     const onHide = ()=> {
         setVideo(false)
     }
@@ -32,11 +27,11 @@ const ComboHome = ()=> {
             <div>
                 <h6 className="my-6">About HELOC Financing </h6>
                 <div className="grid my-5 align-items-center">
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-7">
                         <p className={`${styles.para} mt-0 mb-4`}>Open-end revolving credit with interest-only payments for the first ten years is the Home Equity Line of Credit (HELOC). Along with the Prime rate, the rate varies every month. To gradually lower interest payments, you may pay off this line of credit as rapidly as you choose.</p>
                         <p className={`${styles.para} mt-0 mb-4`}>For the first ten years, a HELOC works similarly to a credit card in that more money becomes accessible for use in emergencies as you reduce the balance.</p>
                     </div>
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-5">
                         <div className={styles.imageSection1}>
                             <div className={styles.img1}>
                                 <img src={comboloan1} />

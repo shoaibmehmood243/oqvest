@@ -86,7 +86,7 @@
     color: #222D39;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 992px) {
     .navItems {
         display: none;
     }

@@ -2,7 +2,6 @@ import { Button } from "primereact/button";
 import { useState } from "react";
 import { rectangleLeft, mortgageloanhero, mortgageloan1, mortgageloan2, mortgageloan3, mortgageloan4, mortgageloan7, mortgageloan8, mortgageloan9, mortgageloan10, rectangleRight, mortgageloan6, mortgageloan5 } from "../../assets";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
-import Video from "../../components/common/Video";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
 import VideoDialog from "../../components/common/VideoDialog";
@@ -111,8 +110,8 @@ const Mortgage = () => {
             </div>
             <div>
                 <h6 className="m-0">Want to close in the name of a trust or LLC?</h6>
-                <div className="grid my-6">
-                    <div className="col-12 md:col-6">
+                <div className="grid my-6 align-items-center">
+                    <div className="col-12 md:col-5">
                         <div className={styles.imageSection1}>
                             <div className={styles.img1}>
                                 <img src={mortgageloan1} />
@@ -130,7 +129,7 @@ const Mortgage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-7">
                         <div>
                             <p className={`${styles.para} mb-4`}>The applicant may close in the name of their privately held trust or LLC under our own portfolio loan programme, the PRIVATE CLIENT PORTFOLIO LOAN PROGRAM.</p>
                             <p className={`${styles.para} mb-4`}>20% is the required minimum down payment for this programme. The price of a legal evaluation of the Trust or LLC paperwork is covered by a small fee.</p>
@@ -172,17 +171,17 @@ const Mortgage = () => {
             <div>
                 <h6>No waiting periods after a recent derogatory credit event </h6>
                 <div className="grid my-5 align-items-center">
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-7">
                         <p className={`mb-4 ${styles.para}`}>If you're one of the millions of Americans who have experienced bankruptcy, a short sale, or a foreclosure, you probably already know that you have to wait a certain amount of time before you can apply for a conventional house loan once more.</p>
                         <p className={`mb-0 ${styles.para}`}>With the help of our FLEX Home Loan, you can resume home ownership without the need for these customary waiting periods as soon as ONE DAY following the incident.</p>
                         <p className={`mt-0 ${styles.para}`}>If the housing event is less than 4 years old, the minimum down payment is 20%, and if it is more than 4 years old, it is 25%.</p>
                     </div>
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-5">
                         <div className={styles.imageSection1}>
                             <div className={styles.img1}>
                                 <img src={mortgageloan7} />
                             </div>
-                            <div className={styles.img2}>
+                            <div style={{height: 'auto'}} className={styles.img2}>
                                 <img src={mortgageloan8} />
                             </div>
                         </div>

@@ -15,7 +15,7 @@ const Welcome = () => {
             <div className="grid max-w-full">
                 <div className="col-12 lg:col-6 ml-2 lg:ml-0">
                     <div className="mt-5">
-                        <h1 className="text-4xl mb-1 mt-0">Ready to buy your dream house??</h1>
+                        <h1 className="text-4xl mb-1 mt-0">Start <strong className="st-1">Saving</strong> with Oqvest' s Expert Help - <strong className="st-2"> Act Now!</strong></h1>
                     </div>
                     <div className="custom-tab-shift my-4">
                         <div className={styles.tabButton}>
@@ -39,6 +39,7 @@ const Welcome = () => {
                                 <Button label='Get my Quote' />
                             </div>}
                         </div>
+                        <p className="welcome-text">Already got one ? <span>Get Your quotes back</span></p>
                     </div>
                 </div>
                 <div className="col-12 lg:col-6">

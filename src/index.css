@@ -6,6 +6,11 @@
     overflow-x: hidden;
 }
 
+body .uwy .uai {
+    left: calc(100vw - 80px) !important;
+    top: calc(80% - 0px) !important;
+}
+
 i {
     font-family: 'primeicons';
 }
@@ -25,6 +30,10 @@ h1, h2, h3, h4, h5, h6, p, span, strong, a, li {
 
 button {
     font-family: Poppins;
+}
+
+.p-button {
+    transition: none !important;
 }
 
 .p-button:focus {
@@ -70,3 +79,75 @@ button {
         width: 280px;
     }
 }
+
+.st-1 {
+    color: #0CBC8B;
+}
+
+.st-2 {
+    color: #FF6C59;
+}
+
+.st-1::after, .st-2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    background-color: transparent !important;
+    z-index: -1;
+}
+
+.welcome-text {
+    font-style: normal;
+font-weight: 400;
+font-size: 20.019px;
+line-height: 30px;
+color: #837F7F;
+}
+
+.welcome-text span {
+    color: #222D39;
+}
+
+ .items {
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+ .items img {
+    height: 20px;
+    width: 20px;
+}
+
+ .items li {
+    list-style: none;
+    font-style: italic;
+    font-size: 14px;
+    display: flex;
+    font-weight: 500;
+    gap: 8px;
+    margin: 14px 0px;
+}
+
+.rotate {
+    animation: rotation 2s;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(-45deg);
+    }
+    to {
+      transform: rotate(45deg);
+    }
+  }
+
+  .linear {
+    animation-timing-function: linear;
+  }
+
+  .infinite {
+    animation-iteration-count: infinite;
+  }

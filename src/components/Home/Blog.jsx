@@ -45,10 +45,11 @@ const Blog = ()=> {
     ]
     return (
         <div className={styles.container}>
-            <h1 className='m-0 text-center'>Knowledge Centre <img height={70} width={100} src={idea} /></h1>
+            <h1 className='m-0 text-center'>Knowledge Centre <img className="rotate linear infinite" height={70} width={100} src={idea} /></h1>
             <div className={`mt-6 ${styles.grid}`}>
                 {
                     data.map((data, i)=> (
+                        <div className='flex justify-content-center'>
                         <div key={i} className={styles.card}>
                             <div>
                                 <img src={data.img} />
@@ -63,6 +64,7 @@ const Blog = ()=> {
                                 <span className={styles.msg}><TbMessageCircle2Filled /> 18</span>
                                 <span className={styles.readMore}><AiOutlineAlignLeft /> Read More</span>
                             </div>
+                        </div>
                         </div>
                     ))
                 }

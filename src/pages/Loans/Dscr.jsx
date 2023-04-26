@@ -1,11 +1,10 @@
-import {  dscrloan1, dscrloan2, dscrloan3, dscrloan4, dscrloanhero, privateloan1, privateloan2, privateloan3, privateloan4, privateloanhero, rectangleLeft } from "../../assets";
+import {  dscrloan1, dscrloan2, dscrloan3, dscrloan4, dscrloanhero, rectangleLeft } from "../../assets";
 import Apply from "../../components/common/Apply";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
 import {Button} from 'primereact/button'
 import { useState } from "react";
-import Video from "../../components/common/Video";
 import VideoDialog from "../../components/common/VideoDialog";
 
 const Dscr = ()=> {
@@ -30,8 +29,8 @@ const Dscr = ()=> {
             <div>
                 <h6 className="m-0">Debt Servic Coverage Ratio (DSCR) Loans </h6>
                 <p className={styles.subheading}>designed for seasoned investors seeking a programme with little documentation but without the hard money interest rates and conditions.</p>
-                <div className="grid my-6">
-                    <div className="col-12 md:col-6">
+                <div className="grid my-6 align-items-center">
+                    <div className="col-12 md:col-5">
                         <div className={styles.imageSection1}>
                             <div style={{height: '205px'}} className={styles.img1}>
                                 <img src={dscrloan1} />
@@ -49,7 +48,7 @@ const Dscr = ()=> {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-7">
                         <div>
                             <p className={`${styles.para} mb-4`}><strong>A DSCR (Debt Service Coverage Ratio)</strong> programme is what this is known as. When an appraisal is requested, a qualified appraiser completes both the normal residential appraisal report and an addendum called a Market Rental Analysis, which offers the typical market rent for comparable homes in the neighbourhood.</p>
                             <p className={styles.para}>The total monthly payment for the new loan is then contrasted with this figure. (For instance, a ratio of 1.0 indicates that the rent will cover the entire additional payment.)</p>

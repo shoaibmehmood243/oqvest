@@ -21,7 +21,7 @@ const Rate = ()=> {
     ]
     return(
         <div className={styles.price}>
-            <h2 className="w-full m-auto md:w-10 lg:w-11 text-center m-3">Find the right rate for you. Get a fast quote in 5 minutes or less. <br />  We are always ready to serve you.</h2>
+            <h2 className="w-full m-auto md:w-10 lg:w-11 text-center m-3">Don't settle for a <strong className="st-1">one-size-fits-all</strong> mortgage rate. Let <strong className="st-2">Oqvest</strong> help you find the perfect fit.</h2>
             <div className="grid mt-6">
                 <div className={`col-12 lg:col-6 `}>
                     <div className={styles.cardDiv}>
@@ -57,9 +57,9 @@ const Rate = ()=> {
                         </div>
                 </div>
                 <div className="col-12 lg:col-6 mt-0 lg:mt-6">
-                    <h3>Get Your Price now with Oqvest</h3>
-                    <p className={`${styles.subheading} w-full md:w-10 lg:w-8`}>Get the best results with us. We offer personal quotes within 5 minutes and help you understand the process all the way. Let your dreams come true!</p>
-                    <Button className="mt-5" label="Want a Quote?" />
+                    <h3>Smart technology <strong className="st-1">+</strong> lower rates = <strong className="st-2">Oqvest</strong></h3>
+                    <p className={`${styles.subheading} w-full md:w-11 lg:w-10`}>If you're in the market for a mortgage, applying with Oqvest could be the smartest move you make. With our AI-powered technology, we're able to offer some of the lowest rates around, customized to fit your unique financial situation. And the best part? Our fast quote process takes just 5 minutes or less, so you can get a personalized rate and be on your way to your dream home in no time. Don't settle for a one-size-fits-all mortgage rate. Let Oqvest help you find the right rate for you.</p>
+                    <Button className="mt-4" label="Want a Quote?" />
                 </div>
             </div>
         </div>

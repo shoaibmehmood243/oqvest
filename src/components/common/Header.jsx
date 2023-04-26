@@ -18,12 +18,7 @@ const Header = () => {
             items: []
         },
         {
-            name: 'Calender Booking',
-            link: '/',
-            items: []
-        },
-        {
-            name: 'Calculators',
+            name: 'Calendly Booking',
             link: '/',
             items: []
         },
@@ -75,11 +70,6 @@ const Header = () => {
                     link: '/jumbo-home-loan'
                 },
             ]
-        },
-        {
-            name: 'Contacts',
-            link: '/',
-            items: []
         }
     ]
     const [visible, setVisible] = useState(false);
@@ -149,7 +139,7 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className='hidden lg:block'>
-                        <Button label='Sign In' />
+                        <Button label='Apply Now' />
                     </div>
                     <div className='block lg:hidden'>
                         <span className='cursor-pointer text-2xl' onClick={() => setVisible(!visible)}>

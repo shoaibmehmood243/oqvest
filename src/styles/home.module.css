@@ -72,7 +72,7 @@ line-height: 48px;
 
 .products {
     padding: 40px 40px 80px 40px;
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
@@ -91,7 +91,6 @@ line-height: 48px;
     background: #FFFFFF;
     box-shadow: 0px 25.413px 75.2977px rgba(0, 0, 0, 0.07), 0px 10.6169px 31.4576px rgba(0, 0, 0, 0.0503198), 0px 5.67632px 16.8187px rgba(0, 0, 0, 0.0417275), 0px 3.1821px 9.42844px rgba(0, 0, 0, 0.035), 0px 1.68999px 5.00737px rgba(0, 0, 0, 0.0282725), 0px 0.703242px 2.08368px rgba(0, 0, 0, 0.0196802);
     border-radius: 30px;
-    margin: 0px 10px;
     padding: 20px;
     height: 100%;
     cursor: pointer;
@@ -222,6 +221,13 @@ color: #222D39;
         flex-basis: calc(45.33% - 10px);
     max-width: calc(50.33% - 10px);
     }
+    .calculate h1 {
+        font-size: 105.663px;
+        line-height: 100px;
+    }
+    .right, .left {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -250,7 +256,6 @@ color: #222D39;
     }
     .productCard {
         margin: 0px;
-        width: 210px !important;
         height: 320px;
     }
     .feedback {

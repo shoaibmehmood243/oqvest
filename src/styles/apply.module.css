@@ -12,7 +12,7 @@
 .section :global(.p-button:hover), :global(.p-button:focus) {
     background: #0CBC8B !important;
     border-radius: 11.8163px ;
-    border: none !important;
+    border: 1px solid #0CBC8B !important;
 }
 
 .section :global(.p-button) {

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { HeroImage } from '../../assets';
+import { HeroImage, hero1, hero2, hero3 } from '../../assets';
 import styles from '../../styles/hero.module.css'
 import { InputMask} from 'primereact/inputmask'
 import {Button} from 'primereact/button'
@@ -12,23 +12,35 @@ const Hero = () => {
     };
     return (
         <div className={`grid max-w-full mb-5 m-0 md:m-0 md:relative ${styles.heroSection}`}>
-            <div className={`col-12 md:col-6 px-2 md:pl-8 md:pr-1 ${styles.heroText}`}>
+            <div className={`col-12 lg:col-6 px-2 md:pl-4 lg:pl-8 md:pr-1 ${styles.heroText}`}>
                 <h1>
                     { activeTab === 1 ? <>
-                        Your Dream Home Awaits - Let <strong className='st-1'> Oqvest</strong> Help You Get There with Our Property Purchase Loans
+                        Looking for your <strong className='st-1'> dream home?</strong> Let <strong className='st-2'>Oqvest</strong> make a difference:
                          </> :
-                        activeTab === 2 ? <>Simplify Your Finances with a <strong>Mortgage Refinance</strong></> :
-                        <>Your Home, Your Future Get Pre-Approved for your <strong>Mortgage</strong> Today</>
+                        activeTab === 2 ? <>Need the <strong className='st-1'>extra cash</strong> or reduce your monthly Payment? See how <strong className='st-2'>Oqvest</strong> Rocks:</> :
+                        <>Get <strong className='st-1'>Pre-approved</strong> today, See the <strong className='st-2'>Oqvest</strong> difference:</>
                     }
                 </h1>
                 <p>
-                    { activeTab === 1 ? <>
-                        Work with Our Experienced Team to Secure Your Financing and Close with Confidence
-                         </> :
-                        activeTab === 2 ? <>Get More Out of Your Home with Refinancing</> :
-                        <>Get Pre-Approved Quickly and Confidently with Our Simple Application Process</>
-                    }
+                    <ul className="items">
+                        {
+                            activeTab === 1 ? <>
+                                <li><img src={hero1} /> Enjoy more savings with our low rates.</li>
+                                <li><img src={hero2} /> Choose from our multiple loan programs to fit your specific needs.</li>
+                                <li><img src={hero3} /> On time closing & Expert support.</li>
+                            </> : activeTab === 2 ? <>
+                                <li><img src={hero1} /> Lowest rates in the industry</li>
+                                <li><img src={hero2} /> Multiple options generally not available at big banks</li>
+                                <li><img src={hero3} /> On time closing & Expert support.</li>
+                            </> : <>
+                                <li><img src={hero1} /> Our low rates helps you maximize your budget</li>
+                                <li><img src={hero2} /> Bid with confidence & Negotiate like a pro</li>
+                                <li><img src={hero3} /> Quick & Easy! Get Started now</li>
+                            </>
+                        }
+                    </ul>
                 </p>
+                <p>“Low rates, <span className='st-2'>big savings</span> – Oqvest has you covered.”</p>
                 <div className={styles.tabShift}>
                     <div className={styles.tabButtons}>
                         <button className={activeTab === 0 ? styles.activeTab : ''} onClick={() => handleTabClick(0)}>Get Pre-approved</button>
@@ -53,7 +65,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className={`col-6 m-0 px-0 hidden md:block ${styles.imageDiv}`}>
+            <div className={`col-6 m-0 px-0 hidden md:hidden lg:block ${styles.imageDiv}`}>
                 <img className="w-full" src={HeroImage} />
             </div>
         </div>

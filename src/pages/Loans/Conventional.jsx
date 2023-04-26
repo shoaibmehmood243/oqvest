@@ -29,7 +29,7 @@ const Conventional = ()=> {
                 <h6 className="m-0">Conventional Home Loans</h6>
                 <p className={styles.subheading}>The most popular and versatile home loan in America</p>
                 <div className="grid my-6">
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-5">
                         <div className={styles.imageSection1}>
                             <div className={styles.img1}>
                                 <img src={conventionalloan1} />
@@ -47,7 +47,7 @@ const Conventional = ()=> {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-7">
                         <div>
                             <p className={`${styles.para} text-sm mt-0 mb-2`}>One of the most popular loan forms is the conventional loan. Most other lending programmes are built around them as the benchmark. They 'conform' to a prescribed set of underwriting requirements established by the two government-sponsored entities Fannie Mae (FNMA) and Freddie Mac, and are referred to as "conforming" loans (FHLMC).</p>
                             <p className={`${styles.para} text-sm mt-0 mb-2`}>Since this is a full-doc loan, the lender must verify each borrower's income and assets in order for the loan to be approved. The borrower must have sufficient taxable income as shown by their tax filings in order to prove their ability to repay the new loan.</p>
@@ -59,12 +59,12 @@ const Conventional = ()=> {
             </div>
             <div>
                 <div className="grid my-5 align-items-center">
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-7">
                         <p className={`${styles.para} mt-0 mb-3 text-sm`}>They can be applied to the financing of homes for principal residence, second homes or holiday homes, and even properties for investment.</p>
                         <p className={`${styles.para} mt-0 mb-3 text-sm`}>As long as the applicant hasn't owned a property in the previous five years, the required down payment is just 3% of the purchase price. The required minimum down payment for seasoned homeowners is 5% of the buying price. The applicant may be able to self-manage their property tax and homeowners insurance costs if they have a 20% or higher down payment and are exempt from paying Private Mortgage Insurance (PMI).</p>
                         <p className={`${styles.para} mt-0 mb-2 text-sm`}>In some cases, if the down payment is at least 10%, conventional financing can be combined with a home equity line of credit (HELOC) to accomplish specific objectives, such as avoiding PMI, simplifying the acquisition of a condominium, or avoiding the headache of jumbo financing. The term for this is "COMBO Financing."</p>
                     </div>
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-5">
                         <div className={styles.imageSection1}>
                             <div className={styles.img1}>
                                 <img src={conventionalloan5} />

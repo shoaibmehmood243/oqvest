@@ -30,7 +30,7 @@ const BankStatement = ()=> {
                 <h6 className="m-0">Bank Statement Home Loans</h6>
                 <p className={styles.subheading}>To qualify for a home loan instead of filing tax returns, use the deposit income from your business bank statements.</p>
                 <div className="grid my-6">
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-5">
                         <div className={styles.imageSection1}>
                             <div className={styles.img1}>
                                 <img src={bankloan1} />
@@ -48,7 +48,7 @@ const BankStatement = ()=> {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-7">
                         <div>
                             <strong>The business owner's secret weapon is what we simply refer to as.</strong>
                             <p className={`${styles.para} mb-4`}>Do you have a minimum of two years of self-employment? You "didn't show enough income on your tax returns," so your bank or credit union has denied you for a traditional home loan</p>
@@ -60,11 +60,11 @@ const BankStatement = ()=> {
             <div>
                 <h6>The Paradox of Being Self-Employed... </h6>
                 <div className="grid my-5 align-items-center">
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-7">
                         <p className={styles.para}>Banks and credit unions are subject to the same tax regulations as business owners. Only your tax returns may be used by banks and mortgage lenders to assess your ability to pay the monthly mortgage payments on a "traditional" home loan (such as a Conventional, FHA, VA, or USDA programme).</p>
                         <p className={styles.para}>In other words, if you claim on your tax returns that you are "broke," your bank or credit union will take the same stance. And a lot of business owners have their applications rejected in this way.</p>
                     </div>
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-5">
                         <div className={styles.imageSection1}>
                             <div className={styles.img1}>
                                 <img src={bankloan5} />

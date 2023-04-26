@@ -30,7 +30,7 @@ const Private = ()=> {
                 <h6 className="m-0">Private Client Portfolio</h6>
                 <p className={styles.subheading}>Our Private Client Portfolio Loan Program is our personalized loan solution designed for the unique lending needs of well-qualified high net-worth individuals.</p>
                 <div className="grid my-6">
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-5">
                         <div className={styles.imageSection1}>
                             <div className={styles.img1}>
                                 <img src={privateloan1} />
@@ -48,7 +48,7 @@ const Private = ()=> {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-7">
                         <div>
                             <p className={`${styles.para} mb-4`}>Many constraints on conventional bank loans are burdensome and frequently do not apply to borrowers with a high level of financial sophistication. These strict restrictions can lead to an unnecessary loan denial.</p>
                             <p className={`${styles.para} mb-4`}>This initiative is not a typical bank loan that a computer underwrites. Machines are not designed to take into consideration the subtleties of an expertly crafted financial portfolio.</p>

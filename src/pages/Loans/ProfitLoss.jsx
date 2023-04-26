@@ -31,7 +31,7 @@ const ProfitLoss = ()=> {
                 <h6 className="m-0">Profit & Loss Statement Home Loans</h6>
                 <p className={styles.subheading}>The quickest route to approval for self-employed house buyers is our P&L financing programme.</p>
                 <div className="grid my-6">
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-5">
                         <div className={styles.imageSection1}>
                             <div className={styles.img1}>
                                 <img src={profitloan1} />
@@ -49,7 +49,7 @@ const ProfitLoss = ()=> {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-7">
                         <div>
                             <p className={`${styles.para} mb-4`}>The US tax code offers business owners a special benefit by allowing them to use deductions to offset a sizable portion of their taxable income, so lowering their overall tax liability.</p>
                             <p className={styles.para}>While the business owner benefits tax-wise from this, the issue frequently comes when the business owner asks for a home loan and is turned down because of insufficient income or a high debt-to-income ratio.</p>
@@ -64,12 +64,12 @@ const ProfitLoss = ()=> {
             <div>
                 <h6>Our P&L Loan Program Solves this Problem </h6>
                 <div className="grid my-5 align-items-center">
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-7">
                         <p className={styles.para}>We allow the business owner to have their qualified tax preparer submit a 1-2 Year Profit and Loss (P&L) Statement as income instead of utilising tax returns, which frequently paints a more realistic picture of the applicant's genuine income profile.</p>
                         <p className={styles.para}> Owner-occupied and second houses are exempt from prepayment penalties, thus the loan can be refinanced if needed as soon as the applicant is approved for a conventional home loan. Many of our clients use this technique to purchase their ideal home, then once they and their tax advisors deem the best moment, they choose to refinance it into a conventional loan. It enables the business owner to assume control and make their own terms for property purchase.</p>
                         <p className={styles.para}>This loan program is similar to our Bank Statement Program, but the documentation requirements are much easier than providing 12-24 months of bank statements.</p>
                     </div>
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-5">
                         <div className={styles.imageSection1}>
                             <div className={styles.img1}>
                                 <img src={profitloan5} />
@@ -91,8 +91,8 @@ const ProfitLoss = ()=> {
             </div>
             <div>
                 <h6 className="m-0">Have you been in business less than 2 years (but over 1 year)?  </h6>
-                <div className="grid my-6">
-                    <div className="col-12 md:col-6">
+                <div className="grid my-6 align-items-center">
+                    <div className="col-12 md:col-5">
                         <div className={styles.imageSection1}>
                             <div className={styles.img1}>
                                 <img src={profitloan9} />
@@ -110,7 +110,7 @@ const ProfitLoss = ()=> {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-7">
                         <div>
                             <p className={`${styles.para} mb-4`}>With a supporting P&L and documentation proving you have at least two years of experience working in your present industry, we can approve this situation.</p>
                             <p className={styles.para}>There are a few lenders who provide this kind of programme, but very few of them have the same level of expertise and track record as we do, making us the reliable experts you need to make this programme work for you.</p>

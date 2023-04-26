@@ -1,9 +1,7 @@
-import { Button } from "primereact/button";
 import { useState } from "react";
 import {  jumboloan1, jumboloan2, jumboloanhero, jumboloan3,  rectangleLeft, jumboloan4, jumboloan5, jumboloan6, jumboloan7, jumboloan8, jumboloan9, jumboloan10 } from "../../assets";
 import Apply from "../../components/common/Apply";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
-import Video from "../../components/common/Video";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
 import VideoDialog from "../../components/common/VideoDialog";
@@ -47,7 +45,7 @@ const JumboHome = ()=> {
                 <h6 className="m-0">Jumbo Home Loans</h6>
                 <p className={styles.subheading}>When you want to go BIG, we provide the funding you need without the headache and red tape of traditional jumbo loans. We are your go-to source for JUMBO loans, providing adaptable solutions to fit a variety of situations. Whether you are self-employed or have a large amount of liquid assets but exhibit little or no income on your tax return, we offer the JUMBO solutions you require up to $20MM and the expertise to deal with unusual situations.</p>
                 <div className="grid my-6">
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-5">
                         <div className={styles.imageSection1}>
                             <div className={styles.img1}>
                                 <img src={jumboloan1} />
@@ -65,7 +63,7 @@ const JumboHome = ()=> {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-7">
                         <div>
                             <strong>WHAT IS A JUMBO LOAN?</strong>
                             <p className={`${styles.para} mb-4`}>Any residential loan whose loan amount exceeds the region's conventional loan size restriction is referred to as a "jumbo house loan." That currently means any loan amount that exceeds $647,200 in the majority of Florida in 2022. When it comes to qualification, jumbo loans can frequently present the greatest difficulties. Due to the fact that Jumbo loans are not insured by Fannie Mae or Freddie Mac, many banks and credit unions that do provide Jumbo financing have a reputation for having extremely strict underwriting requirements. As a result, many otherwise qualified borrowers who would likely be approved for a Conventional loan may find themselves ineligible for a Jumbo loan. The requirements for income eligibility and credit history are stricter than those for a conventional house loan. In comparison to conventional loans, interest rates are frequently higher, and fixed rate terms are frequently unavailable.</p>
@@ -76,14 +74,14 @@ const JumboHome = ()=> {
             <div>
                 <h6>Our P&L Loan Program Solves this Problem </h6>
                 <div className="grid my-5 align-items-center">
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-7">
                         <strong>WHAT IS A JUMBO LOAN?</strong>
                         <p className={`mb-4 ${styles.para}`}>Jumbo financing options, like our COMBO Loan, which combines a sizable conventional loan with a smaller second home equity line of credit, often exist depending on the sales price and the size of your down payment. Both loans concurrently close on the same day. For a side-by-side analysis to see which is a better option for you, speak with your loan originator.</p>
                         <strong>YOUR UNCONVENTIONAL JUMBO EXPERTS</strong>
                         <p className={styles.para}>Our Jumbo programmes are incredibly diverse and offer affordable pricing, unlike those of many banks, credit unions, and lenders, enabling us to take into account a wider range of loan eventualities.</p>
                         <p className={styles.para}>We would enjoy the chance to address all of your inquiries if you're thinking about buying a house, considering Jumbo financing, or just want to weigh your alternatives. You may rely on our knowledge because we fund a sizable quantity of jumbo financing.</p>
                     </div>
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-5">
                         <div className={styles.imageSection1}>
                             <div className={styles.img1}>
                                 <img src={jumboloan5} />

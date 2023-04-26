@@ -40,9 +40,9 @@ color: #818AA6;
 }
 
 .price button:hover, button:focus {
-    background: #0cbc8b !important;
+    background: #2BC7B1 !important;
     color: #FFFFFF !important;
-    border: 1px solid #0cbc8b !important;
+    border: 1px solid #2BC7B1 !important;
 }
 
 .cardDiv {

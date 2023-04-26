@@ -14,8 +14,19 @@ import Private from './pages/Loans/Private';
 import Dscr from './pages/Loans/Dscr';
 import JumboHome from './pages/Loans/JumboHome';
 import Mortgage from './pages/Loans/Mortgage';
+import { useEffect } from 'react';
+import userway from './userway';
 
 function App() {
+  useEffect(()=> {
+    userway?.start()
+    setTimeout(() => {
+      const iconElement = document.querySelector('#userwayAccessibilityIcon');
+      if (iconElement) {
+        iconElement.setAttribute('style', 'background-color: rgb(34, 45, 57) !important;');
+      }
+    }, 2000);
+  }, [])
   return (
     <BrowserRouter>
       <Banner />

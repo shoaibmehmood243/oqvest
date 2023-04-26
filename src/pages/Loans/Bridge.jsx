@@ -29,7 +29,7 @@ const Bridge = ()=> {
                 <h6 className="m-0">Bridge Financing </h6>
                 <p className={styles.subheading}>Are you prepared to close on your new home purchase but your old one has not yet sold? We can assist if your current home has been listed for a while but the closing date for your new home is approaching.</p>
                 <div className="grid my-6 align-items-center">
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-5">
                         <div className={styles.imageSection1}>
                             <div className={styles.img1}>
                                 <img src={bridgeloan1} />
@@ -47,7 +47,7 @@ const Bridge = ()=> {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-7">
                         <div>
                             <strong>Look How It Works</strong>
                             <p className={`${styles.para} mb-4`}>We will finance up to 60% of the combined appraised market value of the two properties through our bridge home loan programme, less any outstanding liens or mortgages on the sold property. When the older home is either owned free and clear or has a lot of equity, this method performs especially well. Even if their home isn't selling right away, many homeowners find that they have a sizable amount of equity when the real estate housing market is strong.</p>

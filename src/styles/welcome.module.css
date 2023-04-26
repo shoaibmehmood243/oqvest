@@ -27,7 +27,6 @@
 button:focus {
     background: #2BC7B1;
     border-radius: 8.34123px 8.34123px 0px 0px;
-    color: #fff;
     font-weight: 700;
 }
 
@@ -67,20 +66,28 @@ button:focus {
 
 @media screen and (max-width: 575px) {
     .inputZip {
-        width: 24rem;
+        width: 100%;
+    }
+
+    .inputZip :global(.p-button .p-button-label) {
+        font-size: 14px;
     }
 
     .tabButton {
-        width: 24rem;
+        width: 100%;
+    }
+
+    .tabButton button {
+        padding: 10px 5px;
     }
 }
 
 @media screen and (max-width: 400px) {
     .inputZip {
-        width: 18rem;
+        width: 100%;
     }
 
     .tabButton {
-        width: 18rem;
+        width: 100%;
     }
 }
