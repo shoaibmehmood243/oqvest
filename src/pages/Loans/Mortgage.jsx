@@ -138,6 +138,7 @@ const Mortgage = () => {
                 </div>
             </div>
         </div>
+        <div className="pt-2 pb-4" style={{ background: 'rgba(153, 153, 153, 0.04)' }}>
         <div className={styles.cardLayout}>
             <h1>2 Jumbo Loan Programs to Choose From:</h1>
             <div className={styles.cardGrid}>
@@ -163,6 +164,7 @@ const Mortgage = () => {
                     ))
                 }
             </div>
+        </div>
         </div>
         <div className={styles.gridSection}>
             <div className={styles.left}>

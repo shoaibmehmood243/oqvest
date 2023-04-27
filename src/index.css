@@ -30,6 +30,9 @@ body .uwy .uai {
     padding: 0.75rem 2rem;
     background: #404F66 !important;
     color: #fff !important;
+    border: none !important;
+    box-shadow: 0px 8.30752px 24.343px rgba(10, 63, 120, 0.165559);
+    font-weight: normal !important;
 }
 
 i {
