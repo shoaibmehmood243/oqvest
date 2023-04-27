@@ -3,6 +3,11 @@
     margin: 100px auto;
 }
 
+.container2 {
+    width: 100%;
+    margin: 0;
+}
+
 .container h1 {
     font-weight: 600;
     font-size: 32px;
@@ -17,7 +22,11 @@
     margin-bottom: 100px;
 }
 
-.grid .card {
+.container2 .card {
+    height: 300px;
+}
+
+.card {
 background: #FFFFFF;
 box-shadow: 0px -4.13292px 47.2334px rgba(0, 0, 0, 0.07), 0px -1.72664px 19.733px rgba(0, 0, 0, 0.0503198), 0px -0.923142px 10.5502px rgba(0, 0, 0, 0.0417275), 0px -0.517506px 5.91435px rgba(0, 0, 0, 0.035), 0px -0.274844px 3.14107px rgba(0, 0, 0, 0.0282725), 0px -0.114369px 1.30707px rgba(0, 0, 0, 0.0196802);
 border-radius: 12px;
@@ -27,7 +36,7 @@ height: 355px;
 margin-bottom: 20px;
 }
 
-.grid img {
+.card img {
     width: 100%;
     border-radius: 12px;
     margin-bottom: 10px;
@@ -47,6 +56,14 @@ color: #818AA6;
 .card h3 {
     font-weight: 600;
 font-size: 18px;
+line-height: 27px;
+
+color: #222D39;
+}
+
+.container2 h3 {
+    font-weight: 600;
+font-size: 16px;
 line-height: 27px;
 
 color: #222D39;

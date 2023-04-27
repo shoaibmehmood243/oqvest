@@ -1,11 +1,8 @@
-import { blog1, blog2, blog3, blog4, blog5, blog6, idea } from '../../assets';
-import styles from '../../styles/blog.module.css';
-import { AiOutlineEye, AiFillHeart, AiOutlineAlignLeft } from 'react-icons/ai'
-import { TbMessageCircle2Filled } from 'react-icons/tb'
-import { BiChevronsRight } from 'react-icons/bi'
+import { blog1, blog2, blog3, blog4, blog5, blog6, idea } from '../../../assets';
+import styles from '../../../styles/blog.module.css';
 import {Link} from 'react-router-dom'
 
-const Blog = () => {
+const BlogSection = () => {
     const data = [
         {
             img: blog1,
@@ -51,36 +48,26 @@ const Blog = () => {
         },
     ]
     return (
-        <div className={styles.container}>
-            <h1 className='m-0 text-center'>Knowledge Centre <img className="rotate" height={70} width={100} src={idea} /></h1>
-            <div className={`mt-6 ${styles.grid}`}>
+        <div className={styles.container2}>
+            <div>
                 {
                     data.map((data, i) => (
                         <Link to={data.link} key={i} style={{textDecoration: 'none'}} className='flex justify-content-center'>
                             <div className={styles.card}>
                                 <div>
-                                    <img src={data.img} />
+                                    <img className='mb-1' src={data.img} />
                                 </div>
                                 <div className={`flex justify-content-between align-items-center ${styles.span1}`}>
                                     <span className='text-base'>{data.date}</span>
-                                    <span className='text-base'><AiOutlineEye /> {data.views} k</span>
                                 </div>
-                                <h3 className='m-0 mb-3'>{data.title}</h3>
-                                <div className={`flex justify-content-start gap-4 align-items-center ${styles.widgets}`}>
-                                    <span className={styles.heart}><AiFillHeart /> 31</span>
-                                    <span className={styles.msg}><TbMessageCircle2Filled /> 18</span>
-                                    <span className={styles.readMore}><AiOutlineAlignLeft /> Read More</span>
-                                </div>
+                                <h3 className='m-0'>{data.title}</h3>
                             </div>
                         </Link>
                     ))
                 }
             </div>
-            <div className={styles.btn}>
-                <p>View More <BiChevronsRight /></p>
-            </div>
         </div>
     )
 }
 
-export default Blog;
+export default BlogSection;

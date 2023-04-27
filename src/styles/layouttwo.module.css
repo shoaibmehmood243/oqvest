@@ -595,6 +595,12 @@ margin-top: 5px;
     bottom: 0;
 }
 
+@media screen and (max-width: 1300px) {
+    .right {
+        left: 81.5%;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .gridSection {
         width: 95%;

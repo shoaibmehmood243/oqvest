@@ -16,6 +16,11 @@ import JumboHome from './pages/Loans/JumboHome';
 import Mortgage from './pages/Loans/Mortgage';
 import { useEffect } from 'react';
 import userway from './userway';
+import BlogDetail1 from './pages/Blogs/BlogDetail1';
+import BlogDetail2 from './pages/Blogs/BlogDetail2';
+import BlogDetail3 from './pages/Blogs/BlogDetail3';
+import BlogDetail4 from './pages/Blogs/BlogDetail4';
+import BlogDetail5 from './pages/Blogs/BlogDetail5';
 
 function App() {
   useEffect(()=> {
@@ -44,6 +49,11 @@ function App() {
         <Route path="/dscr-loan" element={<Dscr />} />
         <Route path="/jumbo-home-loan" element={<JumboHome />} />
         <Route path="/flex-mortgage-loan" element={<Mortgage />} />
+        <Route path='/blog/1' element={<BlogDetail1 />} />
+        <Route path='/blog/2' element={<BlogDetail2 />} />
+        <Route path='/blog/3' element={<BlogDetail3 />} />
+        <Route path='/blog/4' element={<BlogDetail4 />} />
+        <Route path='/blog/5' element={<BlogDetail5 />} />
       </Routes>
       <Footer />
     </BrowserRouter>

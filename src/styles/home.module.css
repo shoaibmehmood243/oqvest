@@ -244,6 +244,12 @@ button:focus {
     }
 }
 
+@media screen and (max-width: 1300px) {
+    .right {
+        left: 81.5%;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .featured .images {
         grid-template-columns: repeat(2, 1fr);

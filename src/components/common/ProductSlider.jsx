@@ -72,7 +72,7 @@ const ProductSlider = () => {
         prevArrow: <SamplePrevArrow />,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
                 }
@@ -99,7 +99,7 @@ const ProductSlider = () => {
                                 <Link className='flex justify-content-center' key={i} to={product.link}>
                                     <div className={` text-center ml-4 mr-3 ${styles.productCard}`}>
                                         <div className="mb-3">
-                                            <img height={60} src={product.img} alt={product.title} className="w-6" />
+                                            <img height={60} src={product.img} alt={product.title} className="w-6 m-auto" />
                                         </div>
                                         <div>
                                             <h4 className="mb-1">{product.title}</h4>
