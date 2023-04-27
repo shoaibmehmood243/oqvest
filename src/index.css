@@ -183,3 +183,22 @@ button {
         transform: rotate(-45deg);
     }
 }
+
+.Es8downQlxiASDyltHtn::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+.Es8downQlxiASDyltHtn::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 6px;
+}
+
+.Es8downQlxiASDyltHtn::-webkit-scrollbar-thumb {
+    background-color: #D5D5D5;
+    border-radius: 6px;
+}
+
+.Es8downQlxiASDyltHtn::-webkit-scrollbar-thumb:hover {
+    background-color: #D5D5D5;
+}

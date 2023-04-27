@@ -1,7 +1,6 @@
 import { logo } from '../../assets'
 import styles from "../../styles/header.module.css"
 import { Link } from 'react-router-dom';
-import { Button } from 'primereact/button'
 import { Sidebar } from 'primereact/sidebar'
 import { useState } from 'react';
 import { RxCross2 } from 'react-icons/rx'
@@ -11,19 +10,25 @@ import { useRef } from 'react';
 import { useEffect } from 'react';
 
 const Header = () => {
+    const handleCalendly = ()=> {
+        window.Calendly.initPopupWidget({url: 'https://calendly.com/shoaibmehmood065'});
+    }
     const navItems = [
         {
             name: 'Home',
             link: '/',
+            click: '',
             items: []
         },
         {
             name: 'Calendly Booking',
-            link: '/',
+            link: '',
+            click: handleCalendly,
             items: []
         },
         {
             name: 'Loans',
+            click: '',
             items: [
                 {
                     name: 'Contruction',
@@ -102,7 +107,7 @@ const Header = () => {
                         <ul className='flex gap-4 align-items-center justify-content-center'>
                             {
                                 navItems.map((item, i) => (
-                                    <li key={i} className='flex align-items-center gap-2'>
+                                    <li key={i} onClick={item.click} className='flex align-items-center gap-2'>
                                         {
                                             item.items.length > 0 ?
                                                 <span onClick={() => setShow(!show)} className={styles.span}>{item.name}</span>
