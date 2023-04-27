@@ -21,7 +21,6 @@ const Hero = () => {
                         <>Get <strong className='st-1'>Pre-approved</strong> today, See the <strong className='st-2'>Oqvest</strong> difference:</>
                     }
                 </h1>
-                <p>
                     <ul className="items">
                         {
                             activeTab === 1 ? <>
@@ -39,7 +38,6 @@ const Hero = () => {
                             </>
                         }
                     </ul>
-                </p>
                 <p>“Low rates, <span className='st-2'>big savings</span> – Oqvest has you covered.”</p>
                 <div className={styles.tabShift}>
                     <div className={styles.tabButtons}>

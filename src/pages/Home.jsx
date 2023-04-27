@@ -1,23 +1,19 @@
 import { Button } from "primereact/button";
-import { calculator, client1, client2, client3, closing, construction, conventional, dpa, dscr, fhaloan, forbes, guarantee, hidden, inc, msn, privacy, rectangleLeft, rectangleRight, service, shield, welcome, yahoo } from "../assets";
+import { calculator, client1, client2, client3, closing, forbes, guarantee, hidden, inc, msn, privacy, rectangleLeft, rectangleRight, service, shield, welcome, yahoo } from "../assets";
 import Hero from "../components/Home/Hero";
 import styles from '../styles/home.module.css'
 import { Carousel } from 'primereact/carousel';
 import Welcome from "../components/Home/Welcome";
 import Blog from "../components/Home/Blog";
 import Rate from "../components/common/Rate";
-import Slider from "react-slick";
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
-import { Link } from "react-router-dom";
+import ProductSlider from "../components/common/ProductSlider";
 
-const Home = ()=> {
+const Home = () => {
     const images = [
-        {src: yahoo},
-        {src: forbes},
-        {src: inc},
-        {src: msn},
+        { src: yahoo },
+        { src: forbes },
+        { src: inc },
+        { src: msn },
     ]
     const template = (image) => {
         return (
@@ -43,70 +39,6 @@ const Home = ()=> {
             numScroll: 1
         }
     ];
-    const products = [
-        {
-            img: conventional,
-            link: '/conventional-loan',
-            title: 'Conventional',
-            text: 'Full-Doc Loan. Designed for borrowers who can must show enough taxable income to demonstrate the ability to repay the new loan ',
-        },
-        {
-            img: dscr,
-            link: '/dscr-loan',
-            title: 'DSCR',
-            text: 'Designed for seasoned investors looking for a low-documentation program, but without the hard money interest rates and terms. ',
-        },
-        {
-            img: construction,
-            link: '/construction-loan',
-            title: 'Construction',
-            text: 'Suitable for those who have a landpiece and want to construct their mortgage there. It helps people to get their dream home if they have land and need financial support',
-        },
-        {
-            img: fhaloan,
-            link: '/profit-loss-loan',
-            title: 'FHA Loan',
-            text: 'For most first-time home buyers and for those whose employment or credit history does not meet the standard conventional loan guidelines.',
-        },
-        {
-            img: dpa,
-            link: '/bank-statement-loan',
-            title: 'DPA',
-            text: 'Down payment assistance (DPA) programs offer loans and grants that can cover part or all of a home buyer’s down payment and closing costs.',
-        },
-    ]
-      const productSettings = [
-        {
-            breakpoint: '1199px',
-            numVisible: 1,
-            numScroll: 1
-        },
-        {
-            breakpoint: '991px',
-            numVisible: 2,
-            numScroll: 1
-        },
-        {
-            breakpoint: '767px',
-            numVisible: 1,
-            numScroll: 1
-        }
-    ];
-    const productTemplate = (product)=> {
-        return (
-            <Link to={product.link}>
-                <div className={` text-center mx-4 ${styles.productCard}`}>
-                    <div className="mb-3">
-                        <img height={60} src={product.img} alt={product.title} className="w-6" />
-                    </div>
-                    <div>
-                        <h4 className="mb-1">{product.title}</h4>
-                        <p className="mt-0 mb-3 text-sm">{product.text}</p>
-                    </div>
-                </div>
-            </Link>
-        )
-    }
     const chooseData = [
         {
             img: guarantee,
@@ -157,7 +89,7 @@ const Home = ()=> {
             <div className="text-center mb-7">
                 <Button className="gap-2" label={`Featured In`} icon={<img height={18} src={shield} />} />
             </div>
-            <div style={{maxWidth: '100vw'}} className={styles.images}>
+            <div style={{ maxWidth: '100vw' }} className={styles.images}>
                 <Carousel
                     value={images}
                     itemTemplate={template}
@@ -174,6 +106,7 @@ const Home = ()=> {
             </div>
         </div>
         <Rate />
+        <div className={styles.calculateSection}>
         <div className={styles.calculate}>
             <div>
                 <div className="text-center">
@@ -184,23 +117,16 @@ const Home = ()=> {
                 <h1>Mortage Calculator</h1>
             </div>
         </div>
-        <div className={` m-auto text-center my-4 ${styles.products}`}>
-            <div className="w-full m-auto text-center md:w-10 lg:w-8 mb-8">
-                <h1 className="m-0 mb-2"><strong className="st-1">Flexible</strong> <strong className="st-2">Mortgage</strong> Solutions</h1>
-                <p className="my-1 text">Discover the wide range of mortgage products available at Oqvest and find the one that suits you best.</p>
-            </div>
-            <div className={`my-4`}>
-                <Carousel circular={true} value={products} numVisible={3} numScroll={3} showIndicators={false} responsiveOptions={productSettings} itemTemplate={productTemplate} />
-            </div>
         </div>
-        <div className="choose">
+        <ProductSlider />
+        <div style={{ background: 'rgba(153, 153, 153, 0.04)' }} className="choose pt-2 pb-6">
             <div className={styles.right}>
                 <img src={rectangleRight} />
             </div>
-            <h1 className="text-center mb-7"><strong className="st-1">Your Mortgage</strong>, <strong className="st-2">Your Choice</strong>: Choose Oqvest</h1>
+            <h1 className="text-center mb-7 mt-0"><strong className="st-1">Your Mortgage</strong>, <strong className="st-2">Your Choice</strong>: Choose Oqvest</h1>
             <div className={` mt-3 ${styles.grid}`}>
                 {
-                    chooseData.map((data, i)=> (
+                    chooseData.map((data, i) => (
                         <div key={i} className={styles.gridItems}>
                             <div>
                                 <img height={60} className='mb-3' src={data.img} />
@@ -222,15 +148,15 @@ const Home = ()=> {
                 <div className="grid max-w-full">
                     <div className="col-12 lg:col-6 mt-5 mb-3 ml-2 lg:ml-0">
                         <h1 className="mb-1">Oqvest: <strong className="st-1">Adored</strong> by <strong className="st-2">Clients</strong></h1>
-                        <p className="mt-0 mb-6" style={{color: '#395F99'}}>See what people are sayinng about us.Our happy customers</p>
+                        <p className="mt-0 mb-6" style={{ color: '#395F99' }}>See what people are sayinng about us.Our happy customers</p>
                         <Button label="Paperless & Quick - Apply Now" />
                     </div>
                     <div className="col-12 lg:col-6">
                         <div className={styles.feedback}>
                             {
-                                clients.map((data, i)=> (<>
+                                clients.map((data, i) => (<>
                                     <div key={i}>
-                                        <h2 className="text-6xl relative m-0" style={{top: '10px', fontFamily: 'auto'}}>“</h2>
+                                        <h2 className="text-6xl relative m-0" style={{ top: '10px', fontFamily: 'auto' }}>“</h2>
                                         <div key={i} className="flex align-items-center mb-4">
                                             <div>
                                                 <p className="text-xs m-0">{data.feedback}</p>
