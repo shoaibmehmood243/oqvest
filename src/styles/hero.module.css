@@ -137,9 +137,9 @@ button:hover {
     border: 2px solid #222D39;
 }
 
-.inputZip button:hover {
+.inputZip button:hover, .inputZip button:focus {
     background: #222D39 !important;
-    border: 1px solid #222D39 !important;
+    border: 2px solid #222D39 !important;
 }
 
 .inputZip :global(._heroText_1loah_15 span) {

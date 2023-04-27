@@ -175,7 +175,7 @@ const Construction = ()=> {
                 <div className="text-center">
                     <img src={calculator} />
                     <h4 className="w-full m-auto my-3 md:w-10 lg:w-8">Make <strong className="st-1">informed decision</strong>, calculate your affordability with Oqvest' s <strong className="st-2">mortgage calculator</strong></h4>
-                    <Button label="Calculate your affordability" />
+                    <Button label="Get Started Now" />
                 </div>
                 <h1>Mortage Calculator</h1>
             </div>

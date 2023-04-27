@@ -45,7 +45,7 @@ const Blog = ()=> {
     ]
     return (
         <div className={styles.container}>
-            <h1 className='m-0 text-center'>Knowledge Centre <img className="rotate linear infinite" height={70} width={100} src={idea} /></h1>
+            <h1 className='m-0 text-center'>Knowledge Centre <img className="rotate" height={70} width={100} src={idea} /></h1>
             <div className={`mt-6 ${styles.grid}`}>
                 {
                     data.map((data, i)=> (

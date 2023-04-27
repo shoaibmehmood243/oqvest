@@ -155,7 +155,7 @@ const Home = ()=> {
         <Hero />
         <div className={`mt-7 mb-6 md:my-6 ${styles.featured}`}>
             <div className="text-center mb-7">
-                <Button className="gap-2" label={` Featured In`} icon={<img height={18} src={shield} />} />
+                <Button className="gap-2" label={`Featured In`} icon={<img height={18} src={shield} />} />
             </div>
             <div style={{maxWidth: '100vw'}} className={styles.images}>
                 <Carousel
@@ -179,7 +179,7 @@ const Home = ()=> {
                 <div className="text-center">
                     <img src={calculator} />
                     <h4 className="w-full m-auto my-3 md:w-10 lg:w-8">Make <strong className="st-1">informed decision</strong>, calculate your affordability with Oqvest' s <strong className="st-2">mortgage calculator</strong></h4>
-                    <Button label="Calculate your affordability" />
+                    <Button label="Get Started Now" />
                 </div>
                 <h1>Mortage Calculator</h1>
             </div>
