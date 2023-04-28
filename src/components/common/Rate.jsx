@@ -22,7 +22,7 @@ const Rate = ()=> {
     return(
         <div className={styles.price}>
             <h2 className="w-full m-auto md:w-10 lg:w-11 text-center m-3">Don't settle for a <strong className="st-1">one-size-fits-all</strong> mortgage rate. Let <strong className="st-2">Oqvest</strong> help you find the perfect fit.</h2>
-            <div className="grid mt-6">
+            <div className="grid mt-3 md:mt-6">
                 <div className={`col-12 lg:col-6 `}>
                     <div className={styles.cardDiv}>
                         {

@@ -10,7 +10,8 @@
 .container .blogImage img {
     height: 100%;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 .container h2 {
@@ -154,4 +155,16 @@ li {
     border: none !important;
     cursor: pointer;
     font-weight: normal !important;
+}
+
+
+@media screen and (max-width: 575px) {
+    .container {
+        margin: 80px auto
+    }
+
+    .container h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
 }

@@ -114,12 +114,12 @@
 
 .productCard {
     background: #FFFFFF;
-    box-shadow: 0px 12.7065px 37.6489px rgba(0, 0, 0, 0.07), 
-    0px 5.30845px 15.7288px rgba(0, 0, 0, 0.0503198), 
-    0px 2.83816px 8.40934px rgba(0, 0, 0, 0.0417275), 
-    0px 1.59105px 4.71422px rgba(0, 0, 0, 0.035), 
-    0px 0.844992px 2.50369px rgba(0, 0, 0, 0.0282725), 
-    0px 0.351621px 1.04184px rgba(0, 0, 0, 0.0196802);
+    box-shadow: 0px 12.7065px 37.6489px rgba(0, 0, 0, 0.07),
+        0px 5.30845px 15.7288px rgba(0, 0, 0, 0.0503198),
+        0px 2.83816px 8.40934px rgba(0, 0, 0, 0.0417275),
+        0px 1.59105px 4.71422px rgba(0, 0, 0, 0.035),
+        0px 0.844992px 2.50369px rgba(0, 0, 0, 0.0282725),
+        0px 0.351621px 1.04184px rgba(0, 0, 0, 0.0196802);
     border-radius: 30px;
     padding: 20px;
     height: 100%;
@@ -271,10 +271,11 @@ button:focus {
     .left {
         display: none;
     }
+
     .products :global(.slick-prev) {
         left: -25px;
     }
-    
+
     .products :global(.slick-next) {
         right: -25px;
     }
@@ -282,12 +283,13 @@ button:focus {
 
 @media screen and (max-width: 575px) {
     .products :global(.slick-prev) {
-    left: 0;
-}
+        left: 10px;
+    }
 
-.products :global(.slick-next) {
-    right: 0;
-}
+    .products :global(.slick-next) {
+        right: 10px;
+    }
+
     .calculate {
         padding: 60px 10px;
     }
@@ -310,6 +312,10 @@ button:focus {
 
     .gridItems {
         height: 300px;
+        border-top: 3px solid #222D39;
+        background: #FFFFFF;
+        border-radius: 5px 5px 20px 20px;
+        box-shadow: 0px -7px 193px rgba(116, 193, 234, 0.11), 0px -2.92443px 80.6308px rgba(116, 193, 234, 0.079074), 0px -1.56354px 43.1091px rgba(116, 193, 234, 0.0655718), 0px -0.876509px 24.1666px rgba(116, 193, 234, 0.055), 0px -0.465507px 12.8347px rgba(116, 193, 234, 0.0444282), 0px -0.193708px 5.34081px rgba(116, 193, 234, 0.030926);
     }
 
     .products {
@@ -328,11 +334,24 @@ button:focus {
     }
 
     .featured .images {
-        grid-template-columns: repeat(1, 1fr);
+        margin: 30px 0px;
     }
 
     .right,
     .left {
         display: none;
+    }
+
+    .calculateSection h4 {
+        line-height: 40px;
+    }
+
+    .products h1 {
+        font-size: 24px;
+    }
+
+    .clients h1 {
+        font-size: 28px;
+        line-height: 38px;
     }
 }

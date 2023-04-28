@@ -52,13 +52,13 @@ const Blog = () => {
     ]
     return (
         <div className={styles.container}>
-            <h1 className='m-0 text-center'>Knowledge Centre <img className="rotate" height={70} width={100} src={idea} /></h1>
+            <h1 className='m-0 px-2 md:px-0 text-center'>Knowledge Centre <img className="rotate" height={70} width={100} src={idea} /></h1>
             <div className={`mt-6 ${styles.grid}`}>
                 {
                     data.map((data, i) => (
                         <Link to={data.link} key={i} style={{textDecoration: 'none'}} className='flex justify-content-center'>
                             <div className={styles.card}>
-                                <div>
+                                <div className={styles.blogImage}>
                                     <img src={data.img} />
                                 </div>
                                 <div className={`flex justify-content-between align-items-center ${styles.span1}`}>

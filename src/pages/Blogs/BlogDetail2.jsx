@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../../styles/blogDetail.module.css';
 import BlogSection from './sections/BlogSection';
 import { blog2 } from '../../assets';
@@ -7,12 +7,18 @@ import { RiFireFill } from 'react-icons/ri'
 import { AiFillHeart } from "react-icons/ai";
 import { TbMessageCircle2Filled } from "react-icons/tb";
 import CommentForm from './sections/CommentForm';
+import { Tooltip } from 'primereact/tooltip';
 
 const BlogDetail2 = () => {
+  const [copied, setCopied] = useState(false);
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(window.location.href);
+    setCopied(true);
+  };
   return (
     <div className={styles.container}>
       <div className='grid'>
-        <div className='lg:col-9 pr-0 md:pr-5'>
+        <div className='col-12 lg:col-9 pr-0 md:pr-5'>
           <h2>Article</h2>
           <div className={styles.blogImage}>
             <img src={blog2} />
@@ -31,9 +37,6 @@ const BlogDetail2 = () => {
                 <span className={styles.blue}>
                   <TbMessageCircle2Filled /> 18
                 </span>
-                <span className={styles.green}>
-                  <BsShareFill /> Share
-                </span>
               </div>
             </div>
           </div>
@@ -43,7 +46,8 @@ const BlogDetail2 = () => {
               </h1>
             </div>
             <div className='col-12 md:col-4 text-right'>
-              <div className={styles.shareBtn}>
+              <Tooltip content={copied ? 'Copied' : 'Copy to clipboard'} target=".sharebtn" />
+              <div data-pr-position="top" onClick={copyToClipboard} style={{ cursor: 'pointer' }} className={`sharebtn ${styles.shareBtn}`}>
                 <BsShare /> Share Now
               </div>
             </div>
@@ -62,10 +66,10 @@ const BlogDetail2 = () => {
             <h5>DTI Example</h5>
             <p>Let’s take a look at an example. Imagine that you have a total monthly gross income of $4,000. Say that you have the following monthly debts:</p>
             <ul>
-                <li>Rent: $500 </li>
-                <li>Student loan minimum payment: $150</li>
-                <li>Auto loan minimum payment: $250</li>
-                <li>Credit card minimum payment: $100</li>
+              <li>Rent: $500 </li>
+              <li>Student loan minimum payment: $150</li>
+              <li>Auto loan minimum payment: $250</li>
+              <li>Credit card minimum payment: $100</li>
             </ul>
             <p>In this example, you’d first add up all of your debts for a total of $1,000. Then divide $1,000 by your total gross income, $4,000. Your DTI ratio is 0.25, or 25%.</p>
             <h2>Paying Off Your Student Loans</h2>
@@ -76,9 +80,9 @@ const BlogDetail2 = () => {
             <p>Buying a home while still having student loan debt can be a challenging process, but it's not impossible. By working with a mortgage broker like Oqvest, you can get the guidance you need to navigate the process successfully. Our team of mortgage</p>
           </div>
         </div>
-        <div className='lg:col-3'>
-          <h2>Featured Articles</h2>
-          <BlogSection />
+        <div className='col-12 lg:col-3'>
+          <h2 className='text-center md:text-left'>Featured Articles</h2>
+          <BlogSection id={2} />
         </div>
       </div>
       <CommentForm />

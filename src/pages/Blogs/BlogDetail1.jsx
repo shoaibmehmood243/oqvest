@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../../styles/blogDetail.module.css';
 import BlogSection from './sections/BlogSection';
 import { blog1 } from '../../assets';
@@ -7,12 +7,18 @@ import { RiFireFill } from 'react-icons/ri'
 import { AiFillHeart } from "react-icons/ai";
 import { TbMessageCircle2Filled } from "react-icons/tb";
 import CommentForm from './sections/CommentForm';
+import { Tooltip } from 'primereact/tooltip';
 
 const BlogDetail1 = () => {
+  const [copied, setCopied] = useState(false);
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(window.location.href);
+    setCopied(true);
+  };
   return (
     <div className={styles.container}>
       <div className='grid'>
-        <div className='lg:col-9 pr-0 md:pr-5'>
+        <div className='col-12 lg:col-9 pr-0 md:pr-5'>
           <h2>Article</h2>
           <div className={styles.blogImage}>
             <img src={blog1} />
@@ -31,9 +37,6 @@ const BlogDetail1 = () => {
                 <span className={styles.blue}>
                   <TbMessageCircle2Filled /> 18
                 </span>
-                <span className={styles.green}>
-                  <BsShareFill /> Share
-                </span>
               </div>
             </div>
           </div>
@@ -44,7 +47,8 @@ const BlogDetail1 = () => {
               </h1>
             </div>
             <div className='col-12 md:col-4 text-right'>
-              <div className={styles.shareBtn}>
+              <Tooltip content={copied ? 'Copied' : 'Copy to clipboard'} target=".sharebtn" />
+              <div data-pr-position="top" onClick={copyToClipboard} style={{ cursor: 'pointer' }} className={`sharebtn ${styles.shareBtn}`}>
                 <BsShare /> Share Now
               </div>
             </div>
@@ -111,9 +115,9 @@ const BlogDetail1 = () => {
             <p>Some buyers believe that they might not qualify for first-time buyer programs. If you aren’t sure whether you qualify, the best thing to do is talk to a Home Loan Expert at Rocket Mortgage. They can take a look at your unique situation and point you in the right direction.</p>
           </div>
         </div>
-        <div className='lg:col-3'>
-          <h2>Featured Articles</h2>
-          <BlogSection />
+        <div className='col-12 lg:col-3'>
+          <h2 className='text-center md:text-left'>Featured Articles</h2>
+          <BlogSection id={1} />
         </div>
       </div>
       <CommentForm />

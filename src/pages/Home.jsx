@@ -85,7 +85,7 @@ const Home = () => {
     ]
     return (<>
         <Hero />
-        <div className={`mt-7 mb-6 md:my-6 ${styles.featured}`}>
+        <div className={`mt-7 mb-2 md:mb-6 md:my-6 ${styles.featured}`}>
             <div className="text-center mb-7">
                 <Button className="gap-2" label={`Featured In`} icon={<img height={18} src={shield} />} />
             </div>
@@ -123,8 +123,8 @@ const Home = () => {
             <div className={styles.right}>
                 <img src={rectangleRight} />
             </div>
-            <h1 className="text-center mb-7 mt-0"><strong className="st-1">Your Mortgage</strong>, <strong className="st-2">Your Choice</strong>: Choose Oqvest</h1>
-            <div className={` mt-3 ${styles.grid}`}>
+            <h1 className="text-center mb-2 md:mb-7 mt-0"><strong className="st-1">Your Mortgage</strong>, <strong className="st-2">Your Choice</strong>: Choose Oqvest</h1>
+            <div className={`mt-6 md:mt-3 ${styles.grid}`}>
                 {
                     chooseData.map((data, i) => (
                         <div key={i} className={styles.gridItems}>
@@ -143,10 +143,10 @@ const Home = () => {
                 <img src={rectangleLeft} />
             </div>
         </div>
-        <div className={`${styles.clients} mb-0 mt-6 md:my-6`}>
+        <div className={`${styles.clients} mb-0 mt-0 md:mt-6 md:my-6`}>
             <div className="w-11 md:w-10 lg:w-9 m-auto">
                 <div className="grid max-w-full">
-                    <div className="col-12 lg:col-6 mt-5 mb-3 ml-2 lg:ml-0">
+                    <div className="col-12 lg:col-6 mt-2 md:mt-5 mb-3 ml-2 lg:ml-0">
                         <h1 className="mb-1">Oqvest: <strong className="st-1">Adored</strong> by <strong className="st-2">Clients</strong></h1>
                         <p className="mt-0 mb-6" style={{ color: '#395F99' }}>See what people are sayinng about us.Our happy customers</p>
                         <Button label="Paperless & Quick - Apply Now" />

@@ -81,6 +81,7 @@ button:focus {
 
     .tabButton button {
         padding: 10px 5px;
+        font-size: 11px;
     }
 }
 

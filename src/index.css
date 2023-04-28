@@ -115,6 +115,13 @@ button {
     .p-dialog {
         width: 280px;
     }
+    .items li {
+        font-size: 14px !important;
+    }
+    .choose h1 {
+        font-size: 24px;
+        line-height: 35px;
+    }
 }
 
 .st-1 {

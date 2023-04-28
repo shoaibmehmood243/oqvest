@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../../styles/blogDetail.module.css';
 import BlogSection from './sections/BlogSection';
 import { blog6 } from '../../assets';
@@ -7,12 +7,18 @@ import { RiFireFill } from 'react-icons/ri'
 import { AiFillHeart } from "react-icons/ai";
 import { TbMessageCircle2Filled } from "react-icons/tb";
 import CommentForm from './sections/CommentForm';
+import { Tooltip } from 'primereact/tooltip';
 
 const BlogDetail6 = () => {
+  const [copied, setCopied] = useState(false);
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(window.location.href);
+    setCopied(true);
+  };
   return (
     <div className={styles.container}>
       <div className='grid'>
-        <div className='lg:col-9 pr-0 md:pr-5'>
+        <div className='col-12 lg:col-9 pr-0 md:pr-5'>
           <h2>Article</h2>
           <div className={styles.blogImage}>
             <img src={blog6} />
@@ -31,9 +37,6 @@ const BlogDetail6 = () => {
                 <span className={styles.blue}>
                   <TbMessageCircle2Filled /> 18
                 </span>
-                <span className={styles.green}>
-                  <BsShareFill /> Share
-                </span>
               </div>
             </div>
           </div>
@@ -43,7 +46,8 @@ const BlogDetail6 = () => {
               </h1>
             </div>
             <div className='col-12 md:col-4 text-right'>
-              <div className={styles.shareBtn}>
+              <Tooltip content={copied ? 'Copied' : 'Copy to clipboard'} target=".sharebtn" />
+              <div data-pr-position="top" onClick={copyToClipboard} style={{ cursor: 'pointer' }} className={`sharebtn ${styles.shareBtn}`}>
                 <BsShare /> Share Now
               </div>
             </div>
@@ -61,24 +65,24 @@ const BlogDetail6 = () => {
             <p>The first number, 29, represents your housing expense ratio. This is calculated by dividing your mortgage payment (principal, interest, real estate taxes, homeowners insurance and, if applicable, homeowners association dues and mortgage insurance) into your gross monthly income and converting it to a percentage.</p>
             <p>It’s defined by the following formula:</p>
             <div className='w-full md:w-10 lg:w-8 mx-auto text-center my-5'>
-                <p style={{fontStyle: 'italic', fontWeight: '500'}} className='my-1'>Principal + Interest + Property Taxes + Insurance (Homeowners & Mortgage)
-                    + Homeowners Association Dues</p>
-                <div className='flex gap-1 align-items-center w-full'>
-                    <hr style={{background: '#000', height: '2px'}} className='w-full' />
-                    <span>*100</span>
-                </div>
-                <p style={{fontStyle: 'italic', fontWeight: '500'}} className='my-1'>Gross Monthly Income</p>
+              <p style={{ fontStyle: 'italic', fontWeight: '500' }} className='my-1'>Principal + Interest + Property Taxes + Insurance (Homeowners & Mortgage)
+                + Homeowners Association Dues</p>
+              <div className='flex gap-1 align-items-center w-full'>
+                <hr style={{ background: '#000', height: '2px' }} className='w-full' />
+                <span>*100</span>
+              </div>
+              <p style={{ fontStyle: 'italic', fontWeight: '500' }} className='my-1'>Gross Monthly Income</p>
             </div>
             <p>The 41 represents your total DTI after all your other debts are added, including revolving debt (credit cards and other lines of credit) and installment debt – mortgage, car payment, student loans, etc.
-                That equation is as follows:
+              That equation is as follows:
             </p>
             <div className='w-full md:w-10 lg:w-8 mx-auto text-center my-5'>
-                <p style={{fontStyle: 'italic', fontWeight: '500'}} className='my-1'>Installment Debt + Revolving Debt Payments</p>
-                <div className='flex gap-1 align-items-center w-full'>
-                    <hr style={{background: '#000', height: '2px'}} className='w-full' />
-                    <span>*100</span>
-                </div>
-                <p style={{fontStyle: 'italic', fontWeight: '500'}} className='my-1'>Gross Monthly Income</p>
+              <p style={{ fontStyle: 'italic', fontWeight: '500' }} className='my-1'>Installment Debt + Revolving Debt Payments</p>
+              <div className='flex gap-1 align-items-center w-full'>
+                <hr style={{ background: '#000', height: '2px' }} className='w-full' />
+                <span>*100</span>
+              </div>
+              <p style={{ fontStyle: 'italic', fontWeight: '500' }} className='my-1'>Gross Monthly Income</p>
             </div>
             <p>The 29/41 rule is important to know when thinking about your mortgage qualification because DTI helps lenders determine your ability to pay your mortgage. Although higher housing expense and DTI ratios are allowed under many loan types (including conventional, FHA, USDA and VA loans), the 29/41 rule provides a good starting point. You need to calculate how much house you can afford while maintaining a wide range of loan options.</p>
             <p>Make sure your mortgage payment (principal, interest, taxes, insurance and homeowners association dues) is no more than 29% of your gross monthly income. Also make sure your total monthly debt (mortgage plus car loans, student debts, etc.) is no more than 41% of your total monthly income.</p>
@@ -88,24 +92,24 @@ const BlogDetail6 = () => {
             <strong className='mb-0'>Step 1: Add Up All Of Your Monthly Debts</strong>
             <p className='mt-1'>Your debt payments could include:</p>
             <ul>
-                <li>Monthly rent or house payments</li>
-                <li>Monthly child support payments or alimony</li>
-                <li>Student loan payments</li>
-                <li>Car payments</li>
-                <li>Monthly credit card minimum payments</li>
-                <li>Any other debts you might have</li>
+              <li>Monthly rent or house payments</li>
+              <li>Monthly child support payments or alimony</li>
+              <li>Student loan payments</li>
+              <li>Car payments</li>
+              <li>Monthly credit card minimum payments</li>
+              <li>Any other debts you might have</li>
             </ul>
             <p>You don’t need to add in: </p>
             <ul>
-                <li>Grocery bills</li>
-                <li>Utility bills</li>
-                <li>Taxes</li>
-                <li>Any other bills that may vary month to month</li>
+              <li>Grocery bills</li>
+              <li>Utility bills</li>
+              <li>Taxes</li>
+              <li>Any other bills that may vary month to month</li>
             </ul>
             <strong>Step 2: Divide Your Monthly Debts By Your Monthly Gross Income</strong>
             <p>Next, do a simple calculation. For example, let’s say your debts add up to $2,000 per month. If your monthly gross income (your before-tax income) is $6,000 per month, then your DTI ratio is 0.33, or 33%.</p>
             <h2>Home Buyer Education
-                Other Factors That Determine How Much Home You Can Afford
+              Other Factors That Determine How Much Home You Can Afford
             </h2>
             <p>Although DTI and housing expense ratio are important factors in mortgage qualification, there are other things that impact your monthly mortgage payment and how much you can afford.</p>
             <p>What follows are several factors to keep in mind before you hit the pavement looking for a new home.</p>
@@ -122,16 +126,16 @@ const BlogDetail6 = () => {
             <p>You might think you need to plunk down 20% of your purchase price for a down payment, but that’s actually not true. You can get a conventional loan (a loan backed by Fannie Mae or Freddie Mac) for as little as 3% down.</p>
             <p>That’s not to say there aren’t advantages to a higher down payment. For example:</p>
             <ul>
-                <li>Lower interest rates: For starters, interest rates are decided on two factors: down payment and median FICO® Score. The higher your down payment is, the better your interest rate will be. If a lender doesn’t have to loan as much money, the investment is considered a better risk.</li>
-                <li>No mortgage insurance: If you put down less than 20%, you’ll likely have to pay for mortgage insurance, which can involve a monthly fee as well as an upfront fee depending on the loan option you qualify for. Mortgage insurance protects your lender and the mortgage investor if you don’t make payments and default on your loan.</li>
+              <li>Lower interest rates: For starters, interest rates are decided on two factors: down payment and median FICO® Score. The higher your down payment is, the better your interest rate will be. If a lender doesn’t have to loan as much money, the investment is considered a better risk.</li>
+              <li>No mortgage insurance: If you put down less than 20%, you’ll likely have to pay for mortgage insurance, which can involve a monthly fee as well as an upfront fee depending on the loan option you qualify for. Mortgage insurance protects your lender and the mortgage investor if you don’t make payments and default on your loan.</li>
             </ul>
             <p>As you determine how much house you can afford, remember to factor in down payments, especially if you’re trying to afford the 20% to avoid PMI.</p>
             <h5>Extra Costs</h5>
             <p>In addition to the cost of your down payment and any private mortgage insurance, you’ll also need to consider homeowners insurance, taxes and closing costs:</p>
             <ul>
-                <li>Homeowners insurance: Your homeowners insurance amount depends on where you live, your neighborhood and the type of home you buy. Homeowners insurance calculations also consider the value of your property, potential rebuild costs and the value of your at-risk assets. It’s best to call an insurance agent to get an idea of what your homeowners insurance amount could be.</li>
-                <li>Property taxes: If you own property, you pay property taxes, which amount to your property’s assessed value multiplied by the local tax rate. You can ask your local tax assessor for more information.</li>
-                <li>Closing costs: Closing costs must be paid during closing, the last step in the home buying process. Your lender will give you an estimate of your closing costs. These include the loan origination fee, appraisal fees, title search fees, credit report charges and more. Typical closing costs on a home purchase can be anywhere from 3 – 6%.</li>
+              <li>Homeowners insurance: Your homeowners insurance amount depends on where you live, your neighborhood and the type of home you buy. Homeowners insurance calculations also consider the value of your property, potential rebuild costs and the value of your at-risk assets. It’s best to call an insurance agent to get an idea of what your homeowners insurance amount could be.</li>
+              <li>Property taxes: If you own property, you pay property taxes, which amount to your property’s assessed value multiplied by the local tax rate. You can ask your local tax assessor for more information.</li>
+              <li>Closing costs: Closing costs must be paid during closing, the last step in the home buying process. Your lender will give you an estimate of your closing costs. These include the loan origination fee, appraisal fees, title search fees, credit report charges and more. Typical closing costs on a home purchase can be anywhere from 3 – 6%.</li>
             </ul>
             <h2>Conclusion</h2>
             <p>Ultimately, how much home you can afford depends on your financial situation and preferences. It requires a more comprehensive decision than just how much money you want to spend on mortgage payments each month.</p>
@@ -139,9 +143,9 @@ const BlogDetail6 = () => {
             <p>A vital step in figuring out how much you’re able to spend on a home is seeking out mortgage approval. Get approved with Oqvest topday.</p>
           </div>
         </div>
-        <div className='lg:col-3'>
-          <h2>Featured Articles</h2>
-          <BlogSection />
+        <div className='col-12 lg:col-3'>
+          <h2 className='text-center md:text-left'>Featured Articles</h2>
+          <BlogSection id={6} />
         </div>
       </div>
       <CommentForm />

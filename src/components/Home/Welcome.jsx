@@ -11,11 +11,11 @@ const Welcome = () => {
         setActiveTab(tabIndex);
     };
     return (
-        <div className="w-full md:w-10 lg:w-9 m-auto mb-7 mt-2 md:my-7">
-            <div className="grid max-w-full">
+        <div className="w-full md:w-10 lg:w-9 m-auto mb-2 md:mb-7 mt-2 md:my-7">
+            <div className="grid max-w-full px-3 flex-column-reverse md:flex-row md:px-0">
                 <div className="col-12 lg:col-6 ml-2 lg:ml-0">
                     <div className="mt-5">
-                        <h1 className="text-4xl mb-1 mt-0">Start <strong className="st-1">Saving</strong> with Oqvest' s Expert Help - <strong className="st-2"> Act Now!</strong></h1>
+                        <h1 className="text-2xl md:text-4xl mb-1 mt-0">Start <strong className="st-1">Saving</strong> with Oqvest' s Expert Help - <strong className="st-2"> Act Now!</strong></h1>
                     </div>
                     <div className="custom-tab-shift my-4">
                         <div className={styles.tabButton}>

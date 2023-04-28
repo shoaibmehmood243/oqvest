@@ -101,7 +101,7 @@ const Header = () => {
             <div className={styles.header}>
                 <div className='flex justify-content-between lg:justify-content-around gap-4 align-items-center py-2 px-3 md:px-0'>
                     <Link to='/'>
-                        <img src={logo} />
+                        <img className={styles.logo} src={logo} />
                     </Link>
                     <div className={styles.navItems}>
                         <ul className='flex gap-4 align-items-center justify-content-center'>

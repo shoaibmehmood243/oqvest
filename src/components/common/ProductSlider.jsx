@@ -1,12 +1,10 @@
 import React from 'react';
 import { construction, conventional, dpa, dscr, fhaloan } from "../../assets";
 import styles from '../../styles/home.module.css'
-import { Carousel } from 'primereact/carousel';
 import { Link } from "react-router-dom";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
-import { useState } from 'react';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
 
 function SampleNextArrow(props) {
@@ -87,12 +85,12 @@ const ProductSlider = () => {
     }
     return (
         <div style={{ background: 'rgba(153, 153, 153, 0.04)' }}>
-            <div className={` m-auto text-center py-4 ${styles.products}`}>
-                <div className="w-full m-auto text-center md:w-10 lg:w-8 mb-8">
+            <div className={` m-auto text-center py-2 md:py-4 ${styles.products}`}>
+                <div className="w-full m-auto text-center md:w-10 lg:w-8 mb-1 md:mb-8">
                     <h1 className="m-0 mb-2"><strong className="st-1">Flexible</strong> <strong className="st-2">Mortgage</strong> Solutions</h1>
                     <p className="my-1 text">Discover the wide range of mortgage products available at Oqvest and find the one that suits you best.</p>
                 </div>
-                <div className={`my-4`}>
+                <div className={`my-2 md:my-4`}>
                     <Slider {...sliderSettings}>
                         {
                             products.map((product, i) => (

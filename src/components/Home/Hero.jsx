@@ -12,7 +12,7 @@ const Hero = () => {
     };
     return (
         <div className={`grid max-w-full mb-5 m-0 md:m-0 md:relative ${styles.heroSection}`}>
-            <div className={`col-12 lg:col-6 px-2 md:pl-4 lg:pl-8 md:pr-1 ${styles.heroText}`}>
+            <div className={`col-12 lg:col-6 px-3 md:pl-4 lg:pl-8 md:pr-1 ${styles.heroText}`}>
                 <h1>
                     { activeTab === 1 ? <>
                         Looking for your <strong className='st-1'> dream home?</strong> Let <strong className='st-2'>Oqvest</strong> make a difference:

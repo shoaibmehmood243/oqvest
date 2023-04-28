@@ -23,65 +23,76 @@
 }
 
 .container2 .card {
-    height: 300px;
+    height: 280px;
 }
 
 .card {
-background: #FFFFFF;
-box-shadow: 0px -4.13292px 47.2334px rgba(0, 0, 0, 0.07), 0px -1.72664px 19.733px rgba(0, 0, 0, 0.0503198), 0px -0.923142px 10.5502px rgba(0, 0, 0, 0.0417275), 0px -0.517506px 5.91435px rgba(0, 0, 0, 0.035), 0px -0.274844px 3.14107px rgba(0, 0, 0, 0.0282725), 0px -0.114369px 1.30707px rgba(0, 0, 0, 0.0196802);
-border-radius: 12px;
-padding: 10px 10px 20px 10px;
-width: 300px;
-height: 355px;
-margin-bottom: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px -4.13292px 47.2334px rgba(0, 0, 0, 0.07), 0px -1.72664px 19.733px rgba(0, 0, 0, 0.0503198), 0px -0.923142px 10.5502px rgba(0, 0, 0, 0.0417275), 0px -0.517506px 5.91435px rgba(0, 0, 0, 0.035), 0px -0.274844px 3.14107px rgba(0, 0, 0, 0.0282725), 0px -0.114369px 1.30707px rgba(0, 0, 0, 0.0196802);
+    border-radius: 12px;
+    padding: 10px 10px 20px 10px;
+    width: 300px;
+    height: 375px;
+    margin-bottom: 20px;
 }
 
 .card img {
     width: 100%;
     border-radius: 12px;
     margin-bottom: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blogImage {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.blogImage2 {
+    height: 150px;
+    margin-bottom: 10px;
 }
 
 .card .span1 span {
     font-weight: 400;
-font-size: 14px;
-line-height: 21px;
-/* identical to box height */
-
-
-color: #818AA6;
-
+    font-size: 14px;
+    line-height: 21px;
+    color: #818AA6;
 }
 
 .card h3 {
     font-weight: 600;
-font-size: 18px;
-line-height: 27px;
+    font-size: 18px;
+    line-height: 27px;
 
-color: #222D39;
+    color: #222D39;
 }
 
 .container2 h3 {
     font-weight: 600;
-font-size: 16px;
-line-height: 27px;
+    font-size: 16px;
+    line-height: 27px;
 
-color: #222D39;
+    color: #222D39;
 }
 
 .widgets {
-font-size: 15px;
-line-height: 17px;
+    font-size: 15px;
+    line-height: 17px;
 }
 
 .heart {
     cursor: pointer;
     color: #FF5959;
 }
+
 .msg {
     cursor: pointer;
-    color: #4B88E6;;
+    color: #4B88E6;
+    ;
 }
+
 .readMore {
     cursor: pointer;
     color: #0CBC8B;
@@ -114,14 +125,18 @@ line-height: 17px;
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
+
     .container {
         width: 90%;
     }
 }
+
 @media screen and (max-width: 575px) {
     .container {
         width: 100%;
+        margin: 5px 0px 40px 0px;
     }
+
     .grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;

@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../../styles/blogDetail.module.css';
 import BlogSection from './sections/BlogSection';
-import {  blog4 } from '../../assets';
+import { blog4 } from '../../assets';
 import { BsShare, BsShareFill } from 'react-icons/bs'
 import { RiFireFill } from 'react-icons/ri'
 import { AiFillHeart } from "react-icons/ai";
 import { TbMessageCircle2Filled } from "react-icons/tb";
 import CommentForm from './sections/CommentForm';
+import { Tooltip } from 'primereact/tooltip';
 
 const BlogDetail5 = () => {
+    const [copied, setCopied] = useState(false);
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText(window.location.href);
+        setCopied(true);
+    };
     return (
         <div className={styles.container}>
             <div className='grid'>
-                <div className='lg:col-9 pr-0 md:pr-5'>
+                <div className='col-12 lg:col-9 pr-0 md:pr-5'>
                     <h2>Article</h2>
                     <div className={styles.blogImage}>
                         <img src={blog4} />
@@ -31,9 +37,6 @@ const BlogDetail5 = () => {
                                 <span className={styles.blue}>
                                     <TbMessageCircle2Filled /> 18
                                 </span>
-                                <span className={styles.green}>
-                                    <BsShareFill /> Share
-                                </span>
                             </div>
                         </div>
                     </div>
@@ -43,7 +46,8 @@ const BlogDetail5 = () => {
                             </h1>
                         </div>
                         <div className='col-12 md:col-4 text-right'>
-                            <div className={styles.shareBtn}>
+                            <Tooltip content={copied ? 'Copied' : 'Copy to clipboard'} target=".sharebtn" />
+                            <div data-pr-position="top" onClick={copyToClipboard} style={{ cursor: 'pointer' }} className={`sharebtn ${styles.shareBtn}`}>
                                 <BsShare /> Share Now
                             </div>
                         </div>
@@ -101,9 +105,9 @@ const BlogDetail5 = () => {
                         <p>You might be able to save on your closing costs by negotiating with your lender. You may also want to ask your seller to pay a percentage of your closing costs or take a no-closing-cost loan. In addition to your funds, make sure you review everything you need to bring to closing.</p>
                     </div>
                 </div>
-                <div className='lg:col-3'>
-                    <h2>Featured Articles</h2>
-                    <BlogSection />
+                <div className='col-12 lg:col-3'>
+                    <h2 className='text-center md:text-left'>Featured Articles</h2>
+                    <BlogSection id={5} />
                 </div>
             </div>
             <CommentForm />
