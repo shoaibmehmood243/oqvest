@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../../styles/blogDetail.module.css';
 import BlogSection from './sections/BlogSection';
 import { blog2 } from '../../assets';
@@ -15,6 +15,9 @@ const BlogDetail2 = () => {
     navigator.clipboard.writeText(window.location.href);
     setCopied(true);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={styles.container}>
       <div className='grid'>

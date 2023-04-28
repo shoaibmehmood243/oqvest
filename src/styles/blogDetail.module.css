@@ -1,7 +1,18 @@
 .container {
     width: 87%;
     margin: 120px auto;
+    opacity: 0;
+    animation: fade-in 0.3s ease-in-out forwards;
 }
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 .container .blogImage {
     height: 300px;
