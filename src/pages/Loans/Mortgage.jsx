@@ -90,17 +90,23 @@ const Mortgage = () => {
                 <div className={styles.mortgageItems}>
                     <div>Private Cloud Client</div>
                     <li style={{listStyle: 'none',fontStyle: 'normal', margin: '0'}}>One of the best combinations of substantial Asset Based Income and loan terms available today is our <strong>PRIVATE CLIENT PORTFOLIO PROGRAM.</strong> It is intended for eligible customers who have sizable liquid reserves. 20% down is the required minimum, and we will finance up to $20 MILLION.</li>
+                    <a target='_blank' href={'https://lead.oqvest.com/'}>
                     <Button label="Learn More" />
+                    </a>
                 </div>
                 <div className={styles.mortgageItems}>
                     <div>Flex Home Loans</div>
                     <li style={{listStyle: 'none',fontStyle: 'normal', margin: '0'}}>For clients with intermediate wealth, our <strong>FLEX ASSET BASED INCOME PROGRAM</strong> offers a generous asset-based income approach (84 Month amortisation). The programme is accommodating of past credit issues, even with a middle FICO score of 620. 10% down is the required minimum, and we will finance up to $3 MILLION.</li>
+                    <a target='_blank' href={'https://lead.oqvest.com/'}>
                     <Button label="Learn More" />
+                    </a>
                 </div>
                 <div className={styles.mortgageItems}>
                     <div>Flex Asset Machine Program</div>
                     <li style={{listStyle: 'none',fontStyle: 'normal', margin: '0'}}>Clients with wealth equal to or more than the new loan amount are eligible for our FLEX ASSET-MATCHING PROGRAM (after down payment and settlement charges). The programme is accommodating of past credit issues, even with a middle FICO score of 600. 10% down is the required minimum, and we will finance up to $4 MILLION.</li>
+                    <a target='_blank' href={'https://lead.oqvest.com/'}>
                     <Button label="Learn More" />
+                    </a>
                 </div>
             </div>
         </div>
@@ -157,7 +163,9 @@ const Mortgage = () => {
                                     <p>{data.text}</p>
                                 </div>
                                 <div>
+                                <a target='_blank' href={'https://lead.oqvest.com/'}>
                                     <button>{data.btn}</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

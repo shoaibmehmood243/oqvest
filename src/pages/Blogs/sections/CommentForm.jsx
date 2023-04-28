@@ -11,16 +11,16 @@ const CommentForm = () => {
             <h1 className='text-center mt-0'>Leave a Reply</h1>
             <form>
                 <div>
-                    <label className='mb-2 block'>Comment</label>
+                    <label className='mb-2 flex gap-1'>Comment <span className='text-red-500'>*</span></label>
                     <InputTextarea className='w-full' rows={5} cols={30} />
                 </div>
                 <div className='flex align-items-center flex-column lg:flex-row gap-4 my-4'>
                     <div>
-                        <label className='mb-2 block'>Name</label>
+                        <label className='mb-2 flex gap-1'>Name <span className='text-red-500'>*</span></label>
                         <InputText type='text' />
                     </div>
                     <div>
-                        <label className='mb-2 block'>Email</label>
+                        <label className='mb-2 flex gap-1'>Email <span className='text-red-500'>*</span></label>
                         <InputText type='email' />
                     </div>
                 </div>

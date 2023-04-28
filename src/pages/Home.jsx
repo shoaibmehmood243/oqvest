@@ -109,10 +109,12 @@ const Home = () => {
         <div className={styles.calculateSection}>
         <div className={styles.calculate}>
             <div>
-                <div className="text-center">
+                <div style={{zIndex: '1'}} className="text-center">
                     <img src={calculator} />
                     <h4 className="w-full m-auto my-3 md:w-10 lg:w-8">Make <strong className="st-1">informed decision</strong>, calculate your affordability with Oqvest' s <strong className="st-2">mortgage calculator</strong></h4>
-                    <Button label="Get Started Now" />
+                    <a target='_blank' href={'https://lead.oqvest.com/'}>
+                        <Button label="Get Started Now" />
+                    </a>
                 </div>
                 <h1>Mortage Calculator</h1>
             </div>
@@ -149,7 +151,9 @@ const Home = () => {
                     <div className="col-12 lg:col-6 mt-2 md:mt-5 mb-3 ml-2 lg:ml-0">
                         <h1 className="mb-1">Oqvest: <strong className="st-1">Adored</strong> by <strong className="st-2">Clients</strong></h1>
                         <p className="mt-0 mb-6" style={{ color: '#395F99' }}>See what people are sayinng about us.Our happy customers</p>
+                        <a target='_blank' href={'https://lead.oqvest.com/'}>
                         <Button label="Paperless & Quick - Apply Now" />
+                        </a>
                     </div>
                     <div className="col-12 lg:col-6">
                         <div className={styles.feedback}>

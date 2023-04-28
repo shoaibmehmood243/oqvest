@@ -109,7 +109,9 @@ const Bridge = ()=> {
                 </ul>
             </div>
             <div className="text-center mt-6">
+            <a target='_blank' href={'https://lead.oqvest.com/'}>
                 <Button label="Get your Quote" />
+                </a>
             </div>
         </div>
         <div className={styles.right}>

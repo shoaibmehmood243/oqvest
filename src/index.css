@@ -53,7 +53,7 @@ p,
 span,
 strong,
 a,
-li {
+li, small, label {
     font-family: Poppins;
 }
 

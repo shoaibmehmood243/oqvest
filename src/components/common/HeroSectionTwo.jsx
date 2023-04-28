@@ -13,7 +13,9 @@ const HeroSectionTwo = ({image, heading, subheading, handleClick}) => {
                         <img src={play} />
                         <span onClick={handleClick}>Watch Video</span>
                     </div>
+                    <a target='_blank' href={'https://lead.oqvest.com/'}>
                     <Button label='Get Pre-approved' />
+                    </a>
                     <p>Get pre-approved today. 3 easy steps. No cost/obligations</p>
                 </div>
             </div>

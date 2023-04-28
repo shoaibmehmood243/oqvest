@@ -1,11 +1,27 @@
 import { welcome } from "../../assets";
 import styles from '../../styles/welcome.module.css'
-import { InputMask} from 'primereact/inputmask'
-import {Button} from 'primereact/button'
+import { InputMask } from 'primereact/inputmask'
+import { Button } from 'primereact/button'
 import { useState } from "react";
 
 const Welcome = () => {
     const [activeTab, setActiveTab] = useState(0);
+    const [zipCode, setZipCode] = useState('');
+    const [isValid, setIsValid] = useState(true);
+
+    const handleInputChange = (event) => {
+        setZipCode(event.target.value);
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const zipCodeRegex = /^\d{6}$/
+        setIsValid(zipCodeRegex.test(Number(zipCode)));
+        if (isValid && zipCode.length > 0) {
+            const url = `https://lead.oqvest.com`;
+            window.open(url, '_blank');
+        }
+    };
 
     const handleTabClick = (tabIndex) => {
         setActiveTab(tabIndex);
@@ -25,19 +41,38 @@ const Welcome = () => {
                         </div>
                         <div className={` ${styles.tabContent}`}>
                             {activeTab === 0 &&
-                                <div className={`mb-4 mt-0 ${styles.inputZip}`}>
-                                    <InputMask mask="999999" placeholder="Enter your zip code here" />
-                                    <Button label='Get my Quote' />
-                                </div>
+                                <form onSubmit={handleSubmit}>
+
+                                    <div className={`mb-1 mt-0 ${styles.inputZip}`}>
+                                        <InputMask value={zipCode}
+                                            onChange={handleInputChange} mask="999999" placeholder="Enter your zip code here" />
+                                        <Button label='Get my Quote' />
+                                    </div>
+                                    {!isValid && <small className='text-red-400'>Please enter a valid zip code.</small>}
+                                </form>
                             }
-                            {activeTab === 1 && <div className={`mb-4 mt-0 ${styles.inputZip}`}>
-                                <InputMask mask="999999" placeholder="Enter your zip code here" />
-                                <Button label='Get my Quote' />
-                            </div>}
-                            {activeTab === 2 && <div className={`mb-4 mt-0 ${styles.inputZip}`}>
-                                <InputMask mask="999999" placeholder="Enter your zip code here" />
-                                <Button label='Get my Quote' />
-                            </div>}
+                            {activeTab === 1 &&
+                                <form onSubmit={handleSubmit}>
+
+                                    <div className={`mb-1 mt-0 ${styles.inputZip}`}>
+                                        <InputMask value={zipCode}
+                                            onChange={handleInputChange} mask="999999" placeholder="Enter your zip code here" />
+                                        <Button label='Get my Quote' />
+                                    </div>
+                                    {!isValid && <small className='text-red-400'>Please enter a valid zip code.</small>}
+                                </form>
+                            }
+                            {activeTab === 2 &&
+                                <form onSubmit={handleSubmit}>
+
+                                    <div className={`mb-1 mt-0 ${styles.inputZip}`}>
+                                        <InputMask value={zipCode}
+                                            onChange={handleInputChange} mask="999999" placeholder="Enter your zip code here" />
+                                        <Button label='Get my Quote' />
+                                    </div>
+                                    {!isValid && <small className='text-red-400'>Please enter a valid zip code.</small>}
+                                </form>
+                            }
                         </div>
                         <p className="welcome-text">Already got one ? <span>Get Your quotes back</span></p>
                     </div>

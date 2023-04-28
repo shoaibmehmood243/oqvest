@@ -144,8 +144,9 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className='hidden lg:block'>
-                        <button className='h-full dark-btn'>Apply Now</button>
-                        {/* <Button label='Apply Now' /> */}
+                        <a target='_blank' href={'https://lead.oqvest.com/'}>
+                            <button className='h-full dark-btn'>Apply Now</button>
+                        </a>
                     </div>
                     <div className='block lg:hidden'>
                         <span className='cursor-pointer text-2xl' onClick={() => setVisible(!visible)}>

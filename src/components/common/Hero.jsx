@@ -1,11 +1,26 @@
 import { useState } from 'react';
-import { HeroImage } from '../../assets';
 import styles from '../../styles/hero.module.css'
 import { InputMask} from 'primereact/inputmask'
 import {Button} from 'primereact/button'
 
 const Hero = ({image, heading, subheading}) => {
     const [activeTab, setActiveTab] = useState(0);
+    const [zipCode, setZipCode] = useState('');
+    const [isValid, setIsValid] = useState(true);
+
+    const handleInputChange = (event) => {
+        setZipCode(event.target.value);
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const zipCodeRegex = /^\d{6}$/
+        setIsValid(zipCodeRegex.test(Number(zipCode)));
+        if (isValid && zipCode.length > 0) {
+            const url = `https://lead.oqvest.com`;
+            window.open(url, '_blank');
+        }
+    };
 
     const handleTabClick = (tabIndex) => {
         setActiveTab(tabIndex);
@@ -22,20 +37,43 @@ const Hero = ({image, heading, subheading}) => {
                         <button className={activeTab === 2 ? styles.activeTab : ''} onClick={() => handleTabClick(2)}>Refinance</button>
                     </div>
                     <div className="tab-content">
-                        {activeTab === 0 && 
-                            <div className={`mb-4 mt-5 w-full flex ${styles.inputZip}`}>
-                                <InputMask mask="999999" placeholder="Enter your zip code here" />
-                                <Button label='Search' />
-                            </div>
+                        {activeTab === 0 &&
+                            <form onSubmit={handleSubmit}>
+                                <div className={`mb-1 mt-5 w-full flex ${styles.inputZip}`}>
+                                    <InputMask value={zipCode}
+                                        onChange={handleInputChange}
+                                         mask="999999" placeholder="Enter your zip code here" />
+
+                                    <Button className='px-5' label='Search' />
+                                </div>
+                                {!isValid && <small className='text-red-400'>Please enter a valid zip code.</small>}
+                            </form>
                         }
-                        {activeTab === 1 && <div className={`mb-4 mt-5 w-full flex ${styles.inputZip}`}>
-                                <InputMask mask="999999" placeholder="Enter your zip code here" />
-                                <Button label='Search' />
-                            </div>}
-                        {activeTab === 2 && <div className={`mb-4 mt-5 w-full flex ${styles.inputZip}`}>
-                                <InputMask mask="999999" placeholder="Enter your zip code here" />
-                                <Button label='Search' />
-                            </div>}
+                        {activeTab === 1 &&
+                            <form onSubmit={handleSubmit}>
+                                <div className={`mb-1 mt-5 w-full flex ${styles.inputZip}`}>
+                                    <InputMask value={zipCode}
+                                        onChange={handleInputChange}
+                                         mask="999999" placeholder="Enter your zip code here" />
+                                    <Button className='px-5' label='Search' />
+                                    {!isValid && <small className='text-red-400'>Please enter a valid zip code.</small>}
+
+                                </div>
+                            </form>
+                        }
+                        {activeTab === 2 &&
+                            <form onSubmit={handleSubmit}>
+                                <div className={`mb-1 mt-5 w-full flex ${styles.inputZip}`}>
+                                    <InputMask value={zipCode}
+                                        onChange={handleInputChange}
+                                         mask="999999" placeholder="Enter your zip code here" />
+
+                                    <Button className='px-5' label='Search' />
+                                {!isValid && <small className='text-red-400'>Please enter a valid zip code.</small>}
+
+                                </div>
+                            </form>
+                        }
                     </div>
                 </div>
             </div>

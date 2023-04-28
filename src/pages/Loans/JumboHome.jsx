@@ -124,7 +124,9 @@ const JumboHome = ()=> {
                                 <p>{data.text}</p>
                                 </div>
                                 <div>
+                                <a target='_blank' href={'https://lead.oqvest.com/'}>
                                     <button>{data.btn}</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

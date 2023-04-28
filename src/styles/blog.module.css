@@ -114,6 +114,73 @@
     color: #FF6C59;
 }
 
+.slider :global(.slick-prev),
+.slider :global(.slick-next) {
+    background-color: #fff;
+    color: #222D39 !important;
+    font-size: 24px !important;
+}
+
+.slider :global(.slick-next) {
+    right: 20px;
+}
+.slider :global(.slick-prev) {
+    left: 15px;
+}
+
+.slider :global(.slick-prev::before),
+.slider :global(.slick-next::before) {
+    content: '';
+}
+
+.slider a {
+    text-decoration: none;
+}
+
+.slider .text {
+    color: #818AA6;
+    margin: 8px 0px;
+}
+
+.slider :global(.slick-track) {
+    height: 450px;
+    top: 50px;
+    position: relative;
+}
+.slider2 :global(.slick-prev),
+.slider2 :global(.slick-next) {
+    background-color: transparent;
+    color: #222D39 !important;
+    font-size: 24px !important;
+}
+
+.slider2 :global(.slick-next) {
+    right: 0px;
+}
+.slider2 :global(.slick-prev) {
+    left: -10px;
+}
+
+.slider2 :global(.slick-prev::before),
+.slider2 :global(.slick-next::before) {
+    content: '';
+}
+
+.slider2 a {
+    text-decoration: none;
+}
+
+.slider2 .text {
+    color: #818AA6;
+    margin: 8px 0px;
+}
+
+.slider2 :global(.slick-track) {
+    height: 450px;
+    top: 50px;
+    position: relative;
+}
+
 @media screen and (min-width: 1400px) {
     .container {
         width: 60%;

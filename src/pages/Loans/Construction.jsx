@@ -150,7 +150,9 @@ const Construction = ()=> {
                     <div className="col-12 lg:col-6 mt-5 mb-3 ml-2 lg:ml-0">
                     <h1 className="mb-1">Oqvest: <strong className="st-1">Adored</strong> by <strong className="st-2">Clients</strong></h1>
                         <p className="mt-0 mb-6" style={{color: '#395F99'}}>See what people are sayinng about us.Our happy customers</p>
+                        <a target='_blank' href={'https://lead.oqvest.com/'}>
                         <Button label="Read more Feedbacks" />
+                        </a>
                     </div>
                     <div className="col-12 lg:col-6">
                         <div className={styles.feedback}>

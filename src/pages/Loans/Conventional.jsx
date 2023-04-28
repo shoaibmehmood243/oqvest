@@ -90,7 +90,9 @@ const Conventional = ()=> {
             <div className="mt-7">
                 <p>If you are thinking about conventional financing, give us a call so we can go through your options, address all of your concerns, and determine whether this is the best lending programme for you.</p>
                 <div className="text-center mt-6">
+                <a target='_blank' href={'https://lead.oqvest.com/'}>
                     <Button className="px-5" label="Get your Quote" />
+                    </a>
                 </div>
             </div>
         </div>
