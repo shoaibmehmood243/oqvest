@@ -123,7 +123,7 @@ const BlogSection = ({ id }) => {
                     ))
                 }
             </div>
-            <div className={`mt-6 ${styles.slider2}`}>
+            <div className={`mt-6 block md:hidden ${styles.slider2}`}>
                 <Slider {...sliderSettings}>
                     {
                         blogs.map((data, i) => (
