@@ -47,7 +47,7 @@ const Blog = () => {
             title: 'Closing Costs: What are They and How Much??',
             views: '3.5',
             date: 'March,2022',
-            link: '/blog/5'
+            link: '/blog/6'
         },
     ]
     return (

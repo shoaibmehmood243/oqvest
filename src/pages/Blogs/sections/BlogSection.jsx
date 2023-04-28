@@ -1,4 +1,4 @@
-import { blog1, blog2, blog3, blog4, blog5, blog6, idea } from '../../../assets';
+import { blog1, blog2, blog3, blog4, blog5, blog6 } from '../../../assets';
 import styles from '../../../styles/blog.module.css';
 import {Link} from 'react-router-dom'
 
@@ -44,7 +44,7 @@ const BlogSection = () => {
             title: 'Closing Costs: What are They and How Much??',
             views: '3.5',
             date: 'March,2022',
-            link: '/blog/5'
+            link: '/blog/6'
         },
     ]
     return (

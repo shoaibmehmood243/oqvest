@@ -162,6 +162,7 @@ import mortgageloan10 from './mortgageloan10.png';
 import hero1 from './hero1.svg';
 import hero2 from './hero2.svg';
 import hero3 from './hero3.svg';
+import sitting from './sitting-8.png'
 
 export {
     logo,
@@ -327,5 +328,6 @@ export {
     mortgageloan9,
     hero1,
     hero2,
-    hero3
+    hero3,
+    sitting
 }

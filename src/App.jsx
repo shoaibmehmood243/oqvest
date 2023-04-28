@@ -21,6 +21,7 @@ import BlogDetail2 from './pages/Blogs/BlogDetail2';
 import BlogDetail3 from './pages/Blogs/BlogDetail3';
 import BlogDetail4 from './pages/Blogs/BlogDetail4';
 import BlogDetail5 from './pages/Blogs/BlogDetail5';
+import BlogDetail6 from './pages/Blogs/BlogDetail6';
 
 function App() {
   useEffect(()=> {
@@ -54,6 +55,7 @@ function App() {
         <Route path='/blog/3' element={<BlogDetail3 />} />
         <Route path='/blog/4' element={<BlogDetail4 />} />
         <Route path='/blog/5' element={<BlogDetail5 />} />
+        <Route path='/blog/6' element={<BlogDetail6 />} />
       </Routes>
       <Footer />
     </BrowserRouter>

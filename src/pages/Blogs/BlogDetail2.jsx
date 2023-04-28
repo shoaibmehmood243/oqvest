@@ -6,12 +6,13 @@ import { BsShare, BsShareFill } from 'react-icons/bs'
 import { RiFireFill } from 'react-icons/ri'
 import { AiFillHeart } from "react-icons/ai";
 import { TbMessageCircle2Filled } from "react-icons/tb";
+import CommentForm from './sections/CommentForm';
 
 const BlogDetail2 = () => {
   return (
     <div className={styles.container}>
       <div className='grid'>
-        <div className='lg:col-9 pr-5'>
+        <div className='lg:col-9 pr-0 md:pr-5'>
           <h2>Article</h2>
           <div className={styles.blogImage}>
             <img src={blog2} />
@@ -23,7 +24,7 @@ const BlogDetail2 = () => {
               </div>
             </div>
             <div className='col-6 text-end'>
-              <div className='flex align-items-center justify-content-end gap-4 pr-5'>
+              <div className='flex align-items-center justify-content-end gap-3 md:gap-4 pr-1 md:pr-5'>
                 <span className={styles.red}>
                   <AiFillHeart /> 31
                 </span>
@@ -36,18 +37,18 @@ const BlogDetail2 = () => {
               </div>
             </div>
           </div>
-          <div className='grid align-items-center pr-5'>
-            <div className='col-8'>
+          <div className='grid align-items-center pr-2 md:pr-5'>
+            <div className='col-12 md:col-8'>
               <h1>What To Know About Getting A Mortgage While You Still Have Student Loan Debt
               </h1>
             </div>
-            <div className='col-4 text-right'>
+            <div className='col-12 md:col-4 text-right'>
               <div className={styles.shareBtn}>
                 <BsShare /> Share Now
               </div>
             </div>
           </div>
-          <span className='mb-3'><strong>Posted on:</strong>  January, 2021</span>
+          <span className='mb-1'><strong>Posted on:</strong>  January, 2021</span>
           <span className='mb-3'><strong>Reading time:</strong> 13 Minutes</span>
           <div className='pr-5'>
             <p>If you're looking to buy a home but still have student loan debt, you may be wondering how this will affect your ability to get a mortgage. Here's what you need to know about getting a mortgage with student loan debt, and how Oqvest can help you through the process.</p>
@@ -80,6 +81,7 @@ const BlogDetail2 = () => {
           <BlogSection />
         </div>
       </div>
+      <CommentForm />
     </div>
   )
 }
