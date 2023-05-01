@@ -36,7 +36,7 @@ const BlogSection = ({ id }) => {
             title: 'A Guide to First-Time Home Buyer Programs, Loans & Grants',
             views: '2.5',
             date: 'January,2021',
-            link: '/blog/1'
+            link: '/blog/a-guide-to-first-time-home-buyer-programs-loans-&-grants'
         },
         {
             id: 2,
@@ -44,7 +44,7 @@ const BlogSection = ({ id }) => {
             title: 'How Much House can I Afford??',
             views: '1.7',
             date: 'February,2020',
-            link: '/blog/2'
+            link: '/blog/how-much-house-can-i-afford'
         },
         {
             id: 3,
@@ -52,7 +52,7 @@ const BlogSection = ({ id }) => {
             title: 'How to buy a Houuse with Student Loan Debt??',
             views: '3.5',
             date: 'March,2022',
-            link: '/blog/3'
+            link: '/blog/how-to-buy-a-house-with-student-loan-debt'
         },
         {
             id: 4,
@@ -60,15 +60,15 @@ const BlogSection = ({ id }) => {
             title: 'Buying an Investment Property:A Complete Guide',
             views: '3.5',
             date: 'March,2022',
-            link: '/blog/4'
+            link: '/blog/buying-an-investment-property-a-complete-guide'
         },
         {
             id: 5,
             img: blog5,
-            title: 'How to Finance an Airbnb Rental: A Guide for Iinvestors',
+            title: 'How to Finance an Airbnb Rental: A Guide for Investors',
             views: '3.5',
             date: 'March,2022',
-            link: '/blog/5'
+            link: '/blog/how-to-finance-an-airbnb-rental-a-guide-for-investors'
         },
         {
             id: 6,
@@ -76,7 +76,7 @@ const BlogSection = ({ id }) => {
             title: 'Closing Costs: What are They and How Much??',
             views: '3.5',
             date: 'March,2022',
-            link: '/blog/6'
+            link: '/blog/closing-costs-what-are-they-and-how-much'
         },
     ]
     useEffect(() => {

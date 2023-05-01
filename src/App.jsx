@@ -50,12 +50,12 @@ function App() {
         <Route path="/dscr-loan" element={<Dscr />} />
         <Route path="/jumbo-home-loan" element={<JumboHome />} />
         <Route path="/flex-mortgage-loan" element={<Mortgage />} />
-        <Route path='/blog/1' element={<BlogDetail1 />} />
-        <Route path='/blog/2' element={<BlogDetail2 />} />
-        <Route path='/blog/3' element={<BlogDetail3 />} />
-        <Route path='/blog/4' element={<BlogDetail4 />} />
-        <Route path='/blog/5' element={<BlogDetail5 />} />
-        <Route path='/blog/6' element={<BlogDetail6 />} />
+        <Route path='/blog/a-guide-to-first-time-home-buyer-programs-loans-&-grants' element={<BlogDetail1 />} />
+        <Route path='/blog/how-much-house-can-i-afford' element={<BlogDetail2 />} />
+        <Route path='/blog/how-to-buy-a-house-with-student-loan-debt' element={<BlogDetail3 />} />
+        <Route path='/blog/buying-an-investment-property-a-complete-guide' element={<BlogDetail4 />} />
+        <Route path='/blog/how-to-finance-an-airbnb-rental-a-guide-for-investors' element={<BlogDetail5 />} />
+        <Route path='/blog/closing-costs-what-are-they-and-how-much' element={<BlogDetail6 />} />
       </Routes>
       <Footer />
     </BrowserRouter>
