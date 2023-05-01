@@ -10,8 +10,8 @@ import { useRef } from 'react';
 import { useEffect } from 'react';
 
 const Header = () => {
-    const handleCalendly = ()=> {
-        window.Calendly.initPopupWidget({url: 'https://calendly.com/oqvest/meeting'});
+    const handleCalendly = () => {
+        window.Calendly.initPopupWidget({ url: 'https://calendly.com/oqvest/meeting' });
     }
     const navItems = [
         {
@@ -82,8 +82,9 @@ const Header = () => {
     const ref = useRef(null);
     const handleClick = () => {
         setShow(false);
+        setVisible(false);
         window.scrollTo(0, 0);
-      };
+    };
 
     useEffect(() => {
         function handleClickOutside(event) {
@@ -112,7 +113,7 @@ const Header = () => {
                                             item.items.length > 0 ?
                                                 <span onClick={() => setShow(!show)} className={styles.span}>{item.name}</span>
                                                 :
-                                            <Link to='/'>{item.name}</Link>
+                                                <Link to='/'>{item.name}</Link>
                                         }
                                         {
                                             item.items.length > 0 && (<>
@@ -168,8 +169,37 @@ const Header = () => {
                 <ul>
                     {
                         navItems.map((item, i) => (
-                            <li key={i}>
-                                <Link to='/'>{item.name}</Link>
+                            <li key={i} onClick={item.click} className='flex align-items-center gap-2'>
+                                {
+                                    item.items.length > 0 ?
+                                        <span onClick={() => setShow(!show)} className={styles.span}>{item.name}</span>
+                                        :
+                                        <Link to='/'>{item.name}</Link>
+                                }
+                                {
+                                    item.items.length > 0 && (<>
+                                        {
+                                            show ?
+                                                <BsChevronUp onClick={() => setShow(!show)} /> :
+                                                <BsChevronDown onClick={() => setShow(!show)} />
+                                        }
+                                    </>)
+                                }
+
+                                {
+                                    (show && item.items.length > 0) &&
+                                    <div className={`${styles.dropdown}`} ref={ref}>
+                                        <ul>
+                                            {
+                                                item.items.map((i, index) => (
+                                                    <li key={index} onClick={handleClick}>
+                                                        <Link to={i.link}>{i.name}</Link>
+                                                    </li>
+                                                ))
+                                            }
+                                        </ul>
+                                    </div>
+                                }
                             </li>
                         ))
                     }
