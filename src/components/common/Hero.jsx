@@ -14,7 +14,7 @@ const Hero = ({image, heading, subheading}) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const zipCodeRegex = /^\d{6}$/
+        const zipCodeRegex = /^\d{5}$/
         setIsValid(zipCodeRegex.test(Number(zipCode)));
         if (isValid && zipCode.length > 0) {
             const url = `https://lead.oqvest.com`;
@@ -42,7 +42,7 @@ const Hero = ({image, heading, subheading}) => {
                                 <div className={`mb-1 mt-5 w-full flex ${styles.inputZip}`}>
                                     <InputMask value={zipCode}
                                         onChange={handleInputChange}
-                                         mask="999999" placeholder="Enter your zip code here" />
+                                         mask="99999" placeholder="Enter your zip code here" />
 
                                     <Button className='px-5' label='Search' />
                                 </div>
@@ -54,7 +54,7 @@ const Hero = ({image, heading, subheading}) => {
                                 <div className={`mb-1 mt-5 w-full flex ${styles.inputZip}`}>
                                     <InputMask value={zipCode}
                                         onChange={handleInputChange}
-                                         mask="999999" placeholder="Enter your zip code here" />
+                                         mask="99999" placeholder="Enter your zip code here" />
                                     <Button className='px-5' label='Search' />
                                     {!isValid && <small className='text-red-400'>Please enter a valid zip code.</small>}
 
@@ -66,7 +66,7 @@ const Hero = ({image, heading, subheading}) => {
                                 <div className={`mb-1 mt-5 w-full flex ${styles.inputZip}`}>
                                     <InputMask value={zipCode}
                                         onChange={handleInputChange}
-                                         mask="999999" placeholder="Enter your zip code here" />
+                                         mask="99999" placeholder="Enter your zip code here" />
 
                                     <Button className='px-5' label='Search' />
                                 {!isValid && <small className='text-red-400'>Please enter a valid zip code.</small>}

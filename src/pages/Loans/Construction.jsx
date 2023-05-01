@@ -110,7 +110,7 @@ const Construction = ()=> {
 
         <div className={styles.calculate}>
             <div>
-                <div className="text-center">
+                <div style={{zIndex: '1'}} className="text-center relative">
                     <img src={calculator} />
                     <h4 className="w-full m-auto my-3 md:w-10 lg:w-8">Make <strong className="st-1">informed decision</strong>, calculate your affordability with Oqvest' s <strong className="st-2">mortgage calculator</strong></h4>
                     <Button label="Get Started Now" />

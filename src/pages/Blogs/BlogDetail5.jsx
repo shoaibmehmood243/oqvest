@@ -113,7 +113,7 @@ const BlogDetail5 = () => {
                     <BlogSection id={5} />
                 </div>
             </div>
-            <CommentForm />
+            {/* <CommentForm /> */}
         </div>
     )
 }

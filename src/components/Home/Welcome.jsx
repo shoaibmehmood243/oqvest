@@ -15,7 +15,7 @@ const Welcome = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const zipCodeRegex = /^\d{6}$/
+        const zipCodeRegex = /^\d{5}$/
         setIsValid(zipCodeRegex.test(Number(zipCode)));
         if (isValid && zipCode.length > 0) {
             const url = `https://lead.oqvest.com`;
@@ -45,7 +45,7 @@ const Welcome = () => {
 
                                     <div className={`mb-1 mt-0 ${styles.inputZip}`}>
                                         <InputMask value={zipCode}
-                                            onChange={handleInputChange} mask="999999" placeholder="Enter your zip code here" />
+                                            onChange={handleInputChange} mask="99999" placeholder="Enter your zip code here" />
                                         <Button label='Get my Quote' />
                                     </div>
                                     {!isValid && <small className='text-red-400'>Please enter a valid zip code.</small>}
@@ -56,7 +56,7 @@ const Welcome = () => {
 
                                     <div className={`mb-1 mt-0 ${styles.inputZip}`}>
                                         <InputMask value={zipCode}
-                                            onChange={handleInputChange} mask="999999" placeholder="Enter your zip code here" />
+                                            onChange={handleInputChange} mask="99999" placeholder="Enter your zip code here" />
                                         <Button label='Get my Quote' />
                                     </div>
                                     {!isValid && <small className='text-red-400'>Please enter a valid zip code.</small>}
@@ -67,7 +67,7 @@ const Welcome = () => {
 
                                     <div className={`mb-1 mt-0 ${styles.inputZip}`}>
                                         <InputMask value={zipCode}
-                                            onChange={handleInputChange} mask="999999" placeholder="Enter your zip code here" />
+                                            onChange={handleInputChange} mask="99999" placeholder="Enter your zip code here" />
                                         <Button label='Get my Quote' />
                                     </div>
                                     {!isValid && <small className='text-red-400'>Please enter a valid zip code.</small>}

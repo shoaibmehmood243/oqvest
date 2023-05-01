@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 
 const Header = () => {
     const handleCalendly = ()=> {
-        window.Calendly.initPopupWidget({url: 'https://calendly.com/shoaibmehmood065'});
+        window.Calendly.initPopupWidget({url: 'https://calendly.com/oqvest/meeting'});
     }
     const navItems = [
         {

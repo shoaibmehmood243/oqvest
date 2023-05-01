@@ -91,7 +91,7 @@ const BlogDetail4 = () => {
                     <BlogSection id={4} />
                 </div>
             </div>
-            <CommentForm />
+            {/* <CommentForm /> */}
         </div>
     )
 }

@@ -151,7 +151,7 @@ const BlogDetail6 = () => {
           <BlogSection id={6} />
         </div>
       </div>
-      <CommentForm />
+      {/* <CommentForm /> */}
     </div>
   )
 }
