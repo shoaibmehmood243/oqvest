@@ -133,7 +133,7 @@ const SelfEmployed = ()=> {
                             </div>
                             <div>
                                 <h4 className="m-0">{data.title}</h4>
-                                <p className="m-0 text-sm">{data.text}</p>
+                                <p className="m-0 mt-2 text-sm">{data.text}</p>
                             </div>
                         </div>
                     ))

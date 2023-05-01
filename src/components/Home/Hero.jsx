@@ -66,6 +66,7 @@ const Hero = () => {
                             <form onSubmit={handleSubmit}>
                                 <div className={`mb-1 mt-5 w-full flex ${styles.inputZip}`}>
                                     <InputMask value={zipCode}
+                                    autoFocus={false}
                                         onChange={handleInputChange}
                                          mask="999999" placeholder="Enter your zip code here" />
 
@@ -78,6 +79,7 @@ const Hero = () => {
                             <form onSubmit={handleSubmit}>
                                 <div className={`mb-1 mt-5 w-full flex ${styles.inputZip}`}>
                                     <InputMask value={zipCode}
+                                    autoFocus={false}
                                         onChange={handleInputChange}
                                          mask="999999" placeholder="Enter your zip code here" />
                                     <Button className='px-5' label='Search' />
@@ -90,6 +92,7 @@ const Hero = () => {
                             <form onSubmit={handleSubmit}>
                                 <div className={`mb-1 mt-5 w-full flex ${styles.inputZip}`}>
                                     <InputMask value={zipCode}
+                                    autoFocus={false}
                                         onChange={handleInputChange}
                                          mask="999999" placeholder="Enter your zip code here" />
 
