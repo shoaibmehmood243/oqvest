@@ -7,6 +7,7 @@ import Welcome from "../../components/Home/Welcome";
 import Blog from "../../components/Home/Blog";
 import Rate from "../../components/common/Rate";
 import ProductSlider from "../../components/common/ProductSlider";
+import { useEffect } from "react";
 
 const Construction = ()=> {
     const images = [
@@ -83,6 +84,9 @@ const Construction = ()=> {
             feedback: 'I was looking for an investment loan to close in the name of my LLC. After talking to several banks all of whom said it’s not possible, I came across Oqvest, they guided me very well toward the best product that suits my demand. Thumbs up for them. Their team was always helpful and professional, closed on time and with no hiccups.'
         },
     ]
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (<>
         <Hero image={constrcutionLoan} heading={<>Find the best financing options for your <strong>Construction Loan</strong>.</>} subheading="Our construction loan is designed to help you get your project off the ground. Find out how much you can borrow today." />
         <div className={`mt-7 mb-6 md:my-6 ${styles.featured}`}>

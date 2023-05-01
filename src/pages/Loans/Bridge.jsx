@@ -1,5 +1,5 @@
 import { Button } from "primereact/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { bridgeloan1, bridgeloan2, bridgeloan3, bridgeloan4, bridgeloanhero, rectangleLeft, rectangleRight } from "../../assets";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
 import Video from "../../components/common/Video";
@@ -15,6 +15,9 @@ const Bridge = ()=> {
     const onHide = ()=> {
         setVideo(false)
     }
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (<>
         <VideoDialog
             videoId="PudGpKWT8GE"

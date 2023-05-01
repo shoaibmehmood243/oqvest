@@ -72,16 +72,17 @@ button:focus {
     }
 
     .inputZip :global(.p-button .p-button-label) {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .tabButton {
         width: 100%;
+        gap: 0px;
     }
 
     .tabButton button {
         padding: 10px 5px;
-        font-size: 11px;
+        font-size: 10px;
     }
 }
 
@@ -93,4 +94,10 @@ button:focus {
     .tabButton {
         width: 100%;
     }
+
+    .tabContent button {
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+
 }

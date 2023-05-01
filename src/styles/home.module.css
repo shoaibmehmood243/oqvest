@@ -87,9 +87,10 @@
 
 .products :global(.slick-prev),
 .products :global(.slick-next) {
-    background-color: #fff;
+    background-color: transparent;
     color: #222D39 !important;
     font-size: 24px !important;
+    z-index: 1;
 }
 
 .products :global(.slick-next) {
@@ -311,7 +312,7 @@ button:focus {
     }
 
     .gridItems {
-        height: 300px;
+        height: 350px;
         border-top: 3px solid #222D39;
         background: #FFFFFF;
         border-radius: 5px 5px 20px 20px;
@@ -326,6 +327,11 @@ button:focus {
     .productCard {
         margin: 0px;
         height: 320px;
+    }
+
+    .productCard:hover {
+        background-color: #fff;
+        transform: none;
     }
 
     .feedback {

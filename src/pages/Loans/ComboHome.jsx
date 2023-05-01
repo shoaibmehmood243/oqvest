@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { comboloan1, comboloan2, comboloan3, comboloan4, comboloanhero, rectangleLeft, rectangleRight, vector } from "../../assets";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
 import Welcome from "../../components/Home/Welcome";
@@ -10,6 +10,9 @@ const ComboHome = ()=> {
     const onHide = ()=> {
         setVideo(false)
     }
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (<>
         <VideoDialog
             videoId="f3FP666KtNk"

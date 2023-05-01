@@ -83,9 +83,9 @@ const Hero = () => {
                                         onChange={handleInputChange}
                                          mask="99999" placeholder="Enter your zip code here" />
                                     <Button className='px-5' label='Search' />
-                                    {!isValid && <small className='text-red-400'>Please enter a valid zip code.</small>}
 
                                 </div>
+                                    {!isValid && <small className='text-red-400'>Please enter a valid zip code.</small>}
                             </form>
                         }
                         {activeTab === 2 &&
@@ -97,9 +97,9 @@ const Hero = () => {
                                          mask="99999" placeholder="Enter your zip code here" />
 
                                     <Button className='px-5' label='Search' />
-                                {!isValid && <small className='text-red-400'>Please enter a valid zip code.</small>}
 
                                 </div>
+                                {!isValid && <small className='text-red-400'>Please enter a valid zip code.</small>}
                             </form>
                         }
                     </div>

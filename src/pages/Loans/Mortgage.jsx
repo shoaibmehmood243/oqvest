@@ -1,5 +1,5 @@
 import { Button } from "primereact/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { rectangleLeft, mortgageloanhero, mortgageloan1, mortgageloan2, mortgageloan3, mortgageloan4, mortgageloan7, mortgageloan8, mortgageloan9, mortgageloan10, rectangleRight, mortgageloan6, mortgageloan5 } from "../../assets";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
 import Welcome from "../../components/Home/Welcome";
@@ -14,6 +14,9 @@ const Mortgage = () => {
     const onHide = ()=> {
         setVideo(false)
     }
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     const data = [
         {
             image: mortgageloan5,

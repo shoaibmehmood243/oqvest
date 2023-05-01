@@ -37,9 +37,9 @@ const BlogDetail4 = () => {
                                 <span className={styles.red}>
                                     <AiFillHeart /> 31
                                 </span>
-                                <span className={styles.blue}>
+                                {/* <span className={styles.blue}>
                                     <TbMessageCircle2Filled /> 18
-                                </span>
+                                </span> */}
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 import { Button } from "primereact/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { bankloan1, bankloan2, bankloan3, bankloan4, bankloan5, bankloan6, bankloan7, bankloan8, bankloanhero, profitloan1, profitloan10, profitloan11, profitloan12, profitloan2, profitloan3, profitloan4, profitloan5, profitloan6, profitloan7, profitloan8, profitloan9, profitloanhero, rectangleLeft, rectangleRight } from "../../assets";
 import Apply from "../../components/common/Apply";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
@@ -16,6 +16,9 @@ const ProfitLoss = ()=> {
     const onHide = ()=> {
         setVideo(false)
     }
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (<>
         <VideoDialog
             videoId="HFJLjqde8b8"

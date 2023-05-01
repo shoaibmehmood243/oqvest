@@ -7,6 +7,7 @@ import Welcome from "../../components/Home/Welcome";
 import Blog from "../../components/Home/Blog";
 import Rate from "../../components/common/Rate";
 import ProductSlider from "../../components/common/ProductSlider";
+import { useEffect } from "react";
 
 const SelfEmployed = ()=> {
     const images = [
@@ -83,6 +84,9 @@ const SelfEmployed = ()=> {
             feedback: 'I was looking for an investment loan to close in the name of my LLC. After talking to several banks all of whom said it’s not possible, I came across Oqvest, they guided me very well toward the best product that suits my demand. Thumbs up for them. Their team was always helpful and professional, closed on time and with no hiccups.'
         },
     ]
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (<>
         <Hero image={selfEmployedHero} heading={<>Mortgages for <strong>Self-Employed</strong> Borrowers</>} subheading="Are you self-employed and would like to get approved for a home loan? We can help with all of your needs, including rate comparisons and legal tips." />
         <div className={`mt-7 mb-6 md:my-6 ${styles.featured}`}>

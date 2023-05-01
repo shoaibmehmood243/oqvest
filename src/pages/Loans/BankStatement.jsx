@@ -1,5 +1,5 @@
 import { Button } from "primereact/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { bankloan1, bankloan2, bankloan3, bankloan4, bankloan5, bankloan6, bankloan7, bankloan8, bankloanhero, rectangleLeft, rectangleRight } from "../../assets";
 import Apply from "../../components/common/Apply";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
@@ -16,6 +16,9 @@ const BankStatement = ()=> {
     const onHide = ()=> {
         setVideo(false)
     }
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (<>
         <VideoDialog
             videoId="lG4NBGQxDzA"

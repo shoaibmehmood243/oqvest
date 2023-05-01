@@ -103,7 +103,7 @@ const Blog = () => {
     }
     return (
         <div className={styles.container}>
-            <h1 className='m-0 px-2 md:px-0 text-center'>Knowledge Centre <img className="rotate" height={70} width={100} src={idea} /></h1>
+            <h1 className='m-0 px-2 md:px-0 text-center flex align-items-center justify-content-center'>Knowledge Centre <img className="rotate" height={70} width={100} src={idea} /></h1>
             <div className={`mt-6 ${styles.grid}`}>
                 {
                     data.map((data, i) => (
@@ -127,7 +127,7 @@ const Blog = () => {
                     ))
                 }
             </div>
-            <div className={`mt-6 block md:hidden ${styles.slider}`}>
+            <div className={`mt-0 md:mt-6 block md:hidden ${styles.slider}`}>
             <Slider {...sliderSettings}>
                 {
                     data.map((data, i) => (

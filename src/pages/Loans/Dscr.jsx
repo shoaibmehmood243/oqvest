@@ -4,7 +4,7 @@ import HeroSectionTwo from "../../components/common/HeroSectionTwo";
 import Welcome from "../../components/Home/Welcome";
 import styles from '../../styles/layouttwo.module.css'
 import {Button} from 'primereact/button'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import VideoDialog from "../../components/common/VideoDialog";
 
 const Dscr = ()=> {
@@ -15,6 +15,9 @@ const Dscr = ()=> {
     const onHide = ()=> {
         setVideo(false)
     }
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (<>
         <VideoDialog
             videoId="8MutFwLHNK4"

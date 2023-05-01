@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {  privateloan1, privateloan2, privateloan3, privateloan4, privateloanhero, rectangleLeft } from "../../assets";
 import Apply from "../../components/common/Apply";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
@@ -15,6 +15,9 @@ const Private = ()=> {
     const onHide = ()=> {
         setVideo(false)
     }
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (<>
         <VideoDialog
             videoId="E9iFA9VWOCk"

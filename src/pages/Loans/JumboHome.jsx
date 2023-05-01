@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {  jumboloan1, jumboloan2, jumboloanhero, jumboloan3,  rectangleLeft, jumboloan4, jumboloan5, jumboloan6, jumboloan7, jumboloan8, jumboloan9, jumboloan10 } from "../../assets";
 import Apply from "../../components/common/Apply";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
@@ -14,6 +14,9 @@ const JumboHome = ()=> {
     const onHide = ()=> {
         setVideo(false)
     }
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     const data = [
         {
             image: jumboloan9,

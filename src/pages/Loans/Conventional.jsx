@@ -1,5 +1,5 @@
 import { Button } from "primereact/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {  conventionalloan1, conventionalloan2, conventionalloan3, conventionalloan4, conventionalloan5, conventionalloan6, conventionalloan7, conventionalloan8, conventionalLoanHero, rectangleLeft } from "../../assets";
 import HeroSectionTwo from "../../components/common/HeroSectionTwo";
 import Video from "../../components/common/Video";
@@ -15,6 +15,9 @@ const Conventional = ()=> {
     const onHide = ()=> {
         setVideo(false)
     }
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (<>
         <VideoDialog
             videoId="BaedWpuuBsk"
