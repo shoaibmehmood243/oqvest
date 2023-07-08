@@ -1,0 +1,40 @@
+name: Ovqest CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build and test Oqvest app
+        run: |
+          npm install
+          npm test
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    needs: build
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build and deploy Oqvest app
+        run: |
+          # Stop and remove existing container
+          ssh user@209.126.10.187 "docker stop oqvest || true"
+          ssh user@209.126.10.187 "docker rm oqvest || true"
+
+          # Build and tag Docker image
+          docker build -t react-app .
+
+          # Run the new container
+          ssh user@209.126.10.187 "docker run -p 80:80 -d oqvest"
