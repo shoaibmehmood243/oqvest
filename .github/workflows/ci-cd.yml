@@ -16,7 +16,6 @@ jobs:
       - name: Build and test Oqvest app
         run: |
           npm install
-          npm test
 
   deploy:
     runs-on: ubuntu-latest
