@@ -29,11 +29,11 @@ jobs:
       - name: Build and deploy Oqvest app
         run: |
           # Stop and remove existing container
-          ssh user@209.126.10.187 "docker stop oqvest || true"
-          ssh user@209.126.10.187 "docker rm oqvest || true"
+          ssh root@209.126.10.187 "docker stop oqvest || true"
+          ssh root@209.126.10.187 "docker rm oqvest || true"
 
           # Build and tag Docker image
           docker build -t react-app .
 
           # Run the new container
-          ssh user@209.126.10.187 "docker run -p 80:80 -d oqvest"
+          ssh root@209.126.10.187 "docker run -p 80:80 -d oqvest"
